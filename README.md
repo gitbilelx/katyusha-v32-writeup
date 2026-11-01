@@ -482,6 +482,13 @@ paths are now TRACE-VERIFIED via the analyst's own detonation.)*
 | `config_consumer.txt` | c2_bootstrap trace + paste grammar hypothesis + rejected-hypotheses record |
 | `masked_tables.txt` | PB literal-pool decode + rejected hypotheses + ref-count corrections |
 | `blob_table3.txt` | blob VA/length table (decryptor-site targets) |
+| `wmain_flow.md` | WinMain control-flow reconstruction (source cited by protocol_table) |
+| `wmain_narrative.txt` | WinMain narrative (source cited by protocol_table) |
+| `wmain_stmts.txt` | WinMain statement-level dump (source cited by protocol_table) |
+| `decomp_code.txt` | Ghidra decompilation of RuntimeHost (source cited by protocol_table) |
+| `sbox_620320.bin` | RuntimeHost on-disk S-box (256 B) used for blob decryption |
+| `HANDOFF3.md` | Session/hypothesis paper trail |
+| `tasks.txt` | Analyst task ledger |
 
 *This write-up is intended as defensive research material. No malware binaries
 are included with it, and nothing in it was written to help anyone run the
