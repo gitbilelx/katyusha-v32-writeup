@@ -67,7 +67,7 @@ here strictly as hunting IOCs — not as attribution claims.
 | File | Size | SHA-256 |
 |---|---|---|
 | `gmail2.7z` (Dropbox-staged delivery archive — **sandbox-corroborated**) | — | `feb982ce837943c317416d878366ef3e4cce69ae26d6f2bdc2fdb436fe58b79f` |
-| same archive as received (`.tmp` alias in trace) | — | `4ed3e986e8c71a8b7a4486578827824aa5318c3433e43d861378a5637ba3d99` |
+| same archive as received (`.tmp` alias in trace) | — | `unknown` |
 | `payload2.rar` (analyst-supplied study archive of the same drop set — *not* a live-delivery name) | — | `4dc399f68e50fa0a2d267fe7743909435a167a5bee4767be04e57d09e2d6e9ca` |
 | `RuntimeHost.exe` (UPX) | 1,518,024 B | `a9baddca01a6f07cac7472644adde90349e3954ceaead6400f05264e9e93c087` |
 | **`RuntimeHost_unp.exe`** (upx -d) | 3,444,168 B | `396a5a1a33cd3bd6759026ae9991e85fd8668d00fb5571294859ed9601480eaf` |
@@ -77,7 +77,7 @@ here strictly as hunting IOCs — not as attribution claims.
 | **`mservice_l_unp.exe`** | 546,248 B | `cd721660cd0cccb729b12fb21208fe684bb7e7c32e8ee15ebc2c8b0b0d310f13` |
 | `info.exe` (UPX) | 296,904 B | `57e2ce1f973daee7e7dacc7065cff5f6619fef8668ceda61afe6c6e4cea8370a` |
 | **`info_unp.exe`** | 674,248 B | `684714aa504e23b4efbc926dd9807f15654ab509c7ec65c625e8432b52ed6a88` |
-| `WinRing0x64.sys` (vulnerable driver) | 14,544 B | `11bd2c9f9e2397c9a16e0990e4ed2cf0679498fe0fd418a3dfdac60b5c160e5` |
+| `WinRing0x64.sys` (vulnerable driver) | 14,544 B | `11bd2c9f9e2397c9a16e0990e4ed2cf0679498fe0fd418a3dfdac60b5c160ee5` |
 | `ST.xml` (schtask XML) | 2,986 B | `0c0512a567941957503710b99e4838decc808142868d351305e513457a9c89b3` |
 
 Archive MD5s (from the same corroboration): `gmail2.7z` = `c20cd5b3df4ca8fadfa8c2a45054fb4b`, its `.tmp` alias = `93e70abbd335dba791c5e277bba86881`. The `.vbs` dropper itself is deliberately excluded here — see §3 for why it has no stable hash.

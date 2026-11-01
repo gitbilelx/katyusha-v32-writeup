@@ -17,7 +17,7 @@ a9baddca01a6f07cac7472644adde90349e3954ceaead6400f05264e9e93c087  RuntimeHost.ex
 cd721660cd0cccb729b12fb21208fe684bb7e7c32e8ee15ebc2c8b0b0d310f13  mservice_l_unp.exe
 57e2ce1f973daee7e7dacc7065cff5f6619fef8668ceda61afe6c6e4cea8370a  info.exe (UPX)
 684714aa504e23b4efbc926dd9807f15654ab509c7ec65c625e8432b52ed6a88  info_unp.exe
-11bd2c9f9e2397c9a16e0990e4ed2cf0679498fe0fd418a3dfdac60b5c160e5  WinRing0x64.sys (vulnerable driver)
+11bd2c9f9e2397c9a16e0990e4ed2cf0679498fe0fd418a3dfdac60b5c160ee5  WinRing0x64.sys (vulnerable driver)
 0c0512a567941957503710b99e4838decc808142868d351305e513457a9c89b3  ST.xml (schtask XML)
 
 --- DROPPER STAGE (first-stage VBS) ---
@@ -35,7 +35,7 @@ hxxps://www[.]dropbox[.]com/scl/fi/1k7ednk2dz21bvjy1i057/gmail2[.]7z?rlkey=0qbro
 7z password:    1625093
 gmail2.7z       sha256 FEB982CE837943C317416D878366EF3E4CCE69AE26D6F2BDC2FDB436FE58B79F
                 md5    C20CD5B3DF4CA8FADFA8C2A45054FB4B
-(.tmp alias     sha256 4ED3E986E8C71A8B7A4486578827824AA5318C3433E43D861378A5637BA3D99
+(.tmp alias     sha256 UNKNOWN (transcription error; length invalid)
                 md5    93E70ABBD335DBA791C5E277BBA86881)
 NOTE: payload2.rar above is the analyst-supplied study archive of the same
       drop set — NOT a live-delivery file name. The live wire name was
