@@ -1,0 +1,366 @@
+# functions_map.txt - RuntimeHost_unp.exe .code function map (T1)
+# generated STATIC (decomp_code.txt x strings_final.txt); no sample executed, no URL fetched
+# format: VA | size | label | score | #decryptor-calls | key-string evidence (blob VAs) | callees(sample)
+# helper: = unlabeled utility called-by/calls the listed labeled modules
+# total functions: 322  labeled(manual+vote): 275
+====================================================================================================
+0x00695000 | TIMEOUT | pb_winmain                         |   99 |   0 | PB WinMain FUN_00695000 (143,982 B) - decomp TIMEOUT; contains _DAT_00620000 source-line markers and module dispatch (T2) | 
+0x006b8289 |     31 | pb_exit                            |   99 |   0 | ExitProcess path: FUN calls FUN_006b82a8 teardown + ExitProcess | FUN_0040fdb0,FUN_006b82a8
+0x006b82a8 |    106 | pb_exit                            |   99 |   0 | PB program-shutdown chain (OleUninitialize + PB runtime teardowns) | FUN_00401cd5,FUN_00401eda,FUN_00401fb9,FUN_00402806,FUN_00402869
+0x006b8312 |    334 | privilege_token                    |   99 |   1 | GetTokenPrivs: SeDebugPrivilege enable (LookupPrivilegeValueW/OpenProcessToken) | FUN_00401212,FUN_00401240,FUN_004013ec,FUN_0040fca0,FUN_0040fdf0
+0x006b8460 |    634 | net_ip_util                        |    2 |   2 | '0.0.0.0'@0x006858bc | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401230,FUN_00401240
+0x006b86ee |    237 | window_scan                        |    6 |   2 | 'Shell_TrayWnd'@0x00659edc; 'TrayNotifyWnd'@0x0067eda6; api:FindWindowW,FindWindowExW | FUN_00401212,FUN_00401240,FUN_0040fca0,FUN_0040fdf0,FUN_0040fe20
+0x006b87e7 |    413 | helper:(crypto_pbstring,net_ip_util) |    0 |   1 | - | FUN_004011e0,FUN_00401200,FUN_00401240,FUN_0040e930,FUN_0040fca0
+0x006b8998 |   1951 | update_install                     |   18 |  19 | '@echo off'@0x006889fc; 'timeout /t 2 /nobreak > nul'@0x00680690; 'copy /y '@0x006626aa; 'if %errorlevel% neq 0 ('@0x0066d834 | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_004049b8,FUN_00405081
+0x006b9143 |    198 | helper:(crypto_pbstring,file_manager) |    0 |   1 | - | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_0040a69e,FUN_0040a7cb
+0x006b95e3 |   3433 | webcam                             |    2 |  13 | 'capture open: '@0x0066524c | FUN_00401212,FUN_00401240,FUN_004085dd,FUN_0040bb1e,FUN_0040bc8b
+0x006ba358 |    501 | helper:(crypto_pbstring)           |    0 |   1 | - | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240,FUN_00401250
+0x006ba561 |    257 | helper(unlabeled)                  |    0 |   0 | - | FUN_004011b0,FUN_0040df80,FUN_0040ee60,FUN_0040f3f0,FUN_0040f530
+0x006ba66e |   1477 | netscan_smb                        |    8 |   8 | 'NetScan: BaseIP empty in StartNetworkScan, calling SendNetworkScanConfig'@0x0066c208; 'NetScan: nothing to sweep ('@0x00677766; 'NetScan: Starting scan with BaseIP='@0x0065f706; 'NetScan: BaseIP still empty after SendNetworkScanConfig, aborting scan | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_00401250,FUN_00401bc8
+0x006bac33 |    805 | webcam                             |    2 |   2 | 'wdm image capture'@0x006614fa | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401240,FUN_00401250
+0x006baf6c |    129 | helper:(registry_base)             |    0 |   0 | - | FUN_004011b0,FUN_0040a86a,FUN_0040fd30
+0x006baff9 |   1920 | net_adapter_helper                 |    6 |   6 | 'wlan show networks mode=bssid'@0x0068ca1a; 'SSID'@0x006740ec; 'BSSID'@0x0067a37a | FUN_004011b8,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x006bb779 |     85 | helper:(crypto_pbstring,netscan_smb) |    0 |   1 | - | FUN_00401200,FUN_00401240,FUN_0040fca0,FUN_0040fdf0,FUN_006ddca8
+0x006bb826 |    588 | file_manager                       |    4 |   7 | 'DENIED'@0x0067a0fc; 'Denied'@0x0067d2a2 | FUN_004011b0,FUN_00401200,FUN_00401230,FUN_00401240,FUN_00401250
+0x006bbaa4 |   6722 | geoip_client                       |   92 |  59 | 'ip-api.com'@0x0068432e; 'http://ip-api.com/json/?fields=status,message,country,countryCode,city,query'@0x00672f5a; 'ipwho.is'@0x0066e63c; 'https://ipwho.is/'@0x0068388e | FUN_004011b8,FUN_0040c5e7,FUN_0040c8f3,FUN_0040fb90,FUN_0040fca0
+0x006bd4f2 |    875 | helper:(crypto_pbstring,file_manager) |    0 |   2 | - | FUN_004011b0,FUN_0040533b,FUN_0040df80,FUN_0040e930,FUN_0040ee60
+0x006bd869 |    136 | helper:(crypto_pbstring,netscan_smb) |    0 |   1 | - | FUN_00401200,FUN_00401212,FUN_00401240,FUN_004049b8,FUN_0040ab48
+0x006bd905 |    257 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040fca0,FUN_006d5629
+0x006bda12 |    840 | helper:(crypto_pbstring)           |    0 |   5 | - | FUN_00401212,FUN_00401240,FUN_0040585a,FUN_004058ce,FUN_00405928
+0x006bdea8 |    347 | helper:(netscan_smb)               |    0 |   0 | - | FUN_0040c6e3,FUN_0040c906,FUN_0040c96c
+0x006be003 |    337 | helper:(crypto_pbstring)           |    0 |   1 | - | FUN_004011b0,FUN_00401200,FUN_00401240,FUN_00407730,FUN_0040df80
+0x006be168 |    762 | screen_hvnc                        |    3 |   0 | api:GetDIBits,CreateCompatibleBitmap,BitBlt | FUN_0040fca0
+0x006be46e |    657 | helper:(crypto_pbstring,time_fmt)  |    0 |   2 | - | FUN_00401200,FUN_00401240,FUN_0040ec80,FUN_0040fca0,FUN_0040fdf0
+0x006bee32 |    440 | helper:(mic,registry_base)         |    0 |   0 | - | FUN_004011b8,FUN_0040fca0,FUN_006e8f72,FUN_00701978,FUN_00713afa
+0x006beff6 |    291 | window_scan                        |    1 |   0 | api:GetClassNameW | FUN_00401200,FUN_00401240,FUN_0040f3f0,FUN_0040f530,FUN_0040f5d0
+0x006bf12d |    533 | mic                                |    4 |   4 | 'microphone'@0x0066260a; 'mic '@0x00685c20 | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_0040dbf0,FUN_0040de20
+0x006bf34e |    370 | helper:(crypto_pbstring,file_manager) |    0 |   2 | - | FUN_004011b0,FUN_00401200,FUN_00401230,FUN_00401240,FUN_00401250
+0x006bf4d4 |   4207 | window_scan                        |    7 |  30 | 'Shell_TrayWnd'@0x00659edc; 'diagnose: Shell_TrayWnd='@0x00676a94; '  TrayNotifyWnd='@0x00662c08; api:FindWindowW | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240,FUN_00401250
+0x006c0557 |   3710 | netscan_smb                        |    1 |   0 | api:NetShareEnum | FUN_004011b0,FUN_00401250,FUN_0040fca0,FUN_0040fd30,FUN_006e2eeb
+0x006c13d5 |    493 | file_manager                       |    8 |   5 | 'DENIED^the share could not be opened for reading or writing'@0x00671dac; 'READ^readable; the write was refused when it was last tested'@0x00683b68; 'WRITE^'@0x00671a20; 'READ^readable; the write test was not run'@0x0068425c | FUN_004011b0,FUN_00401200,FUN_00401230,FUN_00401240,FUN_00401250
+0x006c15d6 |   1615 | net_ip_util                        |    2 |   4 | '0.0.0.0'@0x006858bc | FUN_004011b8,FUN_004011c0,FUN_00401200,FUN_00401212,FUN_00401230
+0x006c20b4 |    499 | helper:(netscan_smb)               |    0 |   0 | - | FUN_004011b0,FUN_00401230,FUN_00401250,FUN_0040c5e7,FUN_0040c906
+0x006c3b82 |  10573 | file_manager                       |   20 |  31 | 'RECENT_FILES|'@0x0066246a; 'RECENT_FILES'@0x00673620; 'RECENT_FILES\'@0x0065eb62; 'FM_DIR_CONTENT|RECENT_FILES\|'@0x00674a74 | FUN_004011b0,FUN_004011b8,FUN_00401212,FUN_00401230,FUN_00401240
+0x006c64cf |    776 | screen_hvnc                        |    3 |   0 | api:GetDIBits,CreateCompatibleBitmap,BitBlt | FUN_0040fca0,FUN_006b86ee
+0x006c6f9b |    824 | helper:(crypto_pbstring,netscan_smb) |    0 |   7 | - | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040e840
+0x006c72e7 |    257 | window_scan                        |    3 |   1 | 'WIN_LIST|'@0x00660b18; api:EnumWindows | FUN_00401212,FUN_00401240,FUN_0040f3f0,FUN_0040f530,FUN_0040f760
+0x006c73e8 |     99 | crypto_pbstring                    |   99 |   0 | FUN ROR8(x,n&7) rotate helper (F4) | 
+0x006c7457 |    260 | webcam                             |    2 |   2 | 'WEBCAM_ERROR|'@0x0065c742 | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_0040fca0,FUN_0040fce0
+0x006c755b |    467 | helper:(crypto_pbstring)           |    0 |   1 | - | FUN_004011b0,FUN_00401212,FUN_00401250,FUN_0040ba1b,FUN_0040dc70
+0x006c773a |    483 | system_info                        |    6 |   3 | 'HARDWARE\DESCRIPTION\System\CentralProcessor\0'@0x0068493e; 'ProcessorNameString'@0x0066c69a; 'Generic CPU'@0x0066e456 | FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040e8e0,FUN_0040f100
+0x006c7931 |   1626 | registry_base                      |    4 |   8 | 'SYSTEM\CurrentControlSet\Enum\'@0x0066cc30; api:RegCloseKey,RegOpenKeyExW | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401230,FUN_00401240
+0x006c7f9f |    809 | helper:(screen_hvnc)               |    0 |   0 | - | FUN_0040c5e7,FUN_0040c7ae,FUN_0040c817,FUN_0040c906,FUN_0040c96c
+0x006c82d4 |    576 | helper:(browsers_history,crypto_pbstring) |    0 |   3 | - | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040e840
+0x006c8b8e |    613 | window_ctrl                        |   99 |   5 | window control: Close/Minimize/Maximize/Hide/Show via PostMessageW/ShowWindow | FUN_004011b0,FUN_00401230,FUN_00401250,FUN_0040fca0,FUN_0040fd30
+0x006c8df3 |   1423 | helper:(window_scan)               |    0 |   0 | - | FUN_0040f3f0,FUN_0040f530,FUN_0040f5b0,FUN_0040f7c0,FUN_0040fca0
+0x006c94ec |   1012 | netscan_smb                        |    4 |  10 | 'RemoteShares: enabled='@0x0066694e; 'RemoteShares: '@0x0065d9c6 | FUN_00401212,FUN_00401240,FUN_00401bc8,FUN_00401c6b,FUN_0040e930
+0x006c98e0 |    163 | netscan_smb                        |    2 |   1 | 'NET_SCAN_DONE|-1|-1|-1|'@0x00671934 | FUN_00401212,FUN_00401240,FUN_0040fca0,FUN_0040fdf0,FUN_0040fe20
+0x006c9983 |   5296 | mic                                |   24 |  23 | 'Mic_Start: requested DevID='@0x0066c98a; 'session 0 capture unavailable: falling back to the in-process capture and the tray overlay'@0x006638f8; 'Mic_Start: selected device is USB ('@0x0067b796; 'Mic_Start: waveInOpen failed for DevID='@0x00677270 | FUN_00401212,FUN_00401240,FUN_0040c5e7,FUN_0040dbf0,FUN_0040e930
+0x006cae33 |   1229 | browsers_history                   |    2 |   1 | 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0'@0x0065d5bc | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240,FUN_00401250
+0x006cb314 |     83 | helper(unlabeled)                  |    0 |   0 | - | 
+0x006cb66b |    286 | window_scan                        |    1 |   0 | api:UnhookWinEvent | FUN_00401f3f,FUN_00402125,FUN_0040fca0,FUN_006fa23e,FUN_00713abb
+0x006cb789 |    210 | helper(unlabeled)                  |    0 |   0 | - | FUN_004085dd,FUN_00408608,FUN_0040f7d0
+0x006cb9c4 |    168 | helper:(mic)                       |    0 |   0 | - | FUN_0040f530,FUN_0040fca0,FUN_006cb314,FUN_0072d78d
+0x006cba6c |   2868 | install_layout                     |    6 |  10 | 'windowsupdate'@0x00684d66; 'systam.dat'@0x0067d508; '\agent.dat'@0x00663064 | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401230,FUN_00401240
+0x006cc5b4 |    549 | file_manager                       |    2 |   3 | 'RECENT_FILES\'@0x0065eb62 | FUN_004011b0,FUN_00401200,FUN_00401230,FUN_00401240,FUN_00401250
+0x006cc954 |    327 | helper(unlabeled)                  |    0 |   0 | - | FUN_00401170,FUN_004011b0,FUN_00401212,FUN_00401240,FUN_0040da60
+0x006ccaa7 |    407 | os_version                         |    2 |   2 | 'RtlGetVersion'@0x0066fcae | FUN_00401212,FUN_00401240,FUN_0040585a,FUN_004058ce,FUN_00405928
+0x006cd1c6 |    481 | netscan_smb                        |    2 |   1 | 'RemoteShares: could not open the saved-share stream for writing'@0x0065e40e | FUN_00401212,FUN_00401240,FUN_00401250,FUN_00408910,FUN_00408ba0
+0x006cd45e |    101 | helper:(screen_hvnc,window_scan)   |    0 |   0 | - | FUN_0040fca0,FUN_006c7f9f
+0x006cd4cf |    416 | helper:(crypto_pbstring)           |    0 |   2 | - | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401240,FUN_00401250
+0x006cd7bf |    656 | conn_state                         |    2 |   2 | 'aborting the helper start: stopping the capture and closing the pipes'@0x0067a99a | FUN_00401212,FUN_00401240,FUN_00401250,FUN_0040fb90,FUN_0040fca0
+0x006ce2b5 |    515 | netscan_smb                        |    1 |   0 | api:NetServerEnum | FUN_00401212,FUN_00401240,FUN_0040f640,FUN_0040fca0,FUN_0040fdf0
+0x006ce4b8 |   1060 | helper:(crypto_pbstring,geoip_client) |    0 |   3 | - | FUN_004011b0,FUN_00401230,FUN_00401250,FUN_00401290,FUN_004012e0
+0x006ce8e8 |   3282 | file_manager                       |    6 |  14 | 'FM_DIR_CONTENT|REMOTE_SHARES\|'@0x006592a0; 'FM_DIR_CONTENT|'@0x0068b46a; 'END_OF_DIR|'@0x0066ce8e | FUN_004011b0,FUN_004011b8,FUN_00401212,FUN_00401230,FUN_00401240
+0x006cf5ba |   1083 | netscan_smb                        |    2 |   7 | 'NetScan: adapter switched to '@0x0067848c | FUN_004011b0,FUN_004011b8,FUN_00401212,FUN_00401230,FUN_00401240
+0x006cfa01 |   1367 | pipe_relay                         |    5 |   9 | 'helper connected after '@0x0066578a; ' ms (WaitNamedPipe error '@0x0068c0c4; api:WaitNamedPipeW | FUN_00401212,FUN_00401240,FUN_00401250,FUN_004085dd,FUN_00408608
+0x006d0d9e |    410 | time_fmt                           |    2 |   1 | '%dd/%mm/%yyyy %hh:%ii:%ss'@0x00684b44 | FUN_00401200,FUN_00401212,FUN_00401240,FUN_004049b8,FUN_0040a9e2
+0x006d0f4c |    582 | helper:(crypto_pbstring)           |    0 |   1 | - | FUN_004011b0,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x006d119e |    609 | net_adapter_helper                 |    8 |   5 | 'wi-fi'@0x00674650; 'wireless'@0x0067d6ce; 'ethernet'@0x00683074; 'local area connection'@0x00671462 | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_0040dc70,FUN_0040de20
+0x006d140b |    261 | helper:(crypto_pbstring,geoip_client) |    0 |   2 | - | FUN_00401200,FUN_00401240,FUN_00401250,FUN_0040fb90,FUN_0040fca0
+0x006d1524 |   1164 | mic                                |   10 |  11 | 'SendMicrophoneList: waveInGetNumDevs()='@0x0066677a; 'SendMicrophoneList: device '@0x0068c13c; 'SendMicrophoneList: waveInGetDevCapsW failed for device '@0x00684e84; 'SendMicrophoneList: no devices found, using fallback'@0x0066f5a6 | FUN_004011b8,FUN_00401212,FUN_00401240,FUN_00401250,FUN_0040e930
+0x006d19b0 |    452 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040c5e7,FUN_0040fca0,FUN_007088bd
+0x006d1b74 |    951 | registry_base                      |   10 |   5 | 'HKEY_CLASSES_ROOT'@0x006779d2; 'HKEY_CURRENT_USER'@0x0068cb62; 'HKEY_LOCAL_MACHINE'@0x0068b19e; 'HKEY_USERS'@0x0067aaba | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401230,FUN_00401240
+0x006d1f3f |     97 | helper(unlabeled)                  |    0 |   0 | - | FUN_00409850
+0x006d1fac |    406 | registry_base                      |    1 |   0 | api:RegQueryValueExW | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240
+0x006d4bdb |    372 | helper(unlabeled)                  |    0 |   0 | - | FUN_004011b0,FUN_00401250,FUN_00401bc8,FUN_0040fb90,FUN_0040fca0
+0x006d4d5b |    513 | registry_base                      |    3 |   0 | api:RegQueryValueExW,RegCloseKey,RegOpenKeyExW | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401240,FUN_0040e4c0
+0x006d4f70 |    982 | net_ip_util                        |    2 |   5 | '0.0.0.0'@0x006858bc | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401230,FUN_00401240
+0x006d535a |    707 | helper:(window_scan)               |    0 |   0 | - | FUN_00409850,FUN_0040fca0,FUN_006ecd5a
+0x006d5629 |    155 | helper:(screen_hvnc,window_scan)   |    0 |   0 | - | FUN_0040fca0,FUN_006b86ee
+0x006d56d0 |    772 | keylog_klog                        |   99 |   0 | MapVirtualKeyW - key translation (keylog char mapping) | FUN_0040fca0
+0x006d59e0 |    753 | helper:(crypto_pbstring)           |    0 |   1 | - | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040db50
+0x006d7040 |    292 | helper(unlabeled)                  |    0 |   0 | - | FUN_00402125,FUN_00402610,FUN_0040fca0,FUN_007080a5
+0x006d7164 |    327 | helper(unlabeled)                  |    0 |   0 | - | FUN_004011b0,FUN_00401212,FUN_00401230,FUN_00401250,FUN_0040ab36
+0x006d72b7 |     50 | helper(unlabeled)                  |    0 |   0 | - | FUN_00401bc8
+0x006d72e9 |     97 | helper:(crypto_pbstring,mic)       |    0 |   1 | - | FUN_00401200,FUN_00401240,FUN_0040fca0,FUN_0040fce0,FUN_0040fdf0
+0x006d735e |    456 | drive_inventory                    |    1 |   3 | api:GetDriveTypeW | FUN_004011b0,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x006d7532 |    170 | privilege_token                    |   99 |   2 | admin check ('User'/'Administrator') | FUN_00401200,FUN_00401240,FUN_0040fca0,FUN_0040fdf0,FUN_006ddca8
+0x006d7606 |     43 | helper(unlabeled)                  |    0 |   0 | - | 
+0x006d7b43 |    934 | helper:(screen_hvnc)               |    0 |   0 | - | FUN_0040bb1e,FUN_0040bc8b,FUN_0040fca0
+0x006d8cbd |    800 | drive_inventory                    |    3 |   3 | api:WNetGetConnectionW,GetDriveTypeW,GetLogicalDrives | FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250,FUN_0040da80
+0x006d9490 |   3642 | netscan_smb                        |    2 |   7 | 'RemoteShares: saved shares ignored - not a '@0x00689a08 | FUN_004011b0,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x006da2d6 |    164 | device_inventory                   |    2 |   1 | 'WindowsAudioEndpointService'@0x00675846 | FUN_00401200,FUN_00401240,FUN_00401250,FUN_0040fb90,FUN_0040fca0
+0x006da38e |    428 | helper:(crypto_pbstring,mic)       |    0 |   1 | - | FUN_00401212,FUN_00401240,FUN_00401c6b,FUN_00401d17,FUN_00401d77
+0x006da53a |   1311 | netscan_smb                        |    5 |   7 | 'print$'@0x00666322; 'ipc$'@0x0067b466; api:NetShareEnum | FUN_004011b8,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x006daa59 |    120 | helper(unlabeled)                  |    0 |   0 | - | 
+0x006daad1 |   7282 | mic                                |   28 |  53 | 'micsvc_selftest.log'@0x006801a2; 'microphone session 0 self test'@0x006661ca; '=== microphone session 0 self test ==='@0x006602ac; 'RESULT: the session 0 helper could not be started'@0x00663356 | FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250,FUN_00401aba
+0x006dc770 |   1212 | conn_state                         |   22 |  13 | 'CLOSED'@0x0066fb88; 'LISTEN'@0x00681780; 'SYN_SENT'@0x0068252a; 'SYN_RCVD'@0x00685814 | FUN_00401200,FUN_00401240,FUN_0040fca0,FUN_0040fdf0,FUN_006ddca8
+0x006dccfc |   3952 | browsers_history                   |   38 |  23 | 'SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe'@0x00684c5c; 'Chrome|'@0x0068a100; 'Edge|'@0x0065d956; 'SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe'@0x0067c18c | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240,FUN_004048b9
+0x006ddca8 |    256 | crypto_pbstring                    |   99 |   0 | PB protected-string decryptor F4 (call-chain entry; 4104 refs) | FUN_004011b8,FUN_00401200,FUN_00401240,FUN_0040f510,FUN_0040f530
+0x006dddbc |    404 | crypto_pbstring                    |   99 |   0 | decrypt chain helper after FUN_006ddca8 | FUN_004011b0,FUN_00401250,FUN_004072d0,FUN_00407730,FUN_0040de20
+0x006ddf50 |    229 | netscan_smb                        |    2 |   1 | 'RemoteShares: quick refresh thread could not be created'@0x00669bb6 | FUN_00401212,FUN_00401240,FUN_00401bc8,FUN_0040fca0,FUN_0040fdf0
+0x006de786 |    417 | helper:(crypto_pbstring,net_adapter_helper) |    0 |   1 | - | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240
+0x006de93b |    501 | helper:(netscan_smb)               |    0 |   0 | - | FUN_004011b8,FUN_00401212,FUN_00401240,FUN_00408910,FUN_00408d60
+0x006dec10 |   1953 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040f5a0,FUN_0040f7c0
+0x006dfa73 |   1043 | geoip_client                       |   99 |   7 | geo-IP HTTP error parser: too many requests|missingauth|unauthorized|quota|limit | FUN_004011b0,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x006dfe92 |    377 | registry_base                      |    1 |   0 | api:RegQueryValueExW | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401240,FUN_0040f3f0
+0x006e001f |     72 | helper(unlabeled)                  |    0 |   0 | - | FUN_00409850,FUN_0040c3e5,FUN_0040f5b0,FUN_0040f7c0,FUN_0040f7d0
+0x006e03c3 |    737 | helper(unlabeled)                  |    0 |   0 | - | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040da60
+0x006e0817 |   1449 | net_ip_util                        |    4 |   5 | '0.0.0.0'@0x006858bc; '127.'@0x0067fe2a | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401230,FUN_00401240
+0x006e0dd4 |    547 | helper:(window_scan)               |    0 |   0 | - | FUN_00409850,FUN_0040fca0,FUN_006ecd5a
+0x006e1003 |    204 | helper:(screen_hvnc)               |    0 |   0 | - | FUN_0040ade9,FUN_0040fca0,FUN_006ede21,FUN_006f5114
+0x006e10cf |    124 | helper:(mic,pipe_relay)            |    0 |   0 | - | FUN_00401aba
+0x006e114b |   3322 | helper(unlabeled)                  |    0 |   0 | - | FUN_00409850,FUN_0040f3f0,FUN_0040f530,FUN_0040f5b0,FUN_0040f7d0
+0x006e1e51 |   1297 | helper:(crypto_pbstring,proxy_c2)  |    0 |   8 | - | FUN_00401212,FUN_00401240,FUN_004084ab,FUN_004085dd,FUN_00408608
+0x006e26c7 |    295 | persistence_schtask                |    2 |   0 | api:RegCreateKeyW,RegSetValueExW | FUN_004011b0,FUN_0040df80,FUN_0040fca0,FUN_0040fd30
+0x006e27fa |    134 | helper:(mic,os_version)            |    0 |   0 | - | FUN_004086a7,FUN_0040fca0,FUN_006ccaa7
+0x006e29ef |   1019 | webcam                             |    2 |   4 | 'WEBCAM_LIST|'@0x0066a6c2 | FUN_004011b8,FUN_00401212,FUN_00401240,FUN_00401250,FUN_00407730
+0x006e2dea |    257 | helper:(crypto_pbstring)           |    0 |   1 | - | FUN_004011b0,FUN_0040daa0,FUN_0040fb90,FUN_0040fca0,FUN_0040fce0
+0x006e2eeb |   1880 | net_ip_util                        |    8 |   7 | '127.0.0.1'@0x0066df3a; 'localhost'@0x0066cec6; '::1'@0x0068538e; '0.0.0.0'@0x006858bc | FUN_004011b0,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x006e4be6 |   1062 | helper:(crypto_pbstring,screen_hvnc) |    0 |   3 | - | FUN_00401200,FUN_00401240,FUN_00401250,FUN_0040e930,FUN_0040f5b0
+0x006e5020 |   1371 | helper:(c2_bootstrap,crypto_pbstring) |    0 |   3 | - | FUN_004011b8,FUN_00401200,FUN_00401230,FUN_00401240,FUN_00401250
+0x006e558f |   2174 | persistence_schtask                |   10 |  38 | '<Task version='@0x0068a3b8; '><UserId>S-1-5-18</UserId>'@0x00685922; '<RunLevel>HighestAvailable</RunLevel></Principal></Principals>'@0x006896c6; '/create /f /tn '@0x00678920 | FUN_00401212,FUN_00401240,FUN_004049b8,FUN_004054c0,FUN_00408910
+0x006e86fc |    565 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040f5b0
+0x006e893d |    381 | webcam                             |    1 |   0 | api:SetDIBitsToDevice | FUN_0040fca0
+0x006e8ac6 |    363 | helper(unlabeled)                  |    0 |   0 | - | FUN_004011c0,FUN_0040fca0
+0x006e8c3d |    403 | helper(unlabeled)                  |    0 |   0 | - | FUN_00409850,FUN_0040fca0,FUN_0070f76b
+0x006e8f72 |   1557 | registry_base                      |    5 |   2 | 'SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone'@0x0067f700; api:RegEnumKeyExW,RegCloseKey,RegQueryValueExW | FUN_00401212,FUN_00401240,FUN_0040f3f0,FUN_0040f530,FUN_0040f5b0
+0x006e9593 |    637 | helper:(file_manager)              |    0 |   0 | - | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401240,FUN_0040e8e0
+0x006e9824 |   1178 | helper(unlabeled)                  |    0 |   0 | - | FUN_00401200,FUN_00401240,FUN_0040f5b0,FUN_0040fca0,FUN_0040fce0
+0x006e9cd2 |    121 | helper:(webcam)                    |    0 |   0 | - | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_0040fca0,FUN_0040fce0
+0x006e9d4b |    524 | mic                                |    4 |   5 | 'micsvc.log'@0x00673112; '[MICSVC] '@0x006634d6 | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_00408910,FUN_00408ca0
+0x006e9f57 |     51 | helper(unlabeled)                  |    0 |   0 | - | FUN_00401bc8
+0x006e9f8a |    310 | helper(unlabeled)                  |    0 |   0 | - | FUN_004011b0,FUN_0040df80,FUN_0040ee60,FUN_0040f3f0,FUN_0040f530
+0x006ea0c0 |    627 | helper:(crypto_pbstring,pipe_relay) |    0 |   4 | - | FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250,FUN_0040df10
+0x006ea33f |    445 | webcam                             |    2 |   2 | 'WEBCAM_STATS|'@0x0066b596 | FUN_00401212,FUN_00401240,FUN_0040e930,FUN_0040fca0,FUN_0040fdf0
+0x006ea4fc |    421 | helper:(crypto_pbstring)           |    0 |   4 | - | FUN_00401200,FUN_00401240,FUN_0040fca0,FUN_0040fdf0,FUN_006ddca8
+0x006ea9c8 |    799 | proxy_c2                           |   99 |   4 | proxy protocol handler (PROXY|...) | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_004085dd,FUN_0040e930
+0x006ebd4c |    337 | helper:(system_info)               |    0 |   0 | - | FUN_004011b0,FUN_00401200,FUN_00401240,FUN_00401250,FUN_0040fb90
+0x006ebeb1 |    240 | helper:(netscan_smb)               |    0 |   0 | - | FUN_00407b21,FUN_0040fca0
+0x006ebfad |    169 | helper:(screen_hvnc)               |    0 |   0 | - | FUN_004011b0,FUN_00401250,FUN_0040a281,FUN_0040a86a,FUN_0040fd30
+0x006ec056 |    807 | time_fmt                           |    2 |   4 | '%dd/%mm/%yyyy %hh:%ii:%ss'@0x00684b44 | FUN_00401212,FUN_00401240,FUN_00401bc8,FUN_00401c6b,FUN_0040ade9
+0x006ec37d |     48 | helper:(screen_hvnc)               |    0 |   0 | - | FUN_0040fca0,FUN_0072b623
+0x006ec4c9 |    596 | helper:(crypto_pbstring)           |    0 |   4 | - | FUN_004011b0,FUN_00401230,FUN_00401290,FUN_004012e0,FUN_0040df80
+0x006ecd5a |     94 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040fca0,FUN_0070f76b
+0x006ecdc4 |    300 | mic                                |    2 |   1 | '[MIC] Tray overlay stopped'@0x006810fe | FUN_00401212,FUN_00401240,FUN_00401c6b,FUN_00401d77,FUN_0040fca0
+0x006ecef0 |     66 | helper:(netscan_smb)               |    0 |   0 | - | FUN_00401200,FUN_00401240,FUN_0040fca0,FUN_0040fce0,FUN_0040fdf0
+0x006ecf46 |    932 | registry_base                      |    3 |   3 | api:RegEnumKeyExW,RegCloseKey,RegOpenKeyExW | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401230,FUN_00401240
+0x006ed2fe |    356 | install_layout                     |    2 |   2 | 'sc_debug.txt'@0x0065e6ea | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_00408910,FUN_00408c80
+0x006ed462 |    238 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040f5b0
+0x006ed55c |    733 | window_scan                        |    4 |   6 | 'tray overlay NOT started: Windows too old for a tray privacy indicator (real build '@0x0068aa84; 'tray overlay NOT started: CreateThread failed'@0x0067fc8c | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_00401bc8,FUN_00401c6b
+0x006ed839 |    917 | helper:(crypto_pbstring,idle_check) |    0 |   4 | - | FUN_00401000,FUN_004010b0,FUN_00401200,FUN_00401240,FUN_0040e930
+0x006edbe2 |    563 | helper:(crypto_pbstring)           |    0 |   1 | - | FUN_00401230,FUN_00401250,FUN_00401bc8,FUN_00408608,FUN_0040fca0
+0x006ede21 |    101 | helper:(process_ctrl)              |    0 |   0 | - | FUN_0040fca0,FUN_00711884
+0x006ee055 |   2488 | geoip_client                       |    6 |  13 | 'https://time.google.com/'@0x0068266a; 'https://pastebin.com/raw/0hunY74W'@0x00670366; 'https://pastebin.com/raw/EQ0jMEE9'@0x0065be0e | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240,FUN_00401250
+0x006eeea8 |   2056 | time_fmt                           |    2 |   4 | '%dd/%mm/%yyyy %hh:%ii:%ss'@0x00684b44 | FUN_00401212,FUN_004085a2,FUN_0040887e,FUN_0040ade9,FUN_0040b143
+0x006ef86f |    162 | helper:(time_fmt)                  |    0 |   0 | - | FUN_00401200,FUN_00401240,FUN_0040fb90,FUN_0040fca0,FUN_0040fce0
+0x006ef925 |   1673 | net_ip_util                        |    4 |   3 | '0.0.0.0'@0x006858bc; '127.'@0x0067fe2a | FUN_004011b8,FUN_00401200,FUN_00401230,FUN_00401240,FUN_00401250
+0x006f0155 |   1133 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040c3e5,FUN_0040f5b0,FUN_0040f7c0,FUN_0040fca0
+0x006f05c2 |    644 | netscan_smb                        |    2 |   2 | 'wlan show profiles'@0x00682356 | FUN_00401212,FUN_00401240,FUN_00401250,FUN_0040c5e7,FUN_0040c685
+0x006f0916 |    423 | window_scan                        |    1 |   3 | api:GetWindowTextW | FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040df10,FUN_0040e840
+0x006f0ae7 |     71 | helper(unlabeled)                  |    0 |   0 | - | 
+0x006f0b3a |    962 | helper:(crypto_pbstring,time_fmt)  |    0 |   5 | - | FUN_00401000,FUN_004010b0,FUN_00401200,FUN_00401240,FUN_0040e930
+0x006f0f10 |    194 | registry_base                      |    1 |   0 | api:RegQueryValueExW | FUN_004011b0,FUN_0040fca0,FUN_0040fd30
+0x006f0fde |   1440 | persistence_schtask                |    2 |  11 | 'WindowsUpdateTaskScheduler_'@0x0066d048 | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401240,FUN_00401250
+0x006f1592 |    273 | netscan_smb                        |    2 |   3 | 'NET_SCAN_ERROR|'@0x0067626c | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_0040fca0,FUN_0040fd30
+0x006f16a3 |   5022 | browsers_history                   |   28 |  19 | 'Chrome'@0x00676bf8; 'Edge'@0x006837ee; 'Firefox'@0x00676b02; 'Brave'@0x0066b38e | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401230
+0x006f2a55 |    289 | netscan_smb                        |    2 |   2 | 'SHARE_TARGETS|'@0x0066670c | FUN_00401212,FUN_00401240,FUN_004085a2,FUN_0040fb90,FUN_0040fca0
+0x006f2b76 |    719 | mic                                |    4 |   2 | 'Mic_Stop: cleaning buffers'@0x00681ffe; 'Mic_Stop: done'@0x0066b658 | FUN_00401212,FUN_00401240,FUN_0040c685,FUN_0040c906,FUN_0040c96c
+0x006f2e45 |   3371 | mic                                |   20 |  32 | 'session 0 capture + tray overlay test'@0x0066b758; 'calling Mic_Start(0, -1, 16000, 1, 16) ...'@0x00681cac; 'step 2e: calling Mic_Start'@0x0067acfc; 'step 3: Mic_Start returned, sessions='@0x00683d32 | FUN_00401212,FUN_00401240,FUN_00401aba,FUN_004052c2,FUN_004085dd
+0x006f3b70 |   2441 | registry_base                      |    3 |   0 | api:RegEnumKeyExW,RegCloseKey,RegQueryValueExW | FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250,FUN_0040ab36
+0x006f4505 |     97 | mic                                |    2 |   1 | '\\.\pipe\ms_audio_dat_'@0x006877e4 | FUN_00401200,FUN_00401240,FUN_0040fca0,FUN_0040fce0,FUN_0040fdf0
+0x006f457a |    188 | helper:(time_fmt,webcam)           |    0 |   0 | - | FUN_00401230,FUN_00401250,FUN_0040fca0,FUN_0040fdf0,FUN_0040fe20
+0x006f4642 |   1756 | netscan_smb                        |    6 |  11 | '|0|port 445 is not reachable on this host - SMB is closed or filtered here|'@0x0065fde2; 'SHARE_DONE|'@0x00676bc0; '|0|0|0|port 445 is not reachable, so nothing could be enumerated|'@0x0066290e | FUN_004011b0,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x006f4d1e |    266 | helper:(crypto_pbstring,file_manager) |    0 |   3 | - | FUN_00401200,FUN_00401212,FUN_00401240,FUN_004054c0,FUN_0040ade9
+0x006f4e3c |    293 | helper:(crypto_pbstring,time_fmt)  |    0 |   2 | - | FUN_00401200,FUN_00401240,FUN_0040eaa0,FUN_0040fca0,FUN_0040fdf0
+0x006f4f75 |    403 | helper(unlabeled)                  |    0 |   0 | - | FUN_00408ec0,FUN_00408fa0,FUN_0040f3f0,FUN_0040f530,FUN_0040fca0
+0x006f5114 |    686 | screen_hvnc                        |    4 |   4 | 'HVNC_*'@0x006693ea; 'HVNC_'@0x0066ae70 | FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250,FUN_004048b9
+0x006f53c2 |  11103 | update_install                     |   22 |  99 | '-ex bypass -C '@0x00676154; 'Add-MpPreference -ExclusionPath 'C:\',''@0x00683abe; 'powershell'@0x0066c04a; 'advfirewall firewall add rule name='@0x0066b2f0 | FUN_00401212,FUN_00401240,FUN_004049b8,FUN_00405081,FUN_004054c0
+0x006f944a |    134 | helper:(crypto_pbstring,netscan_smb) |    0 |   2 | - | FUN_00401200,FUN_00401240,FUN_0040fca0,FUN_0040fdf0,FUN_006bd869
+0x006f94e4 |    340 | keylog_klog                        |   99 |   0 | foreground-window focus helper (AttachThreadInput/SetForegroundWindow) | FUN_0040fca0
+0x006f9638 |    795 | persistence_runkey                 |    2 |   2 | 'SMB_PIV: '@0x00672aee | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240,FUN_00401250
+0x006f9967 |   1708 | screen_hvnc                        |    4 |   8 | 'no pre-capture snapshot to compare with'@0x0065f61e; ', snapshot was at '@0x00675b8c | FUN_00401200,FUN_00401240,FUN_0040e930,FUN_0040f3f0,FUN_0040f530
+0x006fa027 |    535 | helper:(crypto_pbstring)           |    0 |   3 | - | FUN_004011b8,FUN_00401212,FUN_00401240,FUN_00401250,FUN_0040e930
+0x006fa23e |    212 | helper:(screen_hvnc,window_scan)   |    0 |   0 | - | FUN_0040fca0
+0x006fa5e6 |    187 | helper:(netscan_smb)               |    0 |   0 | - | FUN_0040c906,FUN_0040c96c
+0x006fa6a1 |   1131 | netscan_smb                        |    6 |  10 | 'NetScan: target ''@0x00670bd0; 'NetScan: local /24 unusable too: '@0x0067ee80; 'NetScan: queue holds '@0x0066a9da | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240
+0x006fab20 |    740 | registry_base                      |   10 |   5 | 'HKEY_CLASSES_ROOT'@0x006779d2; 'HKEY_CURRENT_USER'@0x0068cb62; 'HKEY_LOCAL_MACHINE'@0x0068b19e; 'HKEY_USERS'@0x0067aaba | FUN_004011b0,FUN_00401230,FUN_00401250,FUN_0040df10,FUN_0040fca0
+0x006fae10 |    191 | process_ctrl                       |    1 |   0 | api:TerminateProcess | FUN_0040fca0
+0x006fc043 |    322 | time_fmt                           |    2 |   1 | '%yyyy-%mm-%dd %hh:%ii:%ss'@0x0066cbb8 | FUN_00401000,FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040ade9
+0x006fc199 |    427 | helper:(crypto_pbstring)           |    0 |   1 | - | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401240,FUN_00408910
+0x006fc584 |   1346 | netscan_smb                        |    6 |   7 | 'RemoteShares: target list unusable ('@0x006879ca; 'RemoteShares: local segment unusable too ('@0x0066ffbe; 'RemoteShares: queue holds '@0x0066a964 | FUN_004011b8,FUN_00401212,FUN_00401240,FUN_00401250,FUN_004072d0
+0x006fcac6 |    561 | helper:(crypto_pbstring,webcam)    |    0 |   2 | - | FUN_00401212,FUN_00401240,FUN_00401bc8,FUN_00401c6b,FUN_00401d77
+0x006fcd03 |   6147 | browsers_history                   |   36 |  37 | 'chrome.exe'@0x00677070; 'brave.exe'@0x0067208c; 'opera.exe'@0x0066636c; '\Opera Software\Opera Stable'@0x00682b70 | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240
+0x006feee8 |    794 | install_layout                     |   99 |   7 | kit install layout: RuntimeHost.exe/mservice.exe/WinRing0x64.sys/windowsupdate/systam.dat/log.dat | FUN_0040c5e7,FUN_0040c685,FUN_0040fb90,FUN_0040fca0,FUN_0040fdf0
+0x006ff202 |    466 | helper:(crypto_pbstring,process_ctrl) |    0 |   1 | - | FUN_004011b0,FUN_004011b8,FUN_00401230,FUN_00401250,FUN_0040fca0
+0x006ff3e0 |    819 | screen_hvnc                        |    1 |   0 | api:BitBlt | FUN_0040fca0
+0x006ff71f |   1908 | helper:(crypto_pbstring,geoip_client) |    0 |   1 | - | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240
+0x006ffea7 |    578 | helper:(conn_state,mic)            |    0 |   0 | - | FUN_004011b0,FUN_0040df80,FUN_0040ee60,FUN_0040f3f0,FUN_0040f530
+0x007006f7 |    711 | pipe_relay                         |    1 |   0 | api:PeekNamedPipe | FUN_004011b8,FUN_00401200,FUN_00401240,FUN_004085dd,FUN_0040da80
+0x00701978 |   7809 | window_scan                        |    2 |  10 | 'tray grew by '@0x00675fa6 | FUN_004011b8,FUN_00409850,FUN_0040bb1e,FUN_0040bc8b,FUN_0040e930
+0x00703805 |   1094 | time_fmt                           |    2 |   6 | '%yyyy-%mm-%dd %hh:%ii'@0x0065991c | FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040b143,FUN_0040c8f3
+0x00703c5f |     84 | helper(unlabeled)                  |    0 |   0 | - | FUN_004011c0,FUN_0040fca0
+0x00703d0a |    757 | persistence_runkey                 |    6 |   5 | '\C$\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\WindowsUpdateTask.vbs'@0x006845d6; 'SMB_PIV: wrote windowsupdate.vbs to '@0x00683e46; 'SMB_PIV: '@0x00672aee | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_00401250,FUN_00408910
+0x00703fff |     51 | helper(unlabeled)                  |    0 |   0 | - | FUN_00401bc8
+0x00704032 |    549 | helper:(pipe_relay,webcam)         |    0 |   0 | - | FUN_0040f530,FUN_0040fca0
+0x00704257 |    284 | process_ctrl                       |    1 |   0 | api:TerminateProcess | FUN_0040fca0,FUN_006b8312
+0x0070437f |    233 | system_info                        |    2 |   2 | 'GetSystemTimes'@0x0066b54c | FUN_00401212,FUN_00401240,FUN_004058ce,FUN_00405928,FUN_0040fca0
+0x00704468 |    316 | time_fmt                           |    2 |   1 | '[%hh:%ii:%ss] '@0x00664486 | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_00408910,FUN_00408c80
+0x007045a4 |    795 | helper(unlabeled)                  |    0 |   0 | - | FUN_004011b0,FUN_00401250,FUN_004016ca,FUN_0040c5e7,FUN_0040c7ae
+0x00705670 |    496 | window_scan                        |    1 |   0 | api:GetWindowTextW | FUN_00401200,FUN_00401240,FUN_00401250,FUN_0040f3f0,FUN_0040f530
+0x00705b08 |     43 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040ade9
+0x00705b33 |    471 | helper:(window_ctrl)               |    0 |   0 | - | FUN_004085dd,FUN_00408608,FUN_0040fca0,FUN_0071717b,FUN_007255d4
+0x00705d16 |    517 | helper:(webcam)                    |    0 |   0 | - | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040f100
+0x00705f2f |    950 | power_control                      |   99 |   7 | remote power menu: LOGOFF|SHUTDOWN|RESTART|SLEEP|HIBERNATE + ExitWindowsEx | FUN_004011b0,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x007062e5 |    534 | helper:(crypto_pbstring,net_ip_util) |    0 |   5 | - | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040e840
+0x0070650f |    276 | helper:(crypto_pbstring)           |    0 |   2 | - | FUN_00401212,FUN_00401240,FUN_0040fca0,FUN_0040fdf0,FUN_0040fe20
+0x00706623 |    376 | geoip_client                       |    2 |   1 | '/ASN'@0x0068215c | FUN_00401200,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x007067af |    221 | helper(unlabeled)                  |    0 |   0 | - | FUN_004011b8,FUN_00401200,FUN_00401240,FUN_0040f640,FUN_0040fb90
+0x007068a0 |   1247 | netscan_smb                        |    2 |   5 | 'wlan show interfaces'@0x0068d2f8 | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401230,FUN_00401240
+0x00706d93 |    182 | helper:(browsers_history)          |    0 |   0 | - | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040e840
+0x00706e5d |   1376 | screen_hvnc                        |    4 |   4 | 'HVNC_*'@0x006693ea; 'HVNC_'@0x0066ae70 | FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250,FUN_004048b9
+0x007080a5 |    349 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040fca0
+0x0070820e |     43 | helper:(window_scan)               |    0 |   0 | - | FUN_0040fca0,FUN_006cb66b
+0x007088bd |    802 | helper:(window_scan)               |    0 |   0 | - | FUN_00401212,FUN_00401230,FUN_00401250,FUN_0040dbf0,FUN_0040de20
+0x00708beb |    926 | process_ctrl                       |    1 |   0 | api:CreateToolhelp32Snapshot | FUN_0040c5e7,FUN_0040c906,FUN_0040c96c,FUN_0040fca0,FUN_007275ae
+0x00708f89 |    697 | os_version                         |    8 |   7 | 'Windows 10'@0x00660cfc; 'Windows 11'@0x00660e94; 'Windows 7'@0x00673f52; 'Windows Vista'@0x00662d9e | FUN_00401200,FUN_00401240,FUN_004086a7,FUN_0040fca0,FUN_0040fdf0
+0x007092b8 |    266 | helper:(crypto_pbstring,mic)       |    0 |   1 | - | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_00408910,FUN_00408ca0
+0x007093c2 |   1556 | geoip_client                       |   22 |  15 | 'https://pastebin.com/raw/2b1h81R6'@0x0065e354; 'https://pastebin.com/raw/dw6nBkEf'@0x0068c36a; 'https://pastebin.com/raw/DLMEnb2j'@0x00668f8a; 'https://pastebin.com/raw/Pug4gVRw'@0x0065e79a | FUN_00401200,FUN_00401230,FUN_00401240,FUN_00401250,FUN_004072bd
+0x007099ea |    562 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040f5b0
+0x00709e52 |    819 | helper:(netscan_smb)               |    0 |   0 | - | FUN_004011b0,FUN_00401230,FUN_00401250,FUN_0040c5e7,FUN_0040c906
+0x0070a185 |    824 | helper:(screen_hvnc)               |    0 |   0 | - | FUN_00409850,FUN_0040f7c0,FUN_0040fca0,FUN_0070f76b
+0x0070a4c9 |   1626 | mic                                |    4 |  10 | '[MICSVC] reader thread='@0x00687b9c; 'capture running in session 0: '@0x0065b4c4 | FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250,FUN_00401bc8
+0x0070ab2f |   1100 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040fca0
+0x0070b044 |    866 | drive_inventory                    |    1 |   0 | api:FindFirstStreamW | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401230
+0x0070ba12 |   1884 | file_manager                       |   14 |  14 | 'FM_DRIVES|'@0x0068cdce; '[Removable]'@0x006716b4; '[Fixed]'@0x00671f3a; '[CD-ROM]'@0x0068945c | FUN_00401250,FUN_0040e8e0,FUN_0040f100,FUN_0040f5d0,FUN_0040f760
+0x0070c16e |   1315 | update_install                     |    2 |  12 | 'cmd'@0x0065ce82 | FUN_004011b0,FUN_00401212,FUN_00401230,FUN_00401250,FUN_0040a968
+0x0070c69d |   3089 | system_info                        |    2 |   3 | 'WORKGROUP'@0x00682322 | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401230,FUN_00401240
+0x0070d2c2 |    842 | file_manager                       |    8 |   8 | 'DENIED^the share could not be opened for writing or for reading'@0x00681eee; 'READ^readable, but the write was refused ('@0x0068a808; 'WRITE^created and wrote a probe file, but it could not be removed'@0x006654ee; 'WRITE^created, wrote and removed a | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401240,FUN_004085dd
+0x0070d620 |    506 | system_info                        |    8 |   4 | 'USERDNSDOMAIN'@0x00674e3c; 'USERDOMAIN'@0x00669452; 'COMPUTERNAME'@0x00662192; 'WORKGROUP'@0x00682322 | FUN_00401200,FUN_00401212,FUN_00401240,FUN_00401250,FUN_004048b9
+0x0070d82e |    247 | helper:(crypto_pbstring,time_fmt)  |    0 |   2 | - | FUN_00401200,FUN_00401240,FUN_0040e930,FUN_0040fca0,FUN_0040fdf0
+0x0070d939 |   2855 | netscan_smb                        |   14 |  18 | 'RemoteShares: '@0x0065d9c6; 'sweeping'@0x00673b18; 'RemoteShares: pass starting, forced='@0x00659476; 'RemoteShares: nothing to sweep'@0x0065cbc4 | FUN_00401212,FUN_00401240,FUN_00401bc8,FUN_004074e0,FUN_00407930
+0x0070e460 |    422 | mic                                |    2 |   4 | 'C:\Windows\Temp\micsvc_helper.log'@0x00680d6e | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_00408910,FUN_00408ca0
+0x0070ecd9 |   1375 | netscan_smb                        |    1 |   2 | api:NetShareEnum | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401230
+0x0070f24c |    285 | mic                                |    2 |   1 | 'micsvc_selftest.log'@0x006801a2 | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_00408910,FUN_00408ca0
+0x0070f6c6 |    153 | helper:(netscan_smb)               |    0 |   0 | - | FUN_004011b0,FUN_00407ad4,FUN_004083f9,FUN_0040fd30
+0x0070f76b |    130 | helper:(window_scan)               |    0 |   0 | - | 
+0x0070f7f9 |   2811 | pipe_relay                         |   99 |  19 | T7 CORRECTION: mic-service helper launch/param builder -- 'helper start: parameters=' token= exe= mutex= command pipe= data pipe=, Global\ms_audio_endpoint_lock_, 183=instance-in-use (NOT a remote pipe relay) | FUN_00401212,FUN_00401240,FUN_00404839,FUN_004048a5,FUN_004049b8
+0x0071031b |    746 | helper:(crypto_pbstring)           |    0 |   3 | - | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401230,FUN_00401240
+0x00710935 |    135 | system_info                        |    2 |   1 | 'USERNAME'@0x00685890 | FUN_00401200,FUN_00401212,FUN_00401240,FUN_004048b9,FUN_0040fca0
+0x007109d0 |    180 | helper(unlabeled)                  |    0 |   0 | - | FUN_004011b0,FUN_0040c5e7,FUN_0040fb90,FUN_0040fca0,FUN_0040fce0
+0x00710a84 |   1667 | helper:(crypto_pbstring)           |    0 |   0 | - | FUN_004011b0,FUN_004011b8,FUN_00401212,FUN_00401230,FUN_00401240
+0x007113b9 |    562 | helper:(crypto_pbstring,net_ip_util) |    0 |   1 | - | FUN_004011b0,FUN_004011c0,FUN_00401212,FUN_00401250,FUN_0040df80
+0x007115f9 |    639 | registry_base                      |    3 |   2 | api:RegEnumKeyExW,RegCloseKey,RegOpenKeyExW | FUN_00401212,FUN_00401230,FUN_00401250,FUN_0040de20,FUN_0040e8e0
+0x00711884 |    449 | process_ctrl                       |    1 |   0 | api:TerminateProcess | FUN_0040c5e7,FUN_0040c7ae,FUN_0040c817,FUN_0040c906,FUN_0040c96c
+0x00711a45 |   3571 | window_scan                        |   28 |  31 | '  notify icon settings (HKCU\Control Panel\NotifyIconSettings):'@0x0068079c; 'IsPromoted'@0x00687d80; '    IsPromoted='@0x0068b790; '  notify icon settings entries: '@0x0065afd0 | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040dc70
+0x0071284c |   4719 | browsers_history                   |   18 |  31 | 'chrome.exe'@0x00677070; 'brave.exe'@0x0067208c; 'firefox.exe'@0x00663bfc; 'opera.exe'@0x0066636c | FUN_004011b0,FUN_004011b8,FUN_00401212,FUN_00401240,FUN_00401250
+0x00713abb |     63 | helper:(window_scan)               |    0 |   0 | - | FUN_0040fca0
+0x00713afa |    888 | helper:(screen_hvnc)               |    0 |   0 | - | FUN_0040f3f0,FUN_0040f530,FUN_0040fca0,FUN_006c64cf,FUN_006d5629
+0x00713e7e |    915 | geoip_client                       |    8 |   4 | 'myip.opendns.com'@0x00685998; '208.67.222.222'@0x006743f8; '208.67.220.220'@0x00673dfa; '208.67.222.220'@0x00674162 | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240,FUN_00401250
+0x00714225 |    708 | persistence_schtask                |    6 |   7 | 'WindowsUpdateTaskScheduler'@0x0065ee4e; 'schtasks.exe'@0x0067403e; '/create /f /tn '@0x00678920 | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_00404687,FUN_0040499a
+0x00715ce9 |    757 | mic                                |    2 |   3 | '[MICSVC] data pipe not openable yet (error '@0x00672b64 | FUN_00401212,FUN_00401240,FUN_0040e930,FUN_0040fca0,FUN_0040fdf0
+0x00715fea |    806 | helper:(crypto_pbstring)           |    0 |   3 | - | FUN_004011b0,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x0071631c |    104 | crypto_pbstring                    |   99 |   0 | cipher-adjacent init/helper | FUN_00401c6b,FUN_00401d77
+0x00716384 |    830 | crypto_pbstring                    |   99 |   0 | cipher core: SBOX[ROR8(..)]^k1^k2 + IsDebuggerPresent decoy (F4) | FUN_004054c0,FUN_0040f3f0,FUN_0040f510,FUN_0040f5a0,FUN_0040f7c0
+0x007166ce |   1437 | net_adapter_helper                 |   26 |  15 | 'vmware'@0x0068291a; 'virtualbox'@0x00689ac0; 'hyper-v'@0x0068c304; 'vethernet'@0x0065b564 | FUN_004011b0,FUN_00401250,FUN_0040c5e7,FUN_0040c7ae,FUN_0040c817
+0x00716c77 |   1272 | helper:(crypto_pbstring,geoip_client) |    0 |   1 | - | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_0040daa0,FUN_0040eef0
+0x0071717b |    417 | helper(unlabeled)                  |    0 |   0 | - | FUN_004085dd,FUN_00408608,FUN_0040fca0
+0x00717328 |     51 | helper:(browsers_history,mic)      |    0 |   0 | - | FUN_004011b0,FUN_0040fd30
+0x0071735b |    635 | helper:(crypto_pbstring,net_ip_util) |    0 |   2 | - | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040dcb0
+0x007175ea |    738 | helper:(crypto_pbstring,file_manager) |    0 |   3 | - | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401230,FUN_00401240
+0x007178e0 |    255 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040fca0,FUN_006d5629
+0x007179eb |   1210 | helper:(browsers_history,crypto_pbstring) |    0 |   1 | - | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240
+0x00717eb9 |    148 | helper(unlabeled)                  |    0 |   0 | - | 
+0x00717f59 |    246 | helper(unlabeled)                  |    0 |   0 | - | FUN_00401212,FUN_00401240,FUN_00404839,FUN_004048a5,FUN_0040fca0
+0x0071805b |    390 | time_fmt                           |    2 |   1 | '%yyyy-%mm-%dd %hh:%ii:%ss'@0x0066cbb8 | FUN_00401000,FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040ade9
+0x007181f5 |    419 | helper:(crypto_pbstring)           |    0 |   1 | - | FUN_004011b0,FUN_004084ab,FUN_00408519,FUN_0040e930,FUN_0040fb90
+0x007183a4 |    220 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040fca0
+0x0071848c |     48 | helper:(screen_hvnc)               |    0 |   0 | - | FUN_0040fca0,FUN_0072b623
+0x007184bc |    539 | helper:(crypto_pbstring,geoip_client) |    0 |   1 | - | FUN_004011b0,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x007197eb |    367 | helper:(crypto_pbstring)           |    0 |   1 | - | FUN_00401200,FUN_00401240,FUN_0040e930,FUN_0040f5b0,FUN_0040fca0
+0x0071996e |    862 | helper:(crypto_pbstring,file_manager) |    0 |   2 | - | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401230,FUN_00401240
+0x0071a65d |    194 | helper:(crypto_pbstring,netscan_smb) |    0 |   1 | - | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401240,FUN_0040de20
+0x0071dcf5 |   1813 | helper:(crypto_pbstring,netscan_smb) |    0 |   5 | - | FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401240,FUN_004078d0
+0x0071e41e |    310 | geoip_client                       |    2 |   1 | 'http://clients3.google.com/generate_204'@0x0066e0d0 | FUN_00401212,FUN_00401240,FUN_004072bd,FUN_004085dd,FUN_00408608
+0x0071e560 |    491 | screen_hvnc                        |    1 |   0 | api:EnumDisplayMonitors | FUN_0040bcdb,FUN_0040fca0
+0x0071e74b |   1699 | helper:(crypto_pbstring,pipe_relay) |    0 |   9 | - | FUN_004011b8,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x0071ee06 |    745 | process_ctrl                       |    2 |   0 | api:TerminateProcess,CreateToolhelp32Snapshot | FUN_004011b0,FUN_00401212,FUN_00401230,FUN_00401250,FUN_0040de20
+0x0071f0fb |    482 | helper:(geoip_client,net_adapter_helper) |    0 |   0 | - | FUN_00401250,FUN_0040c7ae,FUN_0040c817,FUN_0040c8f3,FUN_0040c906
+0x0071f58e |   2104 | helper:(crypto_pbstring,netscan_smb) |    0 |   8 | - | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401240,FUN_00401250
+0x0071fdda |    111 | helper:(crypto_pbstring,device_inventory) |    0 |   1 | - | FUN_00401200,FUN_00401240,FUN_0040fca0,FUN_0040fce0,FUN_0040fdf0
+0x0071fe5d |    552 | helper:(mic,screen_hvnc)           |    0 |   0 | - | FUN_00408608,FUN_0040f3f0,FUN_0040f530,FUN_0040fca0,FUN_006be168
+0x00720085 |    775 | helper:(crypto_pbstring,mic)       |    0 |   2 | - | FUN_004011b0,FUN_004011b8,FUN_00401212,FUN_00401230,FUN_00401240
+0x0072038c |   2497 | file_manager                       |    2 |   7 | 'RECENT_FILES\'@0x0065eb62 | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401230
+0x00720d61 |    212 | helper(unlabeled)                  |    0 |   0 | - | 
+0x00720e35 |   1423 | file_manager                       |    2 |  15 | 'access denied'@0x006830ee | FUN_00401200,FUN_00401240,FUN_0040e930,FUN_0040fca0,FUN_0040fdf0
+0x007214b2 |    339 | system_info                        |    2 |   4 | 'USERNAME'@0x00685890 | FUN_00401200,FUN_00401212,FUN_00401240,FUN_00401250,FUN_004048b9
+0x0072205d |    293 | helper:(browsers_history,crypto_pbstring) |    0 |   2 | - | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_0040daa0,FUN_0040fca0
+0x0072218e |    302 | idle_check                         |   99 |   1 | idle detection (GetLastInputInfo/GetTickCount) | FUN_00401000,FUN_00401200,FUN_00401240,FUN_0040fca0,FUN_0040fdf0
+0x007222d0 |    648 | webcam                             |    2 |   2 | 'WEBCAM_INFO|'@0x00667ca6 | FUN_004011b0,FUN_00401212,FUN_00401240,FUN_0040e930,FUN_0040fca0
+0x00722c79 |   2477 | netscan_smb                        |    2 |   8 | ' addresses in the sweep'@0x006864da | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401230
+0x007255d4 |    237 | window_ctrl                        |    1 |   0 | api:ShowWindowAsync | FUN_0040fca0
+0x007256cd |   5323 | browsers_history                   |   20 |  16 | 'bh_'@0x0067cf80; 'BROWSER_HISTORY: Failed to open database: '@0x006885b2; 'Firefox'@0x00676b02; 'SELECT url, title, last_visit_date, visit_count FROM moz_places WHERE last_visit_date IS NOT NULL AND last_visit_date > 0 ORDER BY last_visit_date DESC  | FUN_004011b0,FUN_004011b8,FUN_00401200,FUN_00401212,FUN_00401230
+0x00726bac |   2542 | c2_bootstrap                       |   99 |  14 | CAMPAIGN C2/CONFIG BOOTSTRAP: 15x pastebin raw URLS + t.me/testma1625 + t.me/+vudhn + ddns host + start1625092 token | FUN_00401200,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x007275ae |    184 | helper:(process_ctrl,screen_hvnc)  |    0 |   0 | - | FUN_0040c5e7,FUN_0040c906,FUN_0040c96c
+0x00727666 |    252 | window_scan                        |    3 |   1 | 'TrayClockWClass'@0x006800a6; api:FindWindowExW | FUN_00401212,FUN_00401240,FUN_0040fca0,FUN_0040fdf0,FUN_0040fe20
+0x0072776e |   2717 | helper(unlabeled)                  |    0 |   0 | - | FUN_00409850,FUN_0040f3f0,FUN_0040f4f0,FUN_0040f530,FUN_0040fca0
+0x00728217 |   3822 | window_scan                        |    3 |   1 | 'Shell_TrayWnd'@0x00659edc; api:FindWindowW | FUN_004011b8,FUN_00401212,FUN_00401240,FUN_0040fca0,FUN_0040fd30
+0x007292b6 |    134 | helper:(mic,os_version)            |    0 |   0 | - | FUN_004086a7,FUN_0040fca0,FUN_006ccaa7
+0x00729348 |   5613 | netscan_smb                        |   28 |  32 | 'NetScan: SendNetworkScanConfig start'@0x00664a24; 'NetScan: GetAdaptersInfo initial Result='@0x00668e0a; 'NetScan: Allocating adapter buffer size '@0x0065c30e; 'NetScan: GetAdaptersInfo filled Result='@0x006636fa | FUN_004011b8,FUN_00401212,FUN_00401230,FUN_00401240,FUN_00401250
+0x0072a944 |    458 | helper:(crypto_pbstring,install_layout) |    0 |   1 | - | FUN_004011b0,FUN_00401200,FUN_00401212,FUN_00401240,FUN_00401250
+0x0072b3ac |    601 | helper(unlabeled)                  |    0 |   0 | - | FUN_004011b0,FUN_00405550,FUN_00405740,FUN_004085dd,FUN_00408910
+0x0072b623 |   1058 | screen_hvnc                        |    2 |   2 | 'SetWindowDisplayAffinity'@0x00683160 | FUN_00401212,FUN_00401240,FUN_00402034,FUN_0040255a,FUN_0040256c
+0x0072ba45 |    451 | helper:(file_manager)              |    0 |   0 | - | FUN_004011b0,FUN_00401200,FUN_00401240,FUN_0040e8e0,FUN_0040f760
+0x0072bc1c |   2664 | persistence_schtask                |    3 |   5 | api:RegEnumKeyExW,RegOpenKeyExW,RegEnumValueW | FUN_004011b0,FUN_004011b8,FUN_00401212,FUN_00401240,FUN_00409850
+0x0072c684 |    242 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040fca0
+0x0072c782 |    837 | helper:(screen_hvnc)               |    0 |   0 | - | FUN_0040f3f0,FUN_0040f530,FUN_0040fca0,FUN_006be168,FUN_006e8c3d
+0x0072cad3 |    149 | helper(unlabeled)                  |    0 |   0 | - | FUN_0040fca0,FUN_006d1f3f
+
+# # Module lattice (label -> functions)
+# 
+# helper                   n=112 0x006b87e7(413B) 0x006b9143(198B) 0x006ba358(501B) 0x006baf6c(129B) 0x006bb779(85B) 0x006bd4f2(875B) 0x006bd869(136B) 0x006bda12(840B) 0x006bdea8(347B) 0x006be003(337B) 0x006be46e(657B) 0x006bee32(440B)
+# helper(unlabeled)        n=47  0x006ba561(257B) 0x006bd905(257B) 0x006cb314(83B) 0x006cb789(210B) 0x006cc954(327B) 0x006d19b0(452B) 0x006d1f3f(97B) 0x006d4bdb(372B) 0x006d7040(292B) 0x006d7164(327B) 0x006d72b7(50B) 0x006d7606(43B)
+# netscan_smb              n=21  0x006ba66e(1477B) 0x006c0557(3710B) 0x006c94ec(1012B) 0x006c98e0(163B) 0x006cd1c6(481B) 0x006ce2b5(515B) 0x006cf5ba(1083B) 0x006d9490(3642B) 0x006da53a(1311B) 0x006ddf50(229B) 0x006f05c2(644B) 0x006f1592(273B)
+# mic                      n=13  0x006bf12d(533B) 0x006c9983(5296B) 0x006d1524(1164B) 0x006daad1(7282B) 0x006e9d4b(524B) 0x006ecdc4(300B) 0x006f2b76(719B) 0x006f2e45(3371B) 0x006f4505(97B) 0x0070a4c9(1626B) 0x0070e460(422B) 0x0070f24c(285B)
+# window_scan              n=12  0x006b86ee(237B) 0x006beff6(291B) 0x006bf4d4(4207B) 0x006c72e7(257B) 0x006cb66b(286B) 0x006ed55c(733B) 0x006f0916(423B) 0x00701978(7809B) 0x00705670(496B) 0x00711a45(3571B) 0x00727666(252B) 0x00728217(3822B)
+# registry_base            n=11  0x006c7931(1626B) 0x006d1b74(951B) 0x006d1fac(406B) 0x006d4d5b(513B) 0x006dfe92(377B) 0x006e8f72(1557B) 0x006ecf46(932B) 0x006f0f10(194B) 0x006f3b70(2441B) 0x006fab20(740B) 0x007115f9(639B)
+# file_manager             n=9   0x006bb826(588B) 0x006c13d5(493B) 0x006c3b82(10573B) 0x006cc5b4(549B) 0x006ce8e8(3282B) 0x0070ba12(1884B) 0x0070d2c2(842B) 0x0072038c(2497B) 0x00720e35(1423B)
+# screen_hvnc              n=8   0x006be168(762B) 0x006c64cf(776B) 0x006f5114(686B) 0x006f9967(1708B) 0x006ff3e0(819B) 0x00706e5d(1376B) 0x0071e560(491B) 0x0072b623(1058B)
+# webcam                   n=7   0x006b95e3(3433B) 0x006bac33(805B) 0x006c7457(260B) 0x006e29ef(1019B) 0x006e893d(381B) 0x006ea33f(445B) 0x007222d0(648B)
+# geoip_client             n=7   0x006bbaa4(6722B) 0x006dfa73(1043B) 0x006ee055(2488B) 0x00706623(376B) 0x007093c2(1556B) 0x00713e7e(915B) 0x0071e41e(310B)
+# time_fmt                 n=7   0x006d0d9e(410B) 0x006ec056(807B) 0x006eeea8(2056B) 0x006fc043(322B) 0x00703805(1094B) 0x00704468(316B) 0x0071805b(390B)
+# net_ip_util              n=6   0x006b8460(634B) 0x006c15d6(1615B) 0x006d4f70(982B) 0x006e0817(1449B) 0x006e2eeb(1880B) 0x006ef925(1673B)
+# system_info              n=6   0x006c773a(483B) 0x0070437f(233B) 0x0070c69d(3089B) 0x0070d620(506B) 0x00710935(135B) 0x007214b2(339B)
+# browsers_history         n=6   0x006cae33(1229B) 0x006dccfc(3952B) 0x006f16a3(5022B) 0x006fcd03(6147B) 0x0071284c(4719B) 0x007256cd(5323B)
+# crypto_pbstring          n=5   0x006c73e8(99B) 0x006ddca8(256B) 0x006dddbc(404B) 0x0071631c(104B) 0x00716384(830B)
+# persistence_schtask      n=5   0x006e26c7(295B) 0x006e558f(2174B) 0x006f0fde(1440B) 0x00714225(708B) 0x0072bc1c(2664B)
+# process_ctrl             n=5   0x006fae10(191B) 0x00704257(284B) 0x00708beb(926B) 0x00711884(449B) 0x0071ee06(745B)
+# update_install           n=3   0x006b8998(1951B) 0x006f53c2(11103B) 0x0070c16e(1315B)
+# net_adapter_helper       n=3   0x006baff9(1920B) 0x006d119e(609B) 0x007166ce(1437B)
+# install_layout           n=3   0x006cba6c(2868B) 0x006ed2fe(356B) 0x006feee8(794B)
+# pipe_relay               n=3   0x006cfa01(1367B) 0x007006f7(711B) 0x0070f7f9(2811B)
+# drive_inventory          n=3   0x006d735e(456B) 0x006d8cbd(800B) 0x0070b044(866B)
+# pb_exit                  n=2   0x006b8289(31B) 0x006b82a8(106B)
+# privilege_token          n=2   0x006b8312(334B) 0x006d7532(170B)
+# window_ctrl              n=2   0x006c8b8e(613B) 0x007255d4(237B)
+# os_version               n=2   0x006ccaa7(407B) 0x00708f89(697B)
+# conn_state               n=2   0x006cd7bf(656B) 0x006dc770(1212B)
+# keylog_klog              n=2   0x006d56d0(772B) 0x006f94e4(340B)
+# persistence_runkey       n=2   0x006f9638(795B) 0x00703d0a(757B)
+# pb_winmain               n=1   0x00695000(0B)
+# device_inventory         n=1   0x006da2d6(164B)
+# proxy_c2                 n=1   0x006ea9c8(799B)
+# power_control            n=1   0x00705f2f(950B)
+# idle_check               n=1   0x0072218e(302B)
+# c2_bootstrap             n=1   0x00726bac(2542B)

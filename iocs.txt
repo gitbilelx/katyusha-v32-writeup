@@ -1,0 +1,123 @@
+=====================================================================
+Katyusha/v32 kit — core IOC list (defanged, for copy/paste)
+All network IOCs are UNVERIFIED-BY-RUNTIME unless tagged TRACE-VERIFIED.
+TRACE-VERIFIED = observed in the analyst's own ANY.RUN detonation
+(2026-11-01, task 7c02e87d-eb52-4b24-be87-809724b6ad53; Dropbox URL
+submitted, contents executed manually — the earlier 2026-10-26 detonation
+was the analyst's too).
+=====================================================================
+
+--- SAMPLE HASHES (verified) ---
+4dc399f68e50fa0a2d267fe7743909435a167a5bee4767be04e57d09e2d6e9ca  payload2.rar (study archive of the drop set)
+a9baddca01a6f07cac7472644adde90349e3954ceaead6400f05264e9e93c087  RuntimeHost.exe (UPX)
+396a5a1a33cd3bd6759026ae9991e85fd8668d00fb5571294859ed9601480eaf  RuntimeHost_unp.exe
+269c255de74a6c486d704b3c5f308a05bd719d4f081b7d64ea3dde8ff342a0e7  ms.exe (UPX)
+6ad3df3aa95f044e50e9c439d4e7b9cef4d609ea9a97de2c0cfcde1669be0bd2  ms_unp.exe
+9e620fdbe81f3649fe51df395d07b4359ce92dd88b221c6c59d649a621d242af  mservice_l.exe (UPX)
+cd721660cd0cccb729b12fb21208fe684bb7e7c32e8ee15ebc2c8b0b0d310f13  mservice_l_unp.exe
+57e2ce1f973daee7e7dacc7065cff5f6619fef8668ceda61afe6c6e4cea8370a  info.exe (UPX)
+684714aa504e23b4efbc926dd9807f15654ab509c7ec65c625e8432b52ed6a88  info_unp.exe
+11bd2c9f9e2397c9a16e0990e4ed2cf0679498fe0fd418a3dfdac60b5c160e5  WinRing0x64.sys (vulnerable driver)
+0c0512a567941957503710b99e4838decc808142868d351305e513457a9c89b3  ST.xml (schtask XML)
+
+--- DROPPER STAGE (first-stage VBS) ---
+NOTE: the VBS regenerates its random comment padding on every download, so
+      it has NO stable hash — hunt on strings/behavior, not SHA-256.
+C2/stage fetch: hxxps://qmlab1[.]com/assets/img/katyusha2  (66[.]11[.]126[.]50:443)
+                TRACE-VERIFIED (any.run + Avira URL Cloud 100%, public dumps)
+qmlab1[.]com is ALSO the kit's live update server (TRACE-VERIFIED):
+                asset paths seen fetched: mservice.jpg  ps.jpg  pss.jpg  test42i.txt
+                (names match mservice_l drop names recovered statically; pss.jpg is new)
+LoLBAS:         hxxps://www[.]7-zip[.]org/a/7zr[.]exe       (official domain, abused tool)
+Dropbox staging (corroborated verbatim in a sandbox HTTP dump):
+hxxps://www[.]dropbox[.]com/scl/fi/1k7ednk2dz21bvjy1i057/gmail2[.]7z?rlkey=0qbro7zvrrrm2kk40ssqvz4hk&dl=1
+                (GET 302 via msedge.exe; Dropbox edge 162[.]125[.]66[.]18:443 — watch only)
+7z password:    1625093
+gmail2.7z       sha256 FEB982CE837943C317416D878366EF3E4CCE69AE26D6F2BDC2FDB436FE58B79F
+                md5    C20CD5B3DF4CA8FADFA8C2A45054FB4B
+(.tmp alias     sha256 4ED3E986E8C71A8B7A4486578827824AA5318C3433E43D861378A5637BA3D99
+                md5    93E70ABBD335DBA791C5E277BBA86881)
+NOTE: payload2.rar above is the analyst-supplied study archive of the same
+      drop set — NOT a live-delivery file name. The live wire name was
+      gmail2.7z.
+NOTE: do NOT fetch the Dropbox URL; the URL itself is the IOC.
+
+--- PASTEBIN CONFIG LIST (hxxps://pastebin[.]com/raw/<id>) ---
+bootstrap (RuntimeHost c2_bootstrap, actively downloaded):
+0hunY74W  DRnMigzY  GzcejBxh  bX3JucL2  EQ0jMEE9
+shared distribution list (ms + mservice_l; also present in RuntimeHost):
+2b1h81R6  aUs7WQNb  cTKeDw1h  cy0PrX6z  deJrLpgd  DLMEnb2j  DV41NysD
+dw6nBkEf  frnSiMaS  LUhm1Nmb  Pug4gVRw
+(Total 16 unique IDs. TRACE-VERIFIED: pastebin.com/raw/2b1h81R6 was
+ contacted during the 2026-11-01 detonation; paste content not captured
+ in the report's summary tier.)
+
+--- C2 / DOWNLOAD / CHANNELS ---
+server1625965200369[.]ddns[.]net:<port>          dynamic C2 directive template
+hxxps://stylegeneration[.]ma/fonts/font-awesome/download.php?file=mservice_L.exe&password=SvabodnayaRassia
+t[.]me/testma1625                                fallback (region branch)
+t[.]me/+vudhn_xMv2ZmNGE0                         fallback (invite link)
+smtp[.]mail[.]ru                                 mail exfil relay
+2ixgejbqdk71[@]mail[.]ru                         envelope identity
+vladimirprolitovitch[@]duck[.]com                report/alias contact
+
+--- IP-ECHO / GEO ENDPOINTS (plain HTTP except noted) ---
+ifconfig[.]me/ip  iseeu[.]cc/json  ipapi[.]co  ipwho[.]is  ipwhois[.]app
+ipconfig[.]io  ident[.]me  ifconfig[.]co  ifconfig[.]is  icanhazip[.]com
+myip[.]opendns[.]com
+TRACE-VERIFIED: http://ip-api[.]com/csv/?fields=countryCode was contacted
+in the 2026-11-01 detonation (ms.exe country gate).
+
+--- IPs SEEN IN THE MALICIOUS CHAIN (2026-11-01 trace; role unassigned) ---
+5[.]139[.]44[.]126   5[.]139[.]44[.]127
+(not explained by static study; candidates: ddns C2 resolution or
+stylegeneration[.]ma hosting. Validate before block-listing.)
+66[.]11[.]126[.]50   (qmlab1[.]com resolving host — TRACE-VERIFIED)
+
+--- IPs ON BENIGN SHARED INFRA (watch queries rather than block) ---
+208[.]67[.]222[.]222  208[.]67[.]220[.]220  208[.]67[.]222[.]220   (OpenDNS)
+8[.]8[.]8[.]8  8[.]8[.]4[.]4                                  (forced DNS)
+208[.]95[.]112[.]1:80                                          (prior ledger geo check)
+162[.]125[.]66[.]18                                            (Dropbox edge, 302 only)
+
+--- HOSTS / FILES / TASKS / REGISTRY ---
+tasks:        MicrosoftUpdateService   WindowsUpdateTaskScheduler
+Run value:    MicrosoftEdgeAutoLaunch_2EDFBF
+firewall:     WinAgent_Out  WinAgent_In
+paths:        %public%\windowsupdate\  (mservice_l.exe  mservice.exe  mservice.vbs
+              mservice.jpg  ps.jpg  test42i.txt  log.dat  temp.xml)
+              %APPDATA%\RatClient\  UPDATE\  update_temp.exe
+desktop dirs: files dropped on victim Desktop in live trace (TRACE-VERIFIED):
+              ms.exe  mservice_l.exe  mservice.exe  info.exe  networkhost.exe
+              p_DESKTOP-JGLLJLD.exe  c_DESKTOP-JGLLJLD.exe  gmail2.7z
+              (networkhost.exe appears in the trace only; likely a renamed
+              RuntimeHost.exe — write-up's inference, not trace fact)
+mutex:        ANDROMEDA
+pipes:        \\.\pipe\ms_audio_cmd_<id>   \\.\pipe\ms_audio_dat_<id>
+mutex:        Global\ms_audio_endpoint_lock_<id>
+log file:     C:\Windows\Temp\micsvc_helper.log
+USB spreader: \usbdrive.exe  .lnk  ("Lecteur USB")
+SMB spread:   WindowsUpdateTask.vbs (Startup)  windowsupdate[.]vbs (SMB_PIV)
+self-delete:  del_<n>.bat pattern "ping 127.0.0.1 -n 3 > nul"
+
+--- PROTOCOL MARKERS (host-side / network detection) ---
+start1625092       agent DELETE-received markers: AGENT_DELETE
+SMB_PIV_GET|       KEYLOG_GET|  NET_SCAN_INIT  NET_DLURL|
+FM_UL2_* family    FILEZ|  FILEZ2  Z-Packet Decompressed
+command pipe=      data pipe=
+UA spoof (non-browser): "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+DNS-hijack filter names (adapter description match): Nord|VPN|Virtual|TAP|TUN
+7z password token: AMD_EPYC       (mservice_l; archive password)
+kill-list globs: *mrt.exe  *msmpeng ... (60 entries; see README)
+anti-analysis display names: procexp  procmon  wireshark  tcpview  crowdstrike ...
+
+Runtime IOCs are tagged TRACE-VERIFIED (see header note). The analyst's own
+ANY.RUN detonations (2026-10-26 and 2026-11-01, task
+7c02e87d-eb52-4b24-be87-809724b6ad53) corroborate these:
+      qmlab1.com incl. /assets/img/mservice.jpg, ps.jpg, pss.jpg,
+      test42i.txt; Dropbox gmail2.7z URL; pastebin 2b1h81R6;
+      ip-api.com/csv country gate; 66.11.126.50; 5.139.44.126/.127
+      (connected, role unknown). Still UNVERIFIED-BY-RUNTIME: the other 15
+      paste contents, stylegeneration[.]ma URL, live ddns resolution,
+      t[.]me channels.
+=====================================================================

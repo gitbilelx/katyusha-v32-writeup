@@ -1,0 +1,96 @@
+================================================================================
+T6 DELIVERABLE — CONFIG/C2 CONSUMER (static trace; UNVERIFIED-BY-RUNTIME)
+RuntimeHost_unp.exe sha256 396a5a1a33cd3bd6759026ae9991e85fd8668d00fb5571294859ed9601480eaf
+Method: decomp repairs + capstone xref scan; STATIC ONLY. 2026-11-01.
+================================================================================
+
+1. THE CONSUMER = FUN_00726bac (label `c2_bootstrap` in functions_map.txt,
+   2542 B) called directly from WinMain statement S0897 @0x006a2f3e
+   (call site 0x006a2f50 in marker stream; preceded by system_info S0883 and
+   netscan_smb S0889).
+
+2. WHAT IT DOES (all steps cite decrypted blob VAs, V2 evidence):
+
+   a) Decrypts the primary config URL list into an array (param_3[0..3]):
+        0x00670366 (L=148) https://pastebin.com/raw/0hunY74W
+        0x0065eef2 (L=146) https://pastebin.com/raw/DRnMigzY
+        0x0066aff4 (L=144) https://pastebin.com/raw/GzcejBxh
+        0x00667162 (L=148) https://pastebin.com/raw/bX3JucL2
+        0x0065be0e (L=150) https://pastebin.com/raw/EQ0jMEE9
+   b) For each URL: builds a GET request with header pair
+        0x0066eba8 (L=58)  'User-Agent'
+        0x0066948c (L=180) 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+      and downloads via the vendored-curl wrapper trio
+        FUN_00406c55 (setup) -> FUN_00406c3f (perform) -> FUN_00406b3d (cleanup)
+      into a 0x200-byte buffer (FUN_00407950). Retries: FUN_00406cde(10000)
+      = 10-second sleep between rounds (markers 0x60b/0x63e).
+   c) Validates the response by substring probes (FUN_0040df80 = PB InStr):
+        0x0067a84e (L=64) 'start1625092'    <- campaign validity marker
+        ...on branch: 0x00689ebc (L=42) 'algeria'
+   d) Region-conditioned fallback selection:
+        if 'algeria' probe true  -> t.me/testma1625   [0x0067d498 (L=112)]
+        else                     -> t.me/+vudhn_xMv2ZmNGE0 [0x0066d8a0 (L=132)]
+      ('t.me' presence probe 0x00673592 (L=28); separator blob
+       0x006669b6 (L=24) decodes to '||' — round/field separator).
+   e) Required C2 template probe: 0x0065ebfa (L=134)
+        'server1625965200369.ddns.net:'
+   f) WinMain (statements S0898/S0899, markers 0x3078/0x3079) then decrypts the
+      ':' blob 0x00660a60 and PEM-style string-splits the accepted value on ':'
+      -> C2 host : port split; results land in globals (CMP guards on
+      0x006909b0 / 0x00690a18 = 'already have host'/port), consumer also writes
+      the aggregated result near DAT_00690994 before returning.
+   g) Immediately after (S0903-S0904): FUN_00407b21 + 0x005e5740 (.text
+      socket/connect path) — i.e., the extracted host:port feeds the direct
+      command channel (pipe/TOKEN protocol, §T2 wmain_flow.md).
+   h) TOTAL PASTEBIN ID CORRECTION: static corpus now yields 16 UNIQUE
+      paste IDs (was '15'): bootstrap set {0hunY74W, DRnMigzY, GzcejBxh,
+      bX3JucL2, EQ0jMEE9} + shared set of 11 {2b1h81R6, aUs7WQNb, cTKeDw1h,
+      cy0PrX6z, deJrLpgd, DLMEnb2j, DV41NysD, dw6nBkEf, frnSiMaS, LUhm1Nmb,
+      Pug4gVRw}. The shared 11 also exist as blobs in RuntimeHost itself
+      (VAs 0x65e354, 0x65e79a, 0x6632b0, 0x664c64, 0x668f8a, 0x672a2e,
+      0x6780a2, 0x678678, 0x67aaf4, 0x6865c8, 0x68c36a) but are NOT consumed
+      by FUN_00726bac — c2_bootstrap only downloads its own 5; the 11-ID set
+      is the ms/mservice_l distribution list. Consumer of the 11 in RH is a
+      TODO for T7. 16 unique total (5 + 11).
+
+3. CONFIG FORMAT (STATIC HYPOTHESIS; UNVERIFIED-BY-RUNTIME)
+
+   The paste is treated as PLAINTEXT marker text. Acceptance requires the
+   'start1625092' token; a region probe ('algeria') switches the announced
+   contact channel; the payload the RAT actually consumes is the
+   'server<digits>.ddns.net:<port>' line, ':'-split into host+port.
+   No embedded-secret crypto is applied to the paste content in .code:
+     - the entire CNG API surface (BCryptDecrypt/SecretAgreement/DeriveKey/
+       VerifySignature...) is referenced ONLY from libcurl's schannel backend
+       (thunks 0x005e5b5a-0x005e5bd8; callers 0x005ca3ff-0x005cdxxx, .text)
+     - CRYPT32 usage = curl schannel_verify (0x5a64d3-0x5a751b) + a second
+       vendored cluster 0x5d3f8e-0x5d45c8 (CertCreateCertificateChainEngine,
+       CryptQueryObject, CertDecodeObjectEx — libssh2/TLS plumbing,
+       cf. 'userauth keyboard data buffer too small' strings at 0x5d3c20)
+     - tasks-graph candidates FUN_00463f10 (12629 B) and FUN_00471100
+       (8910 B) = VENDORED SQLITE (string evidence 'expected %d columns for
+       '...' but got %d', 'USE TEMP B-TREE FOR %s') — REJECTED as config
+       parser; they back the cookies/sqlite artifacts seen in ms.
+
+   => 'BCrypted signed-config' hypothesis: NOT SUPPORTED by static evidence;
+      the TLS stack is third-party transport only.
+
+4. REJECTED / RE-CLASSIFIED (record)
+
+   (a) CNG-based config decrypt (tasks.txt T6 preamble) — REJECTED: all
+       BCrypt xrefs are .text-vendored (curl schannel), zero .code callers.
+   (b) FUN_00463f10 / FUN_00471100 as 'config parser or ECDH wrapper' —
+       REJECTED: vendored SQLite.
+   (c) 'CERT32 spr claimed at ~0x5d3f...' — re-classified as vendored
+       libssh2/TLS plumbing, not campaign code.
+
+5. OPEN ITEMS FOR T7+
+
+   - Global config slots: 0x00690994 (aggregated result write), 0x006909b0 /
+     0x00690a18 (have-host/port guards) — enumerate remaining fields at T7.
+   - msl odd blob 0x0047c66c (L=2294, amb=3, '...X1712780915067<hex>---...')
+     unresolved encoded-template candidate; not consumable statically.
+   - The exact paste layout beyond the three tokens is unrecoverable statically
+     (server line format assumed 'server<digits>.ddns.net:<port>').
+
+--- end config_consumer.txt ---

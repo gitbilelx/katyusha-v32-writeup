@@ -1,0 +1,116 @@
+================================================================================
+T4 DELIVERABLE — MASKED STATIC-STRING POOL AT .data:0x620164  (RuntimeHost_unp.exe)
+sha256 396a5a1a33cd3bd6759026ae9991e85fd8668d00fb5571294859ed9601480eaf (re-verified)
+Method: static byte-math only (raw PE + capstone); NO sample executed. 2026-11-01.
+================================================================================
+
+1. WHAT THE "MASKED TABLES" ARE (final answer)
+
+A single PowerBASIC static-string-literal pool: 104 bytes (52 UTF-16LE words) at
+.data:0x620164..0x6201cb, stored XOR-masked with 0x4e ('N') and unmasked ONCE at
+process start, before any other statement mechanic runs.
+
+   WinMain prologue (disasm of FUN_00695000, first emitted statement, marker 0x83
+   written immediately after at 0x0069512c):
+
+     0x0069511b  mov edi, 0x620164      ; pool base
+     0x00695120  mov ecx, 0x68          ; 104 bytes
+     0x00695125  xor byte ptr [edi], 0x4e   ; <=== the mask
+     0x00695128  inc edi
+     0x00695129  dec ecx
+     0x0069512a  jne 0x695125
+
+   Gate-condition proof: the ONLY `xor ..., 0x4e` site in the entire image is
+   0x00695125 (capstone scan of all executable sections). Bytes at rest are NOT
+   valid UTF-16 in memory until this loop runs; every pool read in decompiled
+   code is downstream of it.
+
+2. DECODED POOL CONTENT (XOR-0x4e; all high bytes verify = 0x00, i.e. UTF-16LE)
+
+   VA          decoded                          refs in decomp_code.txt
+   ------------------------------------------------------------------------------
+   0x620164    ""  (empty string literal)        206   <- ubiquitous PB var$="" reset
+   0x620166    U+0003 (Chr 3)                    0*
+   0x62016a    U+0009 (TAB)                      3
+   0x62016e    U+000a (LF)                       65
+   0x620172    U+000d (CR)                       3
+   0x620176    quote-char (U+0022)              87
+   0x62017a    two dquotes                       1   <- FUN_006b8998 installer-batch
+   0x620180    U+00e8 (e-grave)                  0*
+   0x620184    U+00e9 (e-acute)                  0*
+   0x620188    U+00f4 (o-circumflex)             0*
+   0x62018c    quote + CRLF                      1
+   0x620194    CR LF                            120   <- universal line separator
+   0x62019a    "in-process capture"               2   <- mic module only
+   0x6201c0    CR LF CR LF                        0*
+   (trailing 00 00 at 0x6201ca..cb = terminator; * = not directly referenced in
+    decompile — likely accessed via computed offsets or dead pool entries.)
+
+   Coupling to decrypted corpus (V2): the only multi-word literal, "in-process
+   capture", is consumed exclusively by FUN_006c9983 (mic, 5296 B), which also
+   decrypts blob VA 0x006638f8: "session 0 capture unavailable: falling back to
+   the in-process capture and the tray overlay" — the pool literal is the
+   same annotation, kept as a static (not encrypted) convenience constant.
+   Service-context call: FUN_006c9983(0, 0xffffffff, 16000, 1, 0x10)
+   (DevID 0, all devices, 16 kHz, 16-bit PCM).
+
+3. PB RUNTIME GLUE AROUND THE POOL (disasm-verified semantics)
+
+   FUN_0040fce0(ptr)  : wide-literal -> PB dynamic string assign. Walks UTF-16
+                        chars to NUL, allocates (call 0x411f60(-1, char_count)),
+                        copies (call 0x5066f0 = memcpy).
+   FUN_0040fb90(&dst, ...) : PB string-build/concat-assign: reads the
+                        thread handle via TlsGetValue, HeapAlloc/HeapReAlloc on
+                        buffer [0x69200c], copies remainder of source string.
+   FUN_0040fdf0()     : PB TLS accessor idiom GetLastError / TlsGetValue /
+                        SetLastError; returns [eax+8] (thread-local result slot).
+   => The recurring decompile pattern
+         FUN_0040fce0(&DAT_00620164); FUN_0040fce0(puVar11)
+      is "clear temp string then assign literal", i.e. ordinary PB statement
+      codegen, NOT a cryptor.
+
+4. REJECTED HYPOTHESES (record per tasks.txt T4)
+
+   (a) "XOR-only tail decrypt, len 0x4e" — REJECTED. 0x4e is never a payload
+       length; it is the single-byte mask. No F4-cipher structure in the pool
+       (no keys, no sbox math, no ROR).
+   (b) "'N'-filler literal padding" — REJECTED. The 'N' bytes (0x4e) de-mask to
+       0x00; they are the UTF-16LE high/zero bytes of ordinary wide literals,
+       not padding characters.
+   (c) "fixed-protocol offset shift +0xb stride" — RESOLVED, not a stride:
+       Ghidra auto-named the anchored symbol s_..._00620189 mid-pool; each of
+       the 9 separately-referenced literals is cited at its own offset. The
+       most common offset (+0xb from 0x620189 = 0x620194) simply selects the
+       CRLF literal (120 refs).
+
+5. REF-COUNT CORRECTION
+
+   Prior handoff claimed ~400 references. Actual count over decomp_code.txt:
+   377 pool-literal refs (206+87+120+65+3+3+1+1+2), from 319 of 322 functions.
+   Heaviest users: FUN_006f53c2 (191; dq/empty/CRLF — report builder),
+   FUN_006bbaa4 (geo-IP cascade), FUN_006c3b82, FUN_006daad1 (mic-family log
+   builder; dq+LF), FUN_00729348, FUN_0071284c, FUN_007256cd, FUN_0070c69d.
+
+6. ADJACENT PLAIN (NON-MASKED) .data CONSTANTS — same neighborhood, for context
+
+   0x6201d0  100.0f  |  0x6201d4  1.0f  |  0x6201d8  65535.0f  |  0x6201dc  4.5f
+   0x6201f0+ dwords {ffffffff,04} pairs — PB runtime defaults/int64 markers.
+   0x620320  = the F4 cipher S-box (256 B) — matches disk file sbox_620320.bin
+   byte-for-byte (V4). DAT_00620320 referenced once in decompile.
+   0x62001c module-name tag table (session-4 finding) still has NO code xrefs —
+   unchanged, dead/decoy tags only.
+   NOTE: the disasm above the prologue (0x695100-0x6950ff) disassembles as junk
+   because it is a jump-table/vector area misread linearly — not code.
+
+7. IMPACT ON OVERALL ANALYSIS
+
+   - No C2/config IOCs originate in this pool (formatting constants only).
+   - KLog/report string-assembly mechanics for T7 protocol table now fully
+     understood: every ``"` / CRLF / LF / CR / TAB`` literal in decrypted
+     command-text construction code resolves to this pool.
+   - No YARA impact: pool bytes are single-byte-XOR'd trivial constants;
+     the startup unmask loop bytes (edi=0x620164; ecx=0x68; xor 0x4e sequence
+     at 0x69511b..0x69512a) ARE a distinctive code pattern — consider adding
+     as a secondary YARA string during T8 if needed.
+
+--- end masked_tables.txt ---

@@ -1,0 +1,19 @@
+# Defensive research repo: no malware binaries
+*.exe
+*.sys
+*.dll
+*.7z
+*.rar
+*.vbs
+*.bat
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Local analysis scratch
+*.tmp
+*.log

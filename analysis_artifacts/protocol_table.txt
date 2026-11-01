@@ -1,0 +1,140 @@
+================================================================================
+T7 DELIVERABLE — COMMAND-PROTOCOL TABLE + C2 PLUMBING (static; UNVERIFIED-BY-RUNTIME)
+RuntimeHost_unp.exe sha256 396a5a1a33cd3bd6759026ae9991e85fd8668d00fb5571294859ed9601480eaf
+Sources: wmain_flow.md / wmain_narrative.txt / wmain_stmts.txt (T2), decomp_code.txt,
+capstone scans (this session). All strings are F4-decrypted blobs w/ corpus VAs (V2).
+================================================================================
+
+## A. DISPATCH MECHANISM
+
+No jump table (T2): WinMain = source-ordered cascade of string compares against
+"TOKEN|" pipe-split command words. Handler modules invoked directly from the
+matching statement region. Command stream origin: see §C (plumbing).
+
+## B. COMMAND TABLE  (token family | stmt region | handler VA (T1 label) | effect)
+
+Control/keepalive
+  PING|                     S1796-S1807     (inline in WinMain)      keepalive
+  PROXY| / PROXY_OPEN/      S1525-S1589     relays_send@0x006e1e51   outbound relay send
+    PROXY_CLOSE|            S2642-S2702     proxy_c2@0x006ea9c8      proxy relay open/close
+  AGENT_DELETE              S1871-S1915     (inline)                 self-destruct (Run value
+                                                                     MicrosoftEdgeAutoLaunch_2EDFBF,
+                                                                     schtask WindowsUpdateTaskScheduler,
+                                                                     fw rules WinAgent_Out/In)
+Self-update
+  UPDATE_URL| UPDATE_START| S1916-S2043     update_install@0x006b8998 + @0x006f53c2
+    UPDATE_CHUNK/ACK/NACK/                                           remote tasks 2025/S2025;
+    UPDATE_READY|UPDATE_ERROR|                                       staging update_temp.exe, UPDATE\
+    UPDATE_VERIFY/SUCCESS|
+File manager
+  FM_LISTDIR| FM_DOWNLOAD|  S2114-S2345     file_manager@0x006cc5b4  share/list/download ops
+    FM_DL_RESUME| FM_DL_FOLDER|                     (also 0x006c3b82, 0x0070ba12)
+    FM_OPEN| FM_DELETE| FM_PASTE|           S2373-S2529
+    FM_SET_CONCURRENCY| FM_GET_SHARED_FOLDERS|
+    FM_GET_REMOTE_SHARES|(_FORCE) FM_MSG|
+Upload (client->operator)
+  FM_UL2_READY| FM_UL2_CHUNK|               S2114-S2345     file_manager; CRC verify
+    FM_UL2_NACK| FM_UL2_VERIFY| FM_UL2_SUCCESS|
+    FM_UL2_ERROR| FM_UL_COMPLETE|
+Shell
+  CMD_INPUT| CMD_CTRL_C|    S2530-S2589     (inline; cmd.exe /Q /K)
+  CMD_PREVIEW_START|STOP|   S2044-S2113     file_manager@0x006cc5b4
+  RUN_CMD_OUT|              S1458-S1524     (inline; cmd.exe /c)
+  REMOTE_SCRIPT|            S1458-S1524     (inline)
+Remote screen
+  SC_START| SC_MON_LIST|    S1266-S1398     screen_hvnc@0x00706e5d (& 2nd SC block S2530+)
+    SC_MONITORS| SC_MON| SC_STOP|
+    SC_QUALITY| SC_SCALE| SC_CURSOR| SC_BLACK| SC_CLIPSHARE|
+  HVNC_START| HVNC_KILLALL| S1266-S1398     screen_hvnc (T1 lattice)
+  WIN_LIST| WIN_ACTION|     S1266-S1398     window_scan@0x006c72e7 (+0x006bf4d4/0x00701978/0x00728217)
+Input/power
+  INPUT_KEY|                S1404-S1457     (inline)
+  POWER_ACTION|             S1404-S1457     (inline; shutdown/logoff)
+Monitoring
+  KEYLOG_GET|/GET_RANGE|/   S0976-S1105 +   keylog handler (shared body at 2 spots)
+    KEYLOG_DATES|/KEYLOG_CONTENT|           S1809-S1870                 dir %APPDATA%\RatClient\
+  NET_MON|/REFRESH|/KILL|   S0976-S1105     (inline; netstat-style monitor)
+  NET_SCAN_ADAPTER|         S0976-S1105     (inline)
+Mic / webcam
+  MIC_DEBUG| MIC_LIST|      S2593-S2640     mic@0x006c9983 (mic_fun), 0x006d1524, 0x006f2b76
+    MIC_START| MIC_STOP|
+  WEBCAM_LIST| STOP| QUALITY| S2593-S2640   (avicap32.dll usage)
+Network ops
+  NET_DLURL|                S1204-S1263     (inline + FUN_006ee055 dl wrapper)
+    NET_DLURL_STATUS| (|Success|/|Failure|)
+  NET_SCAN_INIT/START|      S1106-S1163     netscan_smb@0x006cf5ba/0x00729348/0x006ba66e
+    SHARE_INIT|/SHARE_START|                netscan_smb@0x006f2a55/0x006f4642
+  SMB_PIV_GET|              S0912           helper@0x006bd4f2          SMB pivot request frame
+File search / misc
+  FILE_SEARCH|/STOP|        S1458-S1524     (inline)
+  PROC_KILL|/KILLED_CONFIRM| S1458-S1524    (inline)
+  REG_LIST|                 S1458-S1524     persistence_runkey@0x0072bc1c
+  CLIPBOARD_DATA|/EMPTY|/   S1525-S1589     (inline) + CLIPBOARD_SHARE| (S2731-S2841)
+    SET|
+File transfer channel
+  FILEZ| FILEZ2 ...         S1590-S1795     (inline parse: header, chunked, CRC Mismatch)
+
+## C. C2 PLUMBING (who feeds the cascade)
+
+1. Connection state: config globals 0x006909b0 / 0x00690a18 (T6).
+   0x00690a18 = stored SOCKET handle: validated pre-use by FUN_006ebeb1 (240B)
+   via getsockopt(SOL_SOCKET 0xffff, SO_TYPE 0x1008) — ws2_32 Ordinal_7 — a
+   liveness check. WinMain S0901 guards on it; S0904 calls setsockopt thunk
+   0x005e5740 directly (statement-level socket configuration).
+2. Socket API is used ONLY via .text wrappers (Pcluster A 0x407a00-0x408600 =
+   PB runtime TCP layer): socket/send/recv/select/connect/close thunks at
+   0x408066/0x4084ab/0x408415/0x407ee4/0x40833c/0x407a..; WSAStartup lazily on
+   first use (FUN_004085dd, guarded by global 0x00691818).
+   .code wrappts: net_ip_util FUN_006e2eeb (address LIST parser: entries split
+   on ';' 0x00660ba8 and ',' 0x0065f406, octet-split on '.' 0x0065f836, caps
+   0x10/field, filters 127.0.0.1 / localhost / ::1 / 0.0.0.0).
+3. Channel protocols:
+   - Framed commands 'TOKEN|args' split in WinMain cascade (S1106-S2841).
+   - Z-compressed packets: 'Z-Packet Decompressed: ' / 'Z: Decompression
+     failed (CompSz:' / 'MMM' flags (S0977-S0981) — inline decompress in
+     WinMain.
+   - FILEZ/FILEZ2 chunked file channel with 'Header: ' parse + '|CRC Mismatch|'
+     (S1590-S1795).
+   - PROXY relays via proxy_c2 FUN_006ea9c8 ('Received PROXY_OPEN command'
+     0x00661dc0) + relays_send FUN_006e1e51.
+   - SMB pivoting: 'SMB_PIV_GET|' (0x0067a610, S0912) + GetTickCount timing
+     (thunk 0x005e53fe) — lateral command/data relay over SMB shares
+     (NET_SCAN / SHARE_* set).
+4. DNS as IP-echo transport: FUN_006ff71f (1908B) = hand-rolled UDP/53 resolver
+   (frame: 2-byte length echo check, qtype/class bytes 0x01, qname dot-split on
+   '.' 0x0065f836; recv 0x200 via 0x408415; called by geoip_client
+   FUN_00713e7e with 'myip.opendns.com' @ 208.67.222.222). NOTE: session-5's
+   HTTPS geo-IP cascade (FUN_006bbaa4) is a SEPARATE, older path — both coexist.
+5. Config-URL normalization: FUN_007093c2 (geoip_client, 1556B, WinMain S0732)
+   is the RuntimeHost consumer of the SHARED 11-ID pastebin set (blobs
+   0x65e354, 0x65e79a, 0x6632b0, 0x664c64, 0x668f8a, 0x672a2e, 0x6780a2,
+   0x678678, 0x67aaf4, 0x6865c8, 0x68c36a): it loads all 11 URLs into an
+   array, strips 'http://'/'https://' (0x0068bc2c/0x00687fbc; Mid 7/8) and
+   '/'-splits (0x0065f894) — i.e., the kit validates/normalizes the same
+   distribution list that ms and mservice_l carry. Closes the T6 TODO.
+6. Local IPC (NOT C2): mic-service named pipes \\.\pipe\ms_audio_cmd_
+   (0x006781fe) and \\.\pipe\ms_audio_dat_ (0x006877e4); param builder
+   FUN_0070f7f9 (see map-correction note): 'helper start: parameters=' +
+   token= + exe= + mutex= + 'command pipe=' + ' data pipe=' +
+   Global\ms_audio_endpoint_lock_ (0x0067f678) + error-183 instance-in-use.
+   MICSVC diagnostics ('[MICSVC] data pipe not openable yet').
+
+## D. LABEL CORRECTIONS (functions_map.txt edits this session)
+
+- 0x0070f7f9 pipe_relay -> mic-service helper launch/param builder
+  ('command pipe=' context is the LOCAL mic IPC, not remote relay; scheme
+   'helper start: parameters= token= exe= mutex= ...183').
+- FUN_007093c2 confirmed geoip_client (URL-list normalizer over shared 11 IDs).
+
+## E. OPEN ITEMS
+
+- Exact statement-level recv-loop that fills the WinMain dispatch buffer is
+  NOT positively identified: candidates are cluster-A wrappers invoked from
+  FUN_006ff71f-like paths and the S090x socket statements; needs one focused
+  pyghidra window if ever reopened (statement profiler data insufficient).
+- mservice_l odd blob 0x0047c66c (L=2294, amb=3, '...X1712780915067<hex>---...'
+  encoded template) remains UNRESOLVED — flagged; not statically consumable.
+- The 'PROXY|' relay packet wire format (PROXY_OPEN target framing,
+  'Failed to connect to target: ') is parsed but not fully reconstructed.
+
+--- end protocol_table.txt ---

@@ -1,0 +1,2227 @@
+# RuntimeHost deobfuscated string corpus v2 (T3, static) - 2224 decoded / 2226 blob VAs
+# src=len3+decomp (ground truth, explicit length) | brute (validator-accepted)
+# key schedule: blob[0..2]=XOR keys; blob[3]=skip; ROR8+sbox+XOR; sbox=sbox_620320.bin
+006592a0 (L=136) [len3+decomp] |FM_DIR_CONTENT|REMOTE_SHARES\||
+00659328 (L=56) [len3+decomp] | ranges='|
+00659360 (L=220) [brute] |the share could not be opened for reading or writing|
+0065943c (L=38) [len3+decomp] ||0||0||
+00659462 (L=20) [len3+decomp] |  |
+00659476 (L=158) [len3+decomp] |RemoteShares: pass starting, forced=|
+00659514 (L=62) [len3+decomp] |countryName|
+0065964c (L=88) [brute] |webcam_frame1.bin|
+006596a4 (L=36) [len3+decomp] | px)|
+006596c8 (L=38) [brute] |*n360*|
+006596ee (L=52) [len3+decomp] |ERR|-998|
+00659722 (L=30) [len3+decomp] |STOP|
+00659740 (L=24) [brute] |PR|
+00659758 (L=48) [len3+decomp] | token='|
+00659788 (L=72) [brute] |process viewer|
+006597d0 (L=28) [brute amb=3] |PS|
+006597ec (L=22) [brute] |HK|
+00659802 (L=20) [brute] |PT|
+00659816 (L=52) [brute] |Indonesia|
+0065984a (L=42) [brute] |Bolivia|
+00659874 (L=92) [brute] |[MIC] Debug enabled|
+006598d0 (L=76) [brute] |INSTALLED_APPS||
+0065991c (L=104) [len3+decomp] |%yyyy-%mm-%dd %hh:%ii|
+00659984 (L=102) [len3+decomp] |press any key to close|
+006599ea (L=48) [brute] |*mcafee*|
+00659a1a (L=42) [brute] |*clamd*|
+00659a44 (L=48) [brute] |*avpui*|
+00659a74 (L=24) [brute] |HM|
+00659a8c (L=88) [brute] |FILE_SEARCH_STOP||
+00659b50 (L=40) [brute] |ahnlab|
+00659b78 (L=26) [brute] |HN|
+00659b92 (L=28) [brute] |.bat|
+00659c66 (L=32) [len3+decomp] |vbs|
+00659cc6 (L=26) [brute] |PW|
+00659ce0 (L=164) [brute] |RemoteShares: quick refresh re-read |
+00659d9c (L=232) [len3+decomp] |<StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>|
+00659e84 (L=20) [len3+decomp] | (|
+00659e98 (L=68) [len3+decomp] |EnableAutoTray|
+00659edc (L=72) [len3+decomp] |Shell_TrayWnd|
+00659f24 (L=206) [len3+decomp] | --force-device-scale-factor=1 --start-maximized|
+00659ff2 (L=76) [brute] |network monitor|
+0065aed4 (L=118) [brute] |switched off in this build|
+0065af4a (L=28) [len3+decomp] | of |
+0065af66 (L=32) [len3+decomp] |.tmp|
+0065af86 (L=46) [len3+decomp] |format |
+0065afb4 (L=28) [len3+decomp] |.xml|
+0065afd0 (L=140) [len3+decomp] |  notify icon settings entries: |
+0065b05c (L=44) [len3+decomp] |Opera||
+0065b088 (L=26) [brute] |PY|
+0065b0a2 (L=36) [brute] |PING||
+0065b0c6 (L=44) [len3+decomp] |UNKNOWN|
+0065b1b6 (L=646) [len3+decomp] |SELECT url, title, last_visit_date, visit_count FROM moz_places WHERE last_visit_date IS NOT NULL AND last_visit_date > 0 ORDER BY last_visit_date DESC LIMIT |
+0065b43c (L=40) [len3+decomp] |Unknown|
+0065b464 (L=24) [brute] |HR|
+0065b47c (L=44) [brute] |SC_STOP||
+0065b4a8 (L=28) [len3+decomp] |micr|
+0065b4c4 (L=136) [len3+decomp] |capture running in session 0: |
+0065b54c (L=24) [brute] |HT|
+0065b564 (L=48) [len3+decomp] |vethernet|
+0065b594 (L=64) [brute] |netstumbler|
+0065b5d4 (L=40) [brute] |avast|
+0065b5fc (L=20) [brute] |HU|
+0065b64e (L=128) [brute] |user account control settings|
+0065b6ce (L=90) [len3+decomp] |SetProcessDPIAware|
+0065b728 (L=68) [brute] |NET_MON_START||
+0065b76c (L=136) [len3+decomp] | share(s); first sweep pending|
+0065b7f4 (L=96) [len3+decomp] |RemoteShares: pass |
+0065b9a6 (L=40) [brute] |Tunisia|
+0065b9ce (L=98) [brute] |FM_GET_REMOTE_SHARES||
+0065ba30 (L=152) [brute] |ERROR: StartDrawing(Image) failed!|
+0065bac8 (L=102) [brute] |advanced task manager|
+0065bb2e (L=48) [brute] |Morocco|
+0065bb5e (L=66) [brute] |FILE_SEARCH||
+0065bba0 (L=38) [len3+decomp] |<Exec>|
+0065bbc6 (L=64) [len3+decomp] |<Repetition>|
+0065bc06 (L=68) [brute] |networkminer|
+0065bc4a (L=80) [brute] |*qhactivedefense*|
+0065bc9a (L=372) [len3+decomp] |<AllowStartOnDemand>true</AllowStartOnDemand><Enabled>true</Enabled><Hidden>false</Hidden>|
+0065be0e (L=150) [len3+decomp] |https://pastebin.com/raw/EQ0jMEE9|
+0065bea4 (L=52) [brute] |killswitch|
+0065bed8 (L=108) [brute amb=1] |[MIC] MIC_LIST requested|
+0065bf44 (L=180) [brute] |\AppData\Roaming\Mozilla\Firefox\Profiles\|
+0065bff8 (L=198) [len3+decomp] |task query                                  : |
+0065c0be (L=58) [brute] |antimalware|
+0065c0f8 (L=56) [brute amb=1] |*kaspersky*|
+0065c130 (L=92) [brute] |FM_NEWFILE_SUCCESS||
+0065c18c (L=60) [brute] |SC_MONITORS||
+0065c1c8 (L=52) [len3+decomp] |ntdll.dll|
+0065c1fc (L=46) [brute] |tcpdump|
+0065c22a (L=46) [brute] |Lebanon|
+0065c258 (L=182) [len3+decomp] |NetScan: Selected adapter WITH gateway IP=|
+0065c30e (L=178) [len3+decomp] |NetScan: Allocating adapter buffer size |
+0065c49a (L=128) [len3+decomp] |Mic_Start: starting capture|
+0065c556 (L=52) [brute] |packetyzer|
+0065c58a (L=32) [brute amb=1] ||TCP||
+0065c5aa (L=210) [len3+decomp] |BROWSER_HISTORY: All Firefox queries failed for |
+0065c67c (L=24) [len3+decomp] | /f|
+0065c694 (L=100) [brute] |[MIC] Debug disabled|
+0065c6f8 (L=74) [brute] |REMOTE_SCRIPT||
+0065c742 (L=68) [len3+decomp] |WEBCAM_ERROR||
+0065c786 (L=34) [brute] |Peru|
+0065c7a8 (L=372) [len3+decomp] |Windows 10: started before the capture, so the indicator is covered as soon as it appears|
+0065c91c (L=36) [len3+decomp] |WAVE|
+0065c98c (L=468) [len3+decomp] | --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-renderer-backgrounding|
+0065cb60 (L=36) [brute amb=1] |comodo|
+0065cb84 (L=64) [brute] |SHARE_STOP||
+0065cbc4 (L=132) [len3+decomp] |RemoteShares: nothing to sweep|
+0065ccf6 (L=40) [len3+decomp] |</Exec>|
+0065cd1e (L=162) [len3+decomp] |<RestartOnIdle>false</RestartOnIdle>|
+0065cdc0 (L=194) [len3+decomp] |<StopAtDurationEnd>false</StopAtDurationEnd>|
+0065ce82 (L=30) [len3+decomp] |cmd|
+0065cf6c (L=52) [len3+decomp] |/run /tn |
+0065cfa0 (L=492) [len3+decomp] |ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /reg:32 /f /t REG_SZ /v "MicrosoftEdgeAutoLaunch_2EDFBF" /d "\"|
+0065d18c (L=194) [len3+decomp] |<AllowHardTerminate>true</AllowHardTerminate>|
+0065d24e (L=42) [brute] |fireeye|
+0065d278 (L=104) [brute] |Svalbard and Jan Mayen|
+0065d2e0 (L=38) [brute] |Egypt|
+0065d306 (L=144) [brute] |Z: Decompression failed (CompSz: |
+0065d396 (L=72) [len3+decomp] |listening on |
+0065d3de (L=66) [len3+decomp] |advapi32.dll|
+0065d420 (L=68) [len3+decomp] |\Preferences|
+0065d464 (L=82) [brute] |virus protection|
+0065d4b6 (L=46) [brute] |*qhsafe*|
+0065d4e4 (L=36) [brute] |Uganda|
+0065d508 (L=74) [brute] |Norfolk Island|
+0065d552 (L=36) [brute] | Rate=|
+0065d576 (L=34) [len3+decomp] |Show|
+0065d598 (L=36) [len3+decomp] |UID-|
+0065d5bc (L=332) [len3+decomp] |Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0|
+0065d734 (L=60) [len3+decomp] |<Principals>|
+0065d770 (L=46) [brute] |Ecuador|
+0065d79e (L=30) [brute] |exit|
+0065d7bc (L=56) [brute] |CMD_START||
+0065d93a (L=28) [brute] |KEY|
+0065d956 (L=40) [len3+decomp] |Edge||
+0065d9c6 (L=70) [len3+decomp] |RemoteShares: |
+0065da76 (L=48) [len3+decomp] |wireguard|
+0065dad6 (L=204) [len3+decomp] |helper start reply                          : |
+0065dba2 (L=270) [len3+decomp] |<RegistrationInfo><Author>Microsoft</Author></RegistrationInfo>|
+0065dcb0 (L=76) [brute] |windows defender|
+0065dcfc (L=20) [len3+decomp] | |
+0065dd10 (L=58) [brute] |PROXY_OPEN||
+0065dd4a (L=54) [brute] |SC_SCALE||
+0065dd80 (L=22) [len3+decomp] |!|
+0065ddc6 (L=150) [len3+decomp] |SendMicrophoneList: sending list '|
+0065de5c (L=44) [len3+decomp] |Binary|
+0065deea (L=36) [brute] |Monaco|
+0065df0e (L=28) [brute] | B|
+0065df2a (L=18) [len3+decomp] |"|
+0065df3c (L=192) [len3+decomp] |<ExecutionTimeLimit>PT0S</ExecutionTimeLimit>|
+0065dffc (L=82) [brute] |BROWSER_HISTORY: |
+0065e04e (L=20) [len3+decomp] |#|
+0065e062 (L=180) [brute] |ProxyManager: Read 0 bytes (Error?) for |
+0065e116 (L=36) [brute] |*eset*|
+0065e1b6 (L=18) [len3+decomp] |$|
+0065e1c8 (L=168) [len3+decomp] |<RunLevel>HighestAvailable</RunLevel>|
+0065e270 (L=228) [len3+decomp] |http://schemas.microsoft.com/windows/2004/02/mit/task|
+0065e354 (L=152) [len3+decomp] |https://pastebin.com/raw/2b1h81R6|
+0065e40e (L=270) [len3+decomp] |RemoteShares: could not open the saved-share stream for writing|
+0065e51c (L=16) [len3+decomp] |%|
+0065e52c (L=102) [len3+decomp] |   pre-capture shot = |
+0065e592 (L=162) [len3+decomp] |\Google\Chrome\Application\chrome.exe|
+0065e634 (L=130) [brute] |\windowsupdate\mservice_L.exe|
+0065e6b6 (L=52) [len3+decomp] |Read/Write|
+0065e6ea (L=66) [len3+decomp] |sc_debug.txt|
+0065e79a (L=146) [len3+decomp] |https://pastebin.com/raw/Pug4gVRw|
+0065e82c (L=78) [brute] |RUN_CMD_OUT_RES||
+0065e8be (L=60) [len3+decomp] |DeviceDesc|
+0065e8fa (L=56) [len3+decomp] |<Triggers>|
+0065e932 (L=22) [len3+decomp] |'|
+0065e948 (L=40) [brute] |Ireland|
+0065e970 (L=52) [brute] |SC_COLOR||
+0065e9a4 (L=42) [brute] |FILEZ2||
+0065e9fa (L=110) [len3+decomp] |countryName|countryCode|
+0065ea68 (L=170) [len3+decomp] |\Microsoft\Edge\Application\msedge.exe|
+0065eb12 (L=80) [len3+decomp] |ProgramFiles(x86)|
+0065eb62 (L=70) [len3+decomp] |RECENT_FILES\|
+0065eba8 (L=82) [len3+decomp] |MIC_START_ERROR||
+0065ebfa (L=134) [len3+decomp] |server1625965200369.ddns.net:|
+0065ec80 (L=360) [len3+decomp] |diagnose: UI Automation dump empty (MicTrayLoc_DumpWanted was not set before the scan)|
+0065ede8 (L=52) [brute] |panda dome|
+0065ee1c (L=18) [len3+decomp] |)|
+0065ee2e (L=32) [len3+decomp] |tap-|
+0065ee4e (L=116) [len3+decomp] |WindowsUpdateTaskScheduler|
+0065eec2 (L=48) [len3+decomp] |unknown|
+0065eef2 (L=146) [len3+decomp] |https://pastebin.com/raw/DRnMigzY|
+0065ef84 (L=112) [brute] |security and maintenance|
+0065eff4 (L=24) [len3+decomp] |*|
+0065f00c (L=40) [brute] |Grenada|
+0065f034 (L=36) [brute] |Angola|
+0065f058 (L=44) [len3+decomp] |APPDATA|
+0065f084 (L=82) [brute amb=1] |amp for endpoints|
+0065f0d6 (L=44) [brute] |Tokelau|
+0065f102 (L=66) [brute] |South Georgia|
+0065f144 (L=32) [len3+decomp] |Date:|
+0065f164 (L=24) [len3+decomp] |.db|
+0065f17c (L=494) [len3+decomp] |ADD "HKLM\Software\Microsoft\Windows\CurrentVersion\Run" /reg:32 /f /t REG_SZ /v "MicrosoftEdgeAutoLaunch_2EDFBF" /d "\"|
+0065f36a (L=156) [len3+decomp] | --disable-ipc-flooding-protection|
+0065f406 (L=20) [len3+decomp] |,|
+0065f41a (L=22) [brute amb=1] |YE|
+0065f430 (L=52) [brute] |Honduras|
+0065f4e6 (L=28) [len3+decomp] | Gw=|
+0065f502 (L=56) [brute amb=1] |DisplayName|
+0065f53a (L=228) [len3+decomp] |logon failure: the account is not granted this right|
+0065f61e (L=172) [len3+decomp] |no pre-capture snapshot to compare with|
+0065f6ca (L=24) [len3+decomp] |-|
+0065f6e2 (L=36) [brute] |Libya|
+0065f706 (L=154) [len3+decomp] |NetScan: Starting scan with BaseIP=|
+0065f7a0 (L=28) [brute] |0^|
+0065f7bc (L=78) [brute] |Intermediate D3D|
+0065f80a (L=44) [brute] |*smadav*|
+0065f836 (L=24) [len3+decomp] |.|
+0065f84e (L=70) [brute] |*roguekiller*|
+0065f894 (L=20) [len3+decomp] |/|
+0065f8a8 (L=40) [len3+decomp] |::0::|
+0065f8d0 (L=138) [len3+decomp] |NetScan: Sending NET_SCAN_CFG: |
+0065f95a (L=210) [len3+decomp] |credentials conflict with an existing connection|
+0065fa2c (L=148) [len3+decomp] |locator alone says      : nothing|
+0065fac0 (L=16) [len3+decomp] |0|
+0065fad0 (L=54) [brute] |Broadwell|
+0065fb06 (L=24) [brute] |QA|
+0065fb1e (L=16) [brute] |1|
+0065fb2e (L=106) [brute] |Preview encoding failed|
+0065fb98 (L=54) [len3+decomp] |HIBERNATE|
+0065fbce (L=68) [brute] | (border row |
+0065fc12 (L=120) [brute] |ProxyManagerThread: Started|
+0065fcba (L=126) [brute] |French Southern Territories|
+0065fd38 (L=58) [brute] |Saint Lucia|
+0065fd72 (L=32) [brute] |Ghana|
+0065fd92 (L=22) [len3+decomp] |H||
+0065fda8 (L=58) [len3+decomp] |more than |
+0065fde2 (L=320) [len3+decomp] ||0|port 445 is not reachable on this host - SMB is closed or filtered here||
+0065ff22 (L=160) [brute] |BROWSER_HISTORY: No users enumerated|
+0065ffc2 (L=272) [len3+decomp] |<RunOnlyIfIdle>false</RunOnlyIfIdle><WakeToRun>false</WakeToRun>|
+006600d2 (L=50) [brute] ||Success||
+00660104 (L=34) [len3+decomp] |wifi|
+00660126 (L=118) [len3+decomp] |the parameter is incorrect|
+0066019c (L=148) [brute] |windows defender security center|
+00660230 (L=78) [brute] |security center|
+0066027e (L=46) [brute] |Austria|
+006602ac (L=172) [len3+decomp] |=== microphone session 0 self test ===|
+00660358 (L=34) [brute] |Iran|
+0066037a (L=36) [brute amb=1] | 2>&1|
+00660478 (L=56) [brute amb=1] |South Korea|
+006604b0 (L=32) [brute] |China|
+006604d0 (L=48) [brute] |Bulgaria|
+00660500 (L=86) [brute] |opensystemexplorer|
+00660556 (L=58) [brute] |*emsisoft*|
+00660590 (L=40) [brute] |Panama|
+006605b8 (L=20) [len3+decomp] |9|
+006605cc (L=620) [len3+decomp] |SELECT url, title, last_visit_time, visit_count FROM urls WHERE last_visit_time IS NOT NULL AND last_visit_time > 0 ORDER BY last_visit_time DESC LIMIT |
+00660838 (L=180) [brute] |capture sequence refused too - giving up|
+006608ec (L=68) [brute] |Intermediate|
+00660930 (L=104) [brute] |Sao Tome and Principe|
+00660998 (L=28) [brute] |Iraq|
+00660a60 (L=24) [len3+decomp] |:|
+00660a78 (L=46) [brute] |Denmark|
+00660aa6 (L=60) [brute] | (attempt |
+00660ae2 (L=20) [len3+decomp] | [|
+00660af6 (L=34) [len3+decomp] |.lnk|
+00660b18 (L=48) [len3+decomp] |WIN_LIST||
+00660b48 (L=40) [brute] |mcafee|
+00660b70 (L=56) [brute] |*totalav*|
+00660ba8 (L=20) [len3+decomp] |;|
+00660bbc (L=26) [brute amb=2] |YT|
+00660bd6 (L=24) [brute amb=1] |ID|
+00660bee (L=40) [brute] |France|
+00660c16 (L=42) [brute] | size=|
+00660cec (L=16) [len3+decomp] |<|
+00660cfc (L=56) [len3+decomp] |Windows 10|
+00660d34 (L=110) [len3+decomp] |step 4: calling Mic_Stop|
+00660da2 (L=34) [brute] |Kenya|
+00660dc4 (L=20) [brute] |IE|
+00660dd8 (L=60) [len3+decomp] |END_OF_DIR|0|
+00660e14 (L=128) [len3+decomp] |https://www.cloudflare.com/|
+00660e94 (L=56) [len3+decomp] |Windows 11|
+00660ecc (L=40) [brute] | rate=|
+00660ef4 (L=114) [len3+decomp] |helper start: parameters=|
+00660f66 (L=66) [len3+decomp] |/delete /tn |
+00660fbe (L=54) [brute] | bitcount |
+00660ff4 (L=18) [len3+decomp] |>|
+00661006 (L=36) [len3+decomp] |start |
+0066102a (L=46) [brute] |cmd.exe|
+00661058 (L=44) [brute] |*norton*|
+00661084 (L=52) [brute] |*kavtray*|
+006610b8 (L=56) [brute] |packetsdump|
+006610f0 (L=18) [len3+decomp] |?|
+00661102 (L=232) [len3+decomp] |SendNetworkDataFull: Socket became invalid during send|
+006612c6 (L=88) [brute] |NET_STRESS|START||
+0066131e (L=92) [len3+decomp] |YYYYYYYYYYYYYYYYYY|
+0066137a (L=148) [len3+decomp] |Control Panel\NotifyIconSettings|
+0066140e (L=216) [brute] |SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall|
+006614e6 (L=20) [len3+decomp] |A|
+006614fa (L=88) [len3+decomp] |wdm image capture|
+006615ca (L=94) [len3+decomp] |http://icanhazip.com|
+00661628 (L=566) [len3+decomp] |SELECT url, title, visit_date, visit_count FROM moz_places WHERE visit_date IS NOT NULL AND visit_date > 0 ORDER BY visit_date DESC LIMIT |
+0066185e (L=38) [len3+decomp] |START|
+00661884 (L=60) [brute] |*f-secure*|
+00661972 (L=26) [len3+decomp] |0s|
+0066198c (L=52) [brute] | bgcopy=|
+006619c0 (L=202) [len3+decomp] |reader frames                               : |
+00661a8a (L=18) [brute amb=2] |C|
+00661a9c (L=20) [brute] |IL|
+00661ab0 (L=80) [brute] |Falkland Islands|
+00661b00 (L=28) [brute] |AD|
+00661b1c (L=442) [brute] |DELETE "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "MicrosoftEdgeAutoLaunch_2EDFBF" /reg:64 /f|
+00661cd6 (L=144) [len3+decomp] |</Command><Arguments>--mic-svc |
+00661d66 (L=68) [brute] |Western Sahara|
+00661daa (L=22) [brute] |AE|
+00661dc0 (L=128) [brute] |Received PROXY_OPEN command|
+00661f76 (L=22) [brute] |IN|
+00661f8c (L=22) [brute] |AF|
+00661fa2 (L=412) [brute] |DELETE "HKLM\Software\Microsoft\Windows\CurrentVersion\Run" /v "MicrosoftEdgeAutoLaunch_2EDFBF" /f|
+0066213e (L=84) [brute] |Connection Error|
+00662192 (L=62) [len3+decomp] |COMPUTERNAME|
+006621d0 (L=168) [len3+decomp] |RESULT: cannot send START to the helper|
+00662278 (L=48) [len3+decomp] |\Profiles|
+006622a8 (L=26) [brute] |IO|
+006622c2 (L=28) [brute] |AG|
+006622de (L=48) [brute] | Size: |
+0066230e (L=28) [len3+decomp] |ip|
+0066232a (L=66) [brute] |Burkina Faso|
+0066236c (L=24) [len3+decomp] |H|
+00662384 (L=130) [brute] |capture loop finished: seen=|
+00662406 (L=52) [brute] |emsisoft|
+0066243a (L=28) [brute] |IQ|
+00662456 (L=20) [brute] |AI|
+0066246a (L=70) [len3+decomp] |RECENT_FILES||
+006624b0 (L=104) [len3+decomp] |<Triggers></Triggers>|
+00662518 (L=68) [brute] |process lasso|
+0066255c (L=58) [brute] |ROOT\CIMV2|
+00662596 (L=26) [brute amb=2] |IR|
+006625d2 (L=56) [len3+decomp] | encoding=|
+0066260a (L=56) [len3+decomp] |microphone|
+00662642 (L=24) [brute] |IS|
+006626aa (L=50) [len3+decomp] |copy /y |
+006626dc (L=42) [len3+decomp] | bytes|
+00662706 (L=52) [brute] |*mpdlpcmd*|
+0066273a (L=78) [brute] |Solomon Islands|
+00662788 (L=20) [brute] |IT|
+0066279c (L=42) [brute] |Croatia|
+006627c6 (L=22) [brute amb=1] |AL|
+006627dc (L=68) [brute] |NET_SCAN_INIT||
+00662856 (L=32) [len3+decomp] |date:|
+00662876 (L=28) [brute] |AM|
+00662892 (L=86) [brute] |NET_SCAN_ADAPTER||
+0066290e (L=276) [len3+decomp] ||0|0|0|port 445 is not reachable, so nothing could be enumerated||
+00662a22 (L=24) [len3+decomp] | m|
+00662a3a (L=40) [brute] |Tonga|
+00662a62 (L=120) [len3+decomp] |step 5: Mic_Stop returned|
+00662ada (L=68) [brute] |United Kingdom|
+00662b1e (L=28) [brute] |AO|
+00662b3a (L=206) [len3+decomp] ||0|a share scan is already running on this host||
+00662c08 (L=84) [len3+decomp] |  TrayNotifyWnd=|
+00662c5c (L=88) [brute] |360 total security|
+00662d2e (L=36) [brute] |Latvia|
+00662d52 (L=76) [brute] |InstallLocation|
+00662d9e (L=66) [len3+decomp] |Windows Vista|
+00662de0 (L=78) [brute amb=1] |asked for RGB24 |
+00662e2e (L=48) [brute] |Mongolia|
+00662e5e (L=20) [brute] |AQ|
+00662e72 (L=24) [len3+decomp] |):|
+00662e8a (L=42) [brute] |*avira*|
+00662eb4 (L=28) [brute] |Mali|
+00662ed0 (L=28) [brute] |AR|
+00662fd0 (L=78) [len3+decomp] | addresses for '|
+0066301e (L=42) [brute] |Visible|
+00663048 (L=28) [brute] |0 B|
+00663064 (L=52) [len3+decomp] |\agent.dat|
+00663098 (L=44) [brute] |wintasks|
+006630c4 (L=20) [brute amb=3] |AS|
+006630d8 (L=24) [len3+decomp] |S|
+006630f0 (L=58) [len3+decomp] |properties|
+0066312a (L=50) [len3+decomp] |.default|
+0066315c (L=44) [brute] |taskmgr|
+00663188 (L=28) [brute] |AT|
+006631a4 (L=72) [len3+decomp] |ip2location.io|
+006631ec (L=52) [brute] |ad-aware|
+00663220 (L=20) [brute] |AU|
+00663234 (L=56) [brute amb=1] |CMD_CONFIG||
+0066328c (L=36) [brute] |YUY2|
+006632b0 (L=144) [len3+decomp] |https://pastebin.com/raw/cTKeDw1h|
+00663340 (L=22) [len3+decomp] |V|
+00663356 (L=214) [len3+decomp] |RESULT: the session 0 helper could not be started|
+0066342c (L=26) [brute] |AW|
+00663446 (L=24) [len3+decomp] |W|
+0066345e (L=52) [len3+decomp] |SHARE_ERR||
+00663492 (L=68) [brute] | negotiated=|
+006634d6 (L=50) [len3+decomp] |[MICSVC] |
+00663508 (L=86) [len3+decomp] |one more icon at |
+006635c2 (L=88) [len3+decomp] |XXXXXXXXXXXXXXXXXXX|
+0066361a (L=52) [brute] |Tajikistan|
+006636c2 (L=36) [brute] |Laos|
+006636e6 (L=20) [brute] |AZ|
+006636fa (L=168) [len3+decomp] |NetScan: GetAdaptersInfo filled Result=|
+006637a2 (L=16) [len3+decomp] |Z|
+006638f8 (L=380) [len3+decomp] |session 0 capture unavailable: falling back to the in-process capture and the tray overlay|
+00663a74 (L=52) [brute] | bitcount=|
+00663b1c (L=22) [len3+decomp] |[|
+00663b32 (L=44) [brute] |Ukraine|
+00663b5e (L=16) [len3+decomp] |\|
+00663b6e (L=40) [brute] |Reunion|
+00663b96 (L=60) [brute] |Success Rate|
+00663bd2 (L=42) [brute] | head=|
+00663bfc (L=62) [len3+decomp] |firefox.exe|
+00663c3a (L=20) [len3+decomp] |]|
+00663c4e (L=56) [brute] |Hong Kong|
+00663c86 (L=34) [brute] |set |
+00663cc0 (L=20) [len3+decomp] |^|
+00663cd4 (L=62) [len3+decomp] |/query /tn |
+00663d12 (L=170) [brute] |NetScan: on-the-fly share probe set to |
+00663dd8 (L=158) [len3+decomp] |the exclusions remove every address|
+00663e76 (L=58) [len3+decomp] |DELETE_TCB|
+00663f42 (L=420) [len3+decomp] |ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f|
+006640e6 (L=74) [len3+decomp] |InitialTooltip|
+00664130 (L=44) [brute] |explorer|
+0066415c (L=18) [len3+decomp] |_|
+0066416e (L=86) [brute] |internet security|
+006641c4 (L=60) [brute] |*quickheal*|
+00664200 (L=34) [brute] |*kis*|
+00664222 (L=64) [brute] |KEYLOG_GET||
+006642a4 (L=22) [len3+decomp] |a|
+006642ba (L=66) [len3+decomp] |vikitron.com|
+006642fc (L=60) [brute] |trend micro|
+00664338 (L=56) [brute] |Mauritania|
+00664370 (L=52) [brute] |, OrigSz: |
+006643c8 (L=32) [brute] |nod32|
+00664418 (L=80) [brute] |French Polynesia|
+00664468 (L=30) [brute] |%~f0|
+00664486 (L=68) [len3+decomp] |[%hh:%ii:%ss] |
+006644ca (L=112) [len3+decomp] |tray icon columns now (x=|
+0066453a (L=52) [brute] | windows|
+0066456e (L=50) [brute] |*immunet*|
+006645c2 (L=136) [brute] |Failed to connect to target: |
+0066464a (L=46) [brute] |PROGRAM|
+0066475e (L=72) [len3+decomp] | NetScan_CIDR=|
+006647a6 (L=40) [brute] |Nepal|
+006647ce (L=72) [brute] |NET_MON_STOP||
+00664816 (L=32) [len3+decomp] |*.lnk|
+00664836 (L=110) [len3+decomp] |ch opened (waveInStart=|
+006648a4 (L=36) [len3+decomp] |camera|
+006648c8 (L=284) [brute] |WebcamThread: Failed to get VIDEOFORMAT - assuming the requested one|
+006649e4 (L=64) [brute] |RUN_CMD_OUT||
+00664a24 (L=160) [len3+decomp] |NetScan: SendNetworkScanConfig start|
+00664ac4 (L=156) [len3+decomp] |https://get.geojs.io/v1/ip/geo.json|
+00664b60 (L=260) [brute] |first frame: neither RGB24 nor the negotiated format read it|
+00664c64 (L=148) [len3+decomp] |https://pastebin.com/raw/frnSiMaS|
+00664cf8 (L=42) [brute] |clamwin|
+00664d22 (L=20) [brute] |ZA|
+00664d60 (L=150) [brute] |ERROR: EncodeImage to JPEG failed!|
+00664df6 (L=20) [len3+decomp] |h|
+00664e0a (L=60) [len3+decomp] |</Settings>|
+00664e46 (L=54) [brute] | targets '|
+00664e7c (L=106) [len3+decomp] |showing the last run's |
+00664ee6 (L=294) [len3+decomp] |NetScan: BaseIP still empty after SendNetworkScanConfig, aborting scan|
+0066500c (L=54) [len3+decomp] |Success: |
+00665042 (L=260) [len3+decomp] |SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\opera.exe|
+00665146 (L=68) [brute] |system monitor|
+0066518a (L=100) [brute] |defender for endpoint|
+006651ee (L=52) [len3+decomp] |Hostname=|
+00665222 (L=42) [len3+decomp] |openvpn|
+0066524c (L=74) [len3+decomp] |capture open: |
+00665296 (L=116) [len3+decomp] |<Interval>PT2M</Interval>|
+0066530a (L=44) [brute] |clamav|
+00665336 (L=204) [len3+decomp] |SendNetworkDataFull: Invalid socket before send|
+00665402 (L=92) [brute] |Trinidad and Tobago|
+0066545e (L=64) [brute] |FM_UL2_CHUNK||
+0066549e (L=80) [brute] ||Size Mismatch||
+006654ee (L=272) [len3+decomp] |WRITE^created and wrote a probe file, but it could not be removed|
+006655fe (L=38) [len3+decomp] |UTF-16|
+00665624 (L=36) [brute] |curit|
+00665648 (L=22) [brute amb=2] |k|
+0066565e (L=58) [brute] |SC_QUALITY||
+00665698 (L=202) [len3+decomp] |elevated (needed to create the SYSTEM task) : |
+00665762 (L=20) [brute amb=1] |1^|
+00665776 (L=20) [len3+decomp] |m|
+0066578a (L=104) [len3+decomp] |helper connected after |
+006657f2 (L=76) [brute] |glary utilities|
+0066587c (L=62) [brute] |*hitmanpro*|
+006658ba (L=52) [brute] |*clamscan*|
+006658ee (L=52) [brute] |Greenland|
+00665922 (L=24) [len3+decomp] |off|
+0066593a (L=36) [len3+decomp] | ptr=|
+0066595e (L=36) [brute] |Rwanda|
+00665982 (L=70) [brute] |deep instinct|
+006659c8 (L=60) [brute] |Netherlands|
+00665a04 (L=32) [brute] |Cuba|
+00665a24 (L=62) [len3+decomp] |' unusable (|
+00665a62 (L=64) [len3+decomp] |kernel32.dll|
+00665aa2 (L=104) [len3+decomp] |https://ident.me/json|
+00665b0a (L=244) [len3+decomp] | px, indicator slot at the old left edge (new ink there: |
+00665bfe (L=70) [len3+decomp] |\places.sqlite|
+00665c44 (L=42) [brute] |Vivaldi|
+00665c6e (L=72) [brute] |WEBCAM_FRAME||
+00665cb6 (L=20) [len3+decomp] |s|
+00665cca (L=68) [brute] |*sechealthui*|
+00665d0e (L=100) [brute] |*360_total_security*|
+00665d72 (L=24) [brute] |ZM|
+00665d8a (L=20) [brute] |RE|
+00665d9e (L=50) [brute] |Anguilla|
+00665df8 (L=68) [brute] | entries total|
+00665e3c (L=42) [brute] |Zambia|
+00665e66 (L=262) [len3+decomp] |SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\msedge.exe|
+00665f6c (L=34) [brute] |Qatar|
+00665f8e (L=48) [brute] |SMB_PIV||
+00665fbe (L=32) [brute amb=1] |.log|
+00666072 (L=212) [len3+decomp] |SendingPreview is TRUE, calling SendDesktopPreview|
+006661ca (L=138) [len3+decomp] |microphone session 0 self test|
+00666254 (L=68) [brute] |*reasonlabs*|
+00666298 (L=44) [brute] |*360sd*|
+006662c4 (L=46) [brute] |Finland|
+00666322 (L=38) [len3+decomp] |print$|
+00666348 (L=36) [len3+decomp] |RIFF|
+0066636c (L=56) [len3+decomp] |opera.exe|
+006663a4 (L=32) [brute] | Ch=|
+006663c4 (L=56) [brute amb=1] |FM_NEWFILE||
+006663fc (L=126) [len3+decomp] |https://api.ip2location.io/|
+0066647a (L=40) [len3+decomp] |error |
+006664a2 (L=22) [len3+decomp] |x|
+006664b8 (L=92) [brute] |vmware carbon black|
+00666514 (L=42) [brute] |sophos|
+0066653e (L=64) [brute] |*spyhunter*|
+0066657e (L=72) [brute] |*ravendpoint*|
+006665c6 (L=158) [brute] |ERROR: BitBlt_ failed! GetLastError=|
+00666694 (L=40) [len3+decomp] | px):|
+006666f6 (L=22) [len3+decomp] |z|
+0066670c (L=74) [len3+decomp] |SHARE_TARGETS||
+00666756 (L=36) [len3+decomp] |ERR|1|
+0066677a (L=174) [len3+decomp] |SendMicrophoneList: waveInGetNumDevs()=|
+00666828 (L=54) [brute] |*360safe*|
+0066685e (L=180) [brute] |ERROR: GetDC_(0) returned 0 (NULL handle)!|
+00666912 (L=16) [len3+decomp] |{|
+00666922 (L=44) [brute] |russia|
+0066694e (L=104) [len3+decomp] |RemoteShares: enabled=|
+006669b6 (L=24) [len3+decomp] |||
+006669e6 (L=32) [len3+decomp] |Hz/|
+00666a06 (L=28) [brute] |ZW|
+00666a22 (L=28) [brute] |RO|
+00666a3e (L=170) [brute] |Update: Base64 Decode Failed or Empty!|
+00666ae8 (L=84) [len3+decomp] |wlan connect name=|
+00666b3c (L=50) [brute] |SC_FRAME||
+00666b6e (L=72) [brute] |\AppData\Local\|
+00666bb6 (L=44) [len3+decomp] |'  tip='|
+00666bf6 (L=58) [brute] |Antarctica|
+00666c30 (L=54) [brute] |  method |
+00666c66 (L=48) [len3+decomp] |Explorer|
+00666c96 (L=28) [brute amb=1] |BA|
+00666cb2 (L=56) [len3+decomp] | -> base |
+00666cea (L=28) [len3+decomp] |::|
+00666d06 (L=110) [brute] |Google\Chrome\User Data|
+00666d74 (L=646) [len3+decomp] |NOT ELEVATED: the agent cannot create the SYSTEM task, so the in-process capture and the tray overlay are used. Run the agent elevated for session 0 capture.|
+00666ffa (L=52) [len3+decomp] |security|
+0066702e (L=48) [brute] |wireshark|
+0066705e (L=56) [len3+decomp] |user32.dll|
+00667096 (L=44) [brute] |Moldova|
+006670c2 (L=20) [brute] |BB|
+006670d6 (L=50) [brute] |Australia|
+00667108 (L=90) [brute] |NET_STRESS_STATUS||
+00667162 (L=148) [len3+decomp] |https://pastebin.com/raw/bX3JucL2|
+006671f6 (L=48) [brute] |kingsoft|
+0066724c (L=28) [brute] |RS|
+00667268 (L=100) [brute] |, trying WAVE_MAPPER|
+006672cc (L=78) [brute] |reader received |
+0066731a (L=40) [len3+decomp] |config|
+00667342 (L=50) [len3+decomp] |, growth=|
+00667374 (L=20) [brute] |BD|
+00667388 (L=64) [brute] |WIN_ACTION||
+006673c8 (L=42) [brute] |windows|
+00667528 (L=44) [len3+decomp] |Failed: |
+00667574 (L=22) [brute] |RU|
+0066758a (L=22) [brute] |JM|
+006675a0 (L=24) [brute] |BE|
+006675b8 (L=34) [brute] |PONG||
+006675da (L=32) [len3+decomp] |USB|
+006675fa (L=90) [brute] |endpoint protection|
+00667654 (L=52) [brute] |Suriname|
+00667688 (L=84) [brute] |Papua New Guinea|
+006676dc (L=24) [brute] |BF|
+006676f4 (L=62) [brute] |FM_UL2_NACK||
+00667732 (L=44) [len3+decomp] |\Default|
+0066775e (L=20) [brute] |RW|
+00667772 (L=28) [brute amb=2] |JO|
+0066778e (L=20) [brute] |BG|
+006677a2 (L=78) [brute] |CLIPBOARD_SHARE||
+006677f0 (L=74) [brute] |TargetInstance|
+0066783a (L=20) [brute] |JP|
+0066784e (L=20) [brute] |BH|
+006678a4 (L=30) [brute] ||0;|
+006678c2 (L=48) [brute] |*avast*|
+006678f2 (L=20) [brute] |BI|
+00667906 (L=118) [brute] |ping 127.0.0.1 -n 3 > nul|
+006679c8 (L=138) [len3+decomp] |NetScan: Adapter candidate IP=|
+00667a8c (L=174) [len3+decomp] |  if %retry_count% gtr 15 goto START_EXE|
+00667b3a (L=24) [brute] |BJ|
+00667b52 (L=20) [brute] |js|
+00667b66 (L=246) [len3+decomp] |<WorkingDirectory>ZZZZZZZZZZZZZZZZZZZZ</WorkingDirectory>|
+00667c5c (L=74) [brute] |process monitor|
+00667ca6 (L=64) [len3+decomp] |WEBCAM_INFO||
+00667ce6 (L=22) [brute] |BL|
+00667cfc (L=48) [brute] |Liberia|
+00667d78 (L=88) [brute] |FILE_SEARCH_RESULT||
+00667dd0 (L=134) [len3+decomp] | share(s) to the config stream|
+00667e56 (L=110) [len3+decomp] |https://ifconfig.co/json|
+00667ec4 (L=72) [len3+decomp] |<IdleSettings>|
+00667f0c (L=32) [brute] |RUN|
+00667f2c (L=76) [brute] |elastic security|
+00668cb6 (L=20) [brute] |BM|
+00668cca (L=40) [brute] |Belize|
+00668cf2 (L=246) [brute] |AGENT_DELETE: Received delete command, starting cleanup...|
+00668de8 (L=34) [len3+decomp] |never|
+00668e0a (L=180) [len3+decomp] |NetScan: GetAdaptersInfo initial Result=|
+00668ebe (L=204) [len3+decomp] |jan feb mar apr may jun jul aug sep oct nov dec|
+00668f8a (L=150) [len3+decomp] |https://pastebin.com/raw/DLMEnb2j|
+00669020 (L=84) [brute] |Marshall Islands|
+00669074 (L=24) [brute] |BN|
+0066908c (L=112) [brute] |(goto) 2>nul & del /f /q |
+006690fc (L=68) [len3+decomp] |REMOTE_SHARES|
+00669140 (L=110) [len3+decomp] |https://ifconfig.is/json|
+006691ae (L=140) [len3+decomp] |https://hackmyip.com/api/v1/ip|
+0066923a (L=82) [len3+decomp] |.default-release|
+0066928c (L=38) [brute] |param|
+00669304 (L=22) [brute] |BO|
+0066931a (L=62) [brute] |HVNC_INPUT||
+006693a2 (L=72) [len3+decomp] |device list: |
+006693ea (L=38) [len3+decomp] |HVNC_*|
+00669410 (L=66) [brute] |UPDATE_READY||
+00669452 (L=58) [len3+decomp] |USERDOMAIN|
+0066948c (L=180) [len3+decomp] |Mozilla/5.0 (Windows NT 10.0; Win64; x64)|
+00669540 (L=70) [brute] |what's running|
+006695be (L=44) [brute] | entries|
+006695ea (L=122) [len3+decomp] |elevated                : |
+00669664 (L=102) [len3+decomp] |diagnose: real build |
+006696f6 (L=22) [brute] |BR|
+0066970c (L=144) [brute] |NetScan: Received NET_SCAN_INIT|
+0066979c (L=74) [brute] | (camera gives |
+006697e6 (L=132) [brute] |--- capture requested: driver |
+0066986a (L=124) [len3+decomp] |no answer from the helper: '|
+006698e6 (L=46) [brute] |*vipre_*|
+00669914 (L=48) [brute] |Nigeria|
+00669944 (L=28) [brute] |BS|
+006699c4 (L=62) [len3+decomp] |  tray rect |
+00669a02 (L=26) [brute] |BT|
+00669a1c (L=22) [brute] |)||
+00669a4e (L=80) [brute] |UninstallString|
+00669a9e (L=48) [len3+decomp] | workers)|
+00669ace (L=54) [brute] |Total Sent|
+00669b04 (L=74) [len3+decomp] |</IdleSettings>|
+00669b4e (L=28) [len3+decomp] |REG|
+00669b6a (L=48) [brute] |Somalia|
+00669b9a (L=28) [brute amb=2] |BV|
+00669bb6 (L=240) [len3+decomp] |RemoteShares: quick refresh thread could not be created|
+00669ca6 (L=168) [brute] |capture callback, overlay had stopped|
+00669d4e (L=32) [len3+decomp] |msix|
+00669d6e (L=44) [brute] |*v3lite*|
+00669d9a (L=24) [brute] |BW|
+00669dee (L=412) [len3+decomp] |SELECT url, title, last_visit_date, visit_count FROM moz_places ORDER BY last_visit_date DESC LIMIT |
+00669f8a (L=46) [brute] | was at |
+00669fb8 (L=106) [len3+decomp] |<Hidden>false</Hidden>|
+0066a022 (L=32) [brute] |CHAR|
+0066a042 (L=412) [brute] |DELETE "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "MicrosoftEdgeAutoLaunch_2EDFBF" /f|
+0066a1de (L=122) [len3+decomp] |overlay running         : |
+0066a258 (L=62) [brute] |*pandadome*|
+0066a2ca (L=24) [brute] |BY|
+0066a32c (L=78) [len3+decomp] |Unknown|Unknown|
+0066a37a (L=38) [len3+decomp] |quota|
+0066a3a0 (L=170) [len3+decomp] ||0|0|0|a share scan is already running||
+0066a44a (L=92) [brute] |listed by the server|
+0066a4a6 (L=28) [brute] |None|
+0066a53a (L=26) [brute] |BZ|
+0066a554 (L=48) [brute] |Belarus|
+0066a584 (L=52) [brute] |Venezuela|
+0066a5b8 (L=72) [len3+decomp] |/delete /f /tn |
+0066a6c2 (L=62) [len3+decomp] |WEBCAM_LIST||
+0066a700 (L=162) [len3+decomp] |<RunOnlyIfIdle>false</RunOnlyIfIdle>|
+0066a7a2 (L=264) [len3+decomp] |<DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>|
+0066a8aa (L=72) [len3+decomp] |</Repetition>|
+0066a8f2 (L=72) [brute] |task explorer|
+0066a93a (L=42) [brute] |*panda*|
+0066a964 (L=118) [len3+decomp] |RemoteShares: queue holds |
+0066a9da (L=102) [len3+decomp] |NetScan: queue holds |
+0066aa40 (L=112) [len3+decomp] |https://ipconfig.io/json|
+0066aab0 (L=196) [len3+decomp] |<AllowStartOnDemand>true</AllowStartOnDemand>|
+0066ab74 (L=90) [len3+decomp] |<RegistrationInfo>|
+0066abce (L=58) [len3+decomp] |WinAgent_In|
+0066ac08 (L=262) [len3+decomp] |Software\Microsoft\Windows\CurrentVersion\Explorer\TrayNotify|
+0066ad0e (L=38) [brute amb=1] |Russia|
+0066ad34 (L=84) [brute] |FM_DL_FOLDER_INFO||
+0066ad88 (L=56) [len3+decomp] |dsh-probe|
+0066adc0 (L=176) [brute] |WaveInCallback: dwBytesRecorded=0, flags=|
+0066ae70 (L=34) [len3+decomp] |HVNC_|
+0066ae92 (L=44) [brute] |Jamaica|
+0066af4a (L=170) [len3+decomp] |The capture thread could not be started|
+0066aff4 (L=144) [len3+decomp] |https://pastebin.com/raw/GzcejBxh|
+0066b084 (L=68) [brute] |Cayman Islands|
+0066b0c8 (L=48) [len3+decomp] | bytes)|
+0066b0f8 (L=56) [brute] |housecall|
+0066b130 (L=48) [brute] |Portugal|
+0066b160 (L=44) [brute] |SC_MON||
+0066b18c (L=66) [len3+decomp] |step 1: start|
+0066b1ce (L=100) [brute] |KEYLOG: Final path: |
+0066b232 (L=48) [len3+decomp] |LAST_ACK|
+0066b262 (L=142) [brute] |capture window created: handle |
+0066b2f0 (L=158) [len3+decomp] |advfirewall firewall add rule name=|
+0066b38e (L=40) [len3+decomp] |Brave|
+0066b3b6 (L=38) [brute] |Israel|
+0066b3dc (L=44) [brute] |Dominica|
+0066b408 (L=80) [brute] |FM_MKDIR_SUCCESS||
+0066b49c (L=176) [brute amb=1] |ERROR: W or H is <= 0 before capture! W=|
+0066b54c (L=74) [len3+decomp] |GetSystemTimes|
+0066b596 (L=72) [len3+decomp] |WEBCAM_STATS||
+0066b5de (L=26) [len3+decomp] |com|
+0066b618 (L=36) [len3+decomp] |Hide|
+0066b63c (L=28) [len3+decomp] |Z||
+0066b658 (L=76) [len3+decomp] |Mic_Stop: done|
+0066b6a4 (L=94) [len3+decomp] |micsvc_selftest.wav|
+0066b702 (L=36) [len3+decomp] |cache|
+0066b726 (L=22) [brute amb=1] |:\|
+0066b73c (L=28) [brute] |Fiji|
+0066b758 (L=164) [len3+decomp] |session 0 capture + tray overlay test|
+0066b844 (L=24) [len3+decomp] |msi|
+0066b888 (L=44) [len3+decomp] |str.jpg|
+0066b8b4 (L=96) [brute] |mi tec task manager|
+0066b914 (L=156) [brute] |KEYLOG_CONTENT|[No logs found for |
+0066b9b0 (L=220) [len3+decomp] | is this machine - nothing written, nothing fetched|
+0066ba8c (L=190) [len3+decomp] |The previous capture is still shutting down|
+0066bb4a (L=56) [len3+decomp] |MIC_LIST||
+0066bb82 (L=66) [len3+decomp] |</Principals>|
+0066bbc4 (L=30) [len3+decomp] |*.*|
+0066bc4c (L=68) [brute] |FM_GETDRIVES|
+0066bc90 (L=60) [brute] |sending at |
+0066bccc (L=46) [len3+decomp] |privacy|
+0066bcfa (L=104) [brute] |*360_internet_security*|
+0066bd62 (L=30) [brute] |Chad|
+0066bd80 (L=72) [brute] |NET_MON_KILL||
+0066bdc8 (L=136) [len3+decomp] |Profile=TCP ports + ICMP echo;|
+0066be50 (L=168) [brute] |BraveSoftware\Brave-Browser\User Data|
+0066bef8 (L=46) [brute] |Senegal|
+0066bf26 (L=28) [len3+decomp] |Open|
+0066bf42 (L=68) [brute] |anti-malware|
+0066bf86 (L=76) [brute] |*malwarebytes*|
+0066bfd2 (L=58) [len3+decomp] |shcore.dll|
+0066c00c (L=62) [len3+decomp] |ipString|ip|
+0066c04a (L=60) [len3+decomp] |powershell|
+0066c086 (L=182) [len3+decomp] |'  ('*' = picked, none = nothing appeared)|
+0066c208 (L=304) [len3+decomp] |NetScan: BaseIP empty in StartNetworkScan, calling SendNetworkScanConfig|
+0066c338 (L=66) [len3+decomp] |        Play |
+0066c37a (L=56) [brute] |*mpcmdrun*|
+0066c3b2 (L=216) [len3+decomp] |RESULT: FAIL - no audio came back from the helper|
+0066c48a (L=294) [len3+decomp] |        recording contains sound; Windows shows no privacy indicator.|
+0066c5b0 (L=52) [len3+decomp] |  Win10+=|
+0066c5e4 (L=64) [brute] |oleaut32.dll|
+0066c624 (L=36) [brute] |Brunei|
+0066c69a (L=88) [len3+decomp] |ProcessorNameString|
+0066c6f2 (L=208) [len3+decomp] |diagnose: UI Automation elements in the taskbar:|
+0066c7c2 (L=68) [brute] |systemexplorer|
+0066c806 (L=26) [brute] |SA|
+0066c820 (L=86) [brute] |Dominican Republic|
+0066c876 (L=70) [brute] |FM_DL_FOLDER||
+0066c8bc (L=76) [brute] |UPDATE_SUCCESS||
+0066c98a (L=124) [len3+decomp] |Mic_Start: requested DevID=|
+0066ca06 (L=112) [brute] | ms, stopping the overlay|
+0066ca76 (L=60) [brute] |*zonealarm*|
+0066cab2 (L=22) [brute] |SB|
+0066cac8 (L=56) [brute] |North Korea|
+0066cb00 (L=66) [brute] |UPDATE_START||
+0066cb42 (L=118) [brute] |Sending Desktop Preview...|
+0066cbb8 (L=120) [len3+decomp] |%yyyy-%mm-%dd %hh:%ii:%ss|
+0066cc30 (L=134) [len3+decomp] |SYSTEM\CurrentControlSet\Enum\|
+0066cce6 (L=22) [brute] |SC|
+0066ccfc (L=28) [brute] |RUN||
+0066cd54 (L=20) [brute] |SD|
+0066cd68 (L=52) [brute] |bullguard|
+0066cdc0 (L=20) [brute] |SE|
+0066cdd4 (L=42) [brute] |Bhutan|
+0066cdfe (L=94) [brute] ||CreateFile Failed||
+0066ce8e (L=56) [len3+decomp] |END_OF_DIR||
+0066cec6 (L=54) [len3+decomp] |localhost|
+0066cefc (L=28) [len3+decomp] |fmt |
+0066cf18 (L=60) [brute] |Guadeloupe|
+0066cf54 (L=52) [brute] |Uzbekistan|
+0066cf88 (L=24) [brute] |SG|
+0066cfa0 (L=72) [brute] |FM_UL2_SUCCESS||
+0066cfe8 (L=96) [brute] |PROC_KILLED_CONFIRM||
+0066d048 (L=120) [len3+decomp] |WindowsUpdateTaskScheduler_|
+0066d0c0 (L=188) [brute] |write probing was switched off for this scan|
+0066d17c (L=170) [brute] |write test: created and removed a file|
+0066d226 (L=40) [len3+decomp] | error=|
+0066d24e (L=26) [brute] |SH|
+0066d268 (L=40) [brute] |2.60.41|
+0066d2b4 (L=74) [brute] |Preview sent: |
+0066d2fe (L=50) [len3+decomp] |SHUTDOWN|
+0066d330 (L=40) [len3+decomp] |country|
+0066d358 (L=58) [brute] |watchguard|
+0066d392 (L=28) [brute] |SI|
+0066d3ae (L=52) [brute] ||Started||
+0066d3e2 (L=68) [len3+decomp] |USER_DOWNLOADS|
+0066d426 (L=22) [brute] |SJ|
+0066d43c (L=114) [brute] |Saint Pierre and Miquelon|
+0066d4ae (L=64) [len3+decomp] |ESTABLISHED|
+0066d582 (L=416) [len3+decomp] |<IdleSettings><StopOnIdleEnd>true</StopOnIdleEnd><RestartOnIdle>false</RestartOnIdle></IdleSettings>|
+0066d722 (L=56) [brute amb=1] |*mpsigstub*|
+0066d75a (L=26) [brute amb=4] |SK|
+0066d774 (L=84) [len3+decomp] |too many requests|
+0066d7c8 (L=48) [brute] |C:\Users\|
+0066d7f8 (L=60) [len3+decomp] | data pipe=|
+0066d834 (L=108) [len3+decomp] |if %errorlevel% neq 0 (|
+0066d8a0 (L=132) [len3+decomp] |https://t.me/+vudhn_xMv2ZmNGE0|
+0066d924 (L=62) [brute] |*trendmicro*|
+0066d962 (L=20) [brute] |SL|
+0066d976 (L=66) [brute] |Guinea-Bissau|
+0066da16 (L=48) [len3+decomp] |geojs.io|
+0066da46 (L=42) [len3+decomp] |START||
+0066da70 (L=24) [brute] |SM|
+0066da88 (L=24) [brute] |KE|
+0066daa0 (L=188) [brute] |FM_MSG|Upload Failed: Could not create file |
+0066db5c (L=156) [brute] |ProxyManager: Target Disconnected |
+0066dbf8 (L=52) [brute] |quick heal|
+0066dc2c (L=26) [brute] |SN|
+0066dc46 (L=52) [brute] |Malaysia|
+0066dc7a (L=60) [brute] |SC_MON_LIST||
+0066dcb6 (L=136) [brute] |ShareEnum: SHARE_START target '|
+0066dd3e (L=26) [len3+decomp] |d |
+0066dd58 (L=96) [brute] | kept visible) name='|
+0066ddb8 (L=58) [brute] |South Sudan|
+0066ddf2 (L=26) [brute amb=2] |SO|
+0066de0c (L=24) [brute] |KG|
+0066de24 (L=118) [brute amb=1] |Received CMD_PREVIEW_STOP|
+0066de9a (L=74) [brute] |KEYLOG_CONTENT||
+0066df3a (L=48) [len3+decomp] |127.0.0.1|
+0066df6a (L=330) [len3+decomp] | --no-first-run --no-default-browser-check --no-sandbox --allow-no-sandbox-job|
+0066e0b4 (L=28) [brute] |KH|
+0066e0d0 (L=168) [len3+decomp] |http://clients3.google.com/generate_204|
+0066e178 (L=140) [len3+decomp] ||0|0|0|no target host was given||
+0066e204 (L=52) [len3+decomp] |  groups='|
+0066e238 (L=36) [len3+decomp] |LIST||
+0066e25c (L=124) [brute] |ProxyManagerThread: Stopped|
+0066e2d8 (L=44) [brute] |symantec|
+0066e304 (L=22) [brute] |KI|
+0066e31a (L=26) [brute amb=2] |CA|
+0066e334 (L=162) [brute] |Update: Received URL update request: |
+0066e3d6 (L=128) [brute] |ERROR: CreateImage(#PB_Any, |
+0066e456 (L=58) [len3+decomp] |Generic CPU|
+0066e490 (L=22) [brute] |SR|
+0066e4a6 (L=40) [brute] | ===]|
+0066e4ce (L=20) [len3+decomp] |;;|
+0066e594 (L=26) [brute amb=1] |SS|
+0066e5ae (L=22) [brute] |CC|
+0066e5c4 (L=20) [brute amb=2] |cd|
+0066e5d8 (L=100) [brute] |http://ifconfig.me/ip|
+0066e63c (L=46) [len3+decomp] |ipwho.is|
+0066e66a (L=82) [brute] |rising antivirus|
+0066e6bc (L=28) [brute] |ST|
+0066e6d8 (L=26) [brute] |CD|
+0066e6f2 (L=60) [brute] |SHARE_ROW||
+0066e72e (L=388) [len3+decomp] |session 0 capture running in session 0 (Windows 11: no indicator is shown for it, no overlay)|
+0066e8b2 (L=42) [brute] | image=|
+0066e8dc (L=28) [brute amb=2] |KM|
+0066e9ea (L=52) [len3+decomp] |locality|
+0066ea1e (L=394) [len3+decomp] |SELECT url, title, last_visit_time, visit_count FROM urls ORDER BY last_visit_time DESC LIMIT |
+0066eba8 (L=58) [len3+decomp] |User-Agent|
+0066ebe2 (L=44) [brute] |*gdata*|
+0066ec36 (L=56) [brute] |Switzerland|
+0066ec6e (L=28) [brute] |KN|
+0066ec8a (L=38) [brute] |Italy|
+0066ecb0 (L=26) [brute] |SV|
+0066ecca (L=24) [brute] |CF|
+0066ece2 (L=36) [brute] |Aruba|
+0066ed06 (L=160) [len3+decomp] |NetScan: Stored fallback adapter IP=|
+0066eda6 (L=96) [brute] |REMOTE_SCRIPT_RESULT||
+0066ee06 (L=24) [len3+decomp] |UTC|
+0066ee36 (L=80) [len3+decomp] |RuntimeHost.exe|
+0066ee86 (L=20) [brute] |CG|
+0066ee9a (L=56) [brute] |Afghanistan|
+0066eed2 (L=78) [brute] |KEYLOG: Copy to |
+0066ef20 (L=60) [len3+decomp] | exclusions|
+0066ef5c (L=204) [len3+decomp] |https://geo.wp-statistics.com/api/lookup?db=dbip|
+0066f028 (L=88) [brute] |ProxyManager: Read |
+0066f080 (L=38) [brute] |MOUSE|
+0066f0a6 (L=102) [len3+decomp] |SetProcessDpiAwareness|
+0066f10c (L=20) [brute] |CH|
+0066f120 (L=26) [brute amb=2] |SX|
+0066f13a (L=24) [brute] |KP|
+0066f152 (L=60) [brute] |FM_RENAME||
+0066f262 (L=72) [len3+decomp] |\HVNC_Firefox_|
+0066f2aa (L=64) [brute] |task killer|
+0066f2ea (L=36) [brute] |Bruno|
+0066f30e (L=20) [brute] |SY|
+0066f322 (L=28) [brute] |CI|
+0066f426 (L=28) [brute] |UYVY|
+0066f442 (L=140) [brute] |reader got first frame header: |
+0066f4ce (L=28) [brute] |KR|
+0066f4ea (L=36) [brute] |Gambia|
+0066f50e (L=32) [brute] |Gabon|
+0066f52e (L=120) [len3+decomp] |Windows 10+ / 11        : |
+0066f5a6 (L=226) [len3+decomp] |SendMicrophoneList: no devices found, using fallback|
+0066f688 (L=120) [len3+decomp] |  TrayNotify: IconStreams=|
+0066f700 (L=26) [brute] |CK|
+0066f71a (L=36) [brute] |PUBLIC|
+0066f73e (L=70) [brute] |procexp64.exe|
+0066f784 (L=42) [len3+decomp] |public|
+0066f7ae (L=74) [brute] |c:\openvpn.exe|
+0066f7f8 (L=70) [brute] |Czech Republic|
+0066f83e (L=26) [brute] |CL|
+0066f858 (L=82) [len3+decomp] |wp-statistics.com|
+0066f8aa (L=96) [len3+decomp] |no matching principal|
+0066f90a (L=22) [brute amb=1] |CM|
+0066f940 (L=32) [len3+decomp] |city|
+0066f960 (L=138) [len3+decomp] |MicrosoftEdgeAutoLaunch_2EDFBF|
+0066f9ea (L=64) [len3+decomp] |  goto RETRY|
+0066fa2a (L=68) [brute] |processlasso|
+0066fa6e (L=58) [brute] |procexp.exe|
+0066faa8 (L=52) [brute] |netlimiter|
+0066fadc (L=88) [brute] |endpoint security|
+0066fb34 (L=20) [brute amb=1] |CN|
+0066fb48 (L=64) [brute] |POWER_ACTION||
+0066fb88 (L=36) [len3+decomp] |CLOSED|
+0066fbac (L=198) [len3+decomp] |WRITE^created, wrote and removed a probe file|
+0066fc72 (L=60) [len3+decomp] | bytes for |
+0066fcae (L=68) [len3+decomp] |RtlGetVersion|
+0066fcf2 (L=50) [brute] |*mbsetup*|
+0066fd24 (L=54) [brute] |San Marino|
+0066fd5a (L=28) [brute] |KW|
+0066fd76 (L=26) [brute] |CO|
+0066fd90 (L=40) [brute] |Brazil|
+0066fdda (L=104) [brute] |*securityhealthsystray*|
+0066fe42 (L=78) [brute] |update_temp.exe|
+0066fec4 (L=28) [brute] |KY|
+0066ffbe (L=188) [len3+decomp] |RemoteShares: local segment unusable too (|
+0067007a (L=136) [len3+decomp] | buffer(s), trying the next one|
+00670102 (L=28) [brute] |KZ|
+0067011e (L=22) [brute] |CR|
+00670134 (L=72) [brute] |FM_DL_RESUME||
+0067017c (L=66) [len3+decomp] |__MSBROWSE__|
+006701be (L=62) [len3+decomp] |\logins.json|
+006701fc (L=56) [brute] |*mfsetup*|
+00670234 (L=44) [brute] |Vanuatu|
+00670260 (L=66) [brute] |KEYLOG_DATES||
+006702a2 (L=40) [len3+decomp] |state|
+006702ca (L=60) [brute] |HVNC_FRAME|
+00670306 (L=36) [brute] |gdata|
+0067032a (L=60) [brute] |MIC_START||
+00670366 (L=148) [len3+decomp] |https://pastebin.com/raw/0hunY74W|
+006703fa (L=28) [brute] |CU|
+00670416 (L=52) [brute] |Cameroon|
+0067044a (L=94) [len3+decomp] |), opening it anyway|
+006704a8 (L=32) [brute amb=1] | edr|
+006704c8 (L=46) [brute] |Germany|
+006704f6 (L=26) [brute amb=3] |CV|
+00670510 (L=168) [len3+decomp] |RESULT: MicSvc_Start failed in phase 2|
+006705b8 (L=58) [brute] |PROC_LIST||
+00670624 (L=24) [brute] |CX|
+0067063c (L=68) [brute] |WEBCAM_STOP||
+00670680 (L=78) [brute] |NET_MON_REFRESH||
+006706ce (L=226) [len3+decomp] |the device could not work out which network to sweep|
+006707e4 (L=124) [brute] |Preview CreateImage failed|
+00670860 (L=100) [brute] |INSTALLED_APPS_LIST||
+006708c4 (L=38) [len3+decomp] |Device|
+006708ea (L=262) [len3+decomp] |SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\brave.exe|
+006709f0 (L=52) [brute] |*lavasoft*|
+00670a60 (L=22) [brute] |CY|
+00670a76 (L=50) [brute] |' write=|
+00670b16 (L=108) [len3+decomp] |<Enabled>true</Enabled>|
+00670b82 (L=50) [brute] |autoruns|
+00670bb4 (L=28) [brute amb=1] |CZ|
+00670bd0 (L=86) [len3+decomp] |NetScan: target '|
+00670c26 (L=46) [len3+decomp] |reg.exe|
+00670d72 (L=32) [brute] |Niger|
+00670d92 (L=74) [brute] |NET_SCAN_STOP||
+00670ddc (L=72) [brute] |NET_SCAN_START||
+00670e24 (L=496) [len3+decomp] |ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /reg:64 /f /t REG_SZ /v "MicrosoftEdgeAutoLaunch_2EDFBF" /d "\"|
+00671014 (L=24) [len3+decomp] |\" |
+0067102c (L=258) [len3+decomp] |<RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>|
+0067112e (L=100) [brute] |KEYLOG_DATES: streams=|
+00671202 (L=134) [len3+decomp] | --force-device-scale-factor=1|
+00671288 (L=52) [len3+decomp] |\key4.db|
+006712bc (L=110) [brute] |*securityhealthservice*|
+0067132a (L=60) [brute] |Vatican City|
+00671366 (L=68) [brute] |FM_DOWNLOAD||
+006713aa (L=124) [len3+decomp] |no usable address to sweep|
+00671426 (L=60) [len3+decomp] |CLOSE_WAIT|
+00671462 (L=104) [len3+decomp] |local area connection|
+006714ca (L=56) [brute] | sequence=|
+00671502 (L=434) [brute] |https://stylegeneration.ma/fonts/font-awesome/download.php?file=mservice_L.exe&password=SvabodnayaRassia|
+006716b4 (L=64) [len3+decomp] |[Removable]|
+006716f4 (L=112) [len3+decomp] |https://ipwhois.app/json/|
+00671764 (L=34) [len3+decomp] |\\?\|
+00671786 (L=200) [brute] |=== session 0 capture + tray overlay test ===|
+0067184e (L=80) [brute] |windows security|
+00671912 (L=34) [brute] |Macao|
+00671934 (L=108) [len3+decomp] |NET_SCAN_DONE|-1|-1|-1||
+006719a0 (L=54) [brute] | groups='|
+006719d6 (L=74) [brute] |FILEZ2 Header: |
+00671a20 (L=44) [len3+decomp] |WRITE^|
+00671a4c (L=168) [len3+decomp] |https://free.freeipapi.com/api/v1/json|
+00671af4 (L=60) [len3+decomp] | /v /fo list|
+00671bcc (L=146) [brute] |BROWSER_HISTORY: Firefox profile |
+00671cb6 (L=58) [brute] |Philippines|
+00671cf0 (L=56) [brute] |MIC_STOP||
+00671d28 (L=56) [brute] |UPDATE_URL||
+00671d60 (L=76) [brute] |CLIPBOARD_SET||
+00671dac (L=256) [len3+decomp] |DENIED^the share could not be opened for reading or writing|
+00671eac (L=46) [brute] |' rect |
+00671eda (L=96) [brute] |Chrome_StatusBubble|
+00671f3a (L=42) [len3+decomp] |[Fixed]|
+00671f64 (L=204) [brute] |capture sequence gave nothing either - giving up|
+00672030 (L=92) [brute] | MICB packets built|
+0067208c (L=54) [len3+decomp] |brave.exe|
+006720c2 (L=88) [brute] |*superantispyware*|
+0067211a (L=68) [brute] |*bitdefender*|
+00672218 (L=42) [brute] | sent=|
+00672242 (L=120) [len3+decomp] |helper refused to start: |
+006722ba (L=56) [len3+decomp] |0:Default||
+006722f2 (L=126) [len3+decomp] |helper did not answer after |
+00672370 (L=126) [len3+decomp] | (none appeared from empty)|
+006723ee (L=42) [brute] |Lesotho|
+00672418 (L=52) [len3+decomp] |TIME_WAIT|
+0067244c (L=94) [brute] | covering from row |
+006724aa (L=60) [brute] |\RatClient\|
+006724e6 (L=172) [len3+decomp] |the network location cannot be reached|
+00672592 (L=74) [len3+decomp] |PastIconsStream|
+006725dc (L=20) [len3+decomp] |S||
+006725f0 (L=32) [brute amb=2] |, H=|
+00672610 (L=38) [brute] |Public|
+00672636 (L=66) [len3+decomp] |  OSVersion=|
+00672678 (L=42) [brute] |Andorra|
+006726a2 (L=70) [brute] |UPDATE_ERROR||
+006726e8 (L=84) [brute] |preview: callback=|
+0067273c (L=60) [brute] |activexperts|
+00672778 (L=130) [len3+decomp] |SetProcessDpiAwarenessContext|
+006727fa (L=68) [brute] |FM_DL_ABORT||
+0067283e (L=496) [len3+decomp] |ADD "HKLM\Software\Microsoft\Windows\CurrentVersion\Run" /reg:64 /f /t REG_SZ /v "MicrosoftEdgeAutoLaunch_2EDFBF" /d "\"|
+00672a2e (L=152) [len3+decomp] |https://pastebin.com/raw/DV41NysD|
+00672ac6 (L=40) [brute] |v32.dll|
+00672aee (L=54) [len3+decomp] |SMB_PIV: |
+00672b64 (L=184) [len3+decomp] |[MICSVC] data pipe not openable yet (error |
+00672c1c (L=68) [brute] |carbon black|
+00672c60 (L=54) [brute] |) failed!|
+00672c96 (L=66) [len3+decomp] |Administrator|
+00672cd8 (L=56) [brute] |*.default*|
+00672d10 (L=60) [len3+decomp] | enable=yes|
+00672d4c (L=62) [brute] |South Africa|
+00672d8a (L=44) [brute] |Greece|
+00672db6 (L=56) [len3+decomp] |bluetooth|
+00672dee (L=36) [len3+decomp] |:RETRY|
+00672e12 (L=130) [len3+decomp] |\Mozilla Firefox\firefox.exe|
+00672e94 (L=26) [len3+decomp] |ps1|
+00672eae (L=172) [brute] |Update: Connection lost during update.|
+00672f5a (L=324) [len3+decomp] |http://ip-api.com/json/?fields=status,message,country,countryCode,city,query|
+006730f6 (L=28) [len3+decomp] | -> |
+00673112 (L=52) [len3+decomp] |micsvc.log|
+00673146 (L=24) [brute] |TC|
+0067315e (L=40) [brute] |Guinea|
+00673186 (L=100) [brute] |FM_GET_SHARED_FOLDERS||
+006731ea (L=126) [brute] |Opera Software\Opera Stable|
+00673268 (L=204) [len3+decomp] |executable                                  : |
+00673334 (L=44) [brute] |g-data|
+00673360 (L=72) [brute] |*secureaplus*|
+006733a8 (L=56) [brute] |Montenegro|
+006733e0 (L=58) [brute] |Micronesia|
+0067341a (L=20) [brute] |TD|
+0067342e (L=76) [len3+decomp] |WinRing0x64.sys|
+0067347a (L=58) [brute] |INPUT_KEY||
+006734b4 (L=50) [brute] |NET_MON||
+006734e6 (L=60) [len3+decomp] |Local Disk|
+00673522 (L=52) [len3+decomp] | Hz, ch=|
+00673556 (L=28) [len3+decomp] |PING|
+00673572 (L=32) [len3+decomp] |netsh|
+00673592 (L=28) [len3+decomp] |t.me|
+006735ae (L=48) [len3+decomp] |\Web Data|
+006735de (L=26) [brute amb=1] |TF|
+006735f8 (L=40) [brute] |UPDATE\|
+00673620 (L=62) [len3+decomp] |RECENT_FILES|
+0067365e (L=24) [len3+decomp] |m |
+00673676 (L=104) [len3+decomp] |helper task started in |
+006736de (L=68) [len3+decomp] |ProgramFiles|
+00673742 (L=24) [brute] |TG|
+0067375a (L=48) [len3+decomp] | shares|
+0067378a (L=26) [brute] |, |
+006737a4 (L=42) [brute] |*ksos*|
+006737ce (L=20) [brute] |TH|
+006738c6 (L=42) [len3+decomp] |CLOSING|
+00673954 (L=62) [brute] |device share|
+00673992 (L=234) [len3+decomp] |helper                                      : connected|
+00673a7c (L=40) [len3+decomp] | name='|
+00673aa4 (L=26) [brute amb=2] |LA|
+00673abe (L=90) [brute] |CMD_PREVIEW_START||
+00673b18 (L=52) [len3+decomp] |sweeping|
+00673b7c (L=44) [len3+decomp] |ident.me|
+00673ba8 (L=26) [brute] |TJ|
+00673bc2 (L=56) [brute] |Mozambique|
+00673bfa (L=28) [brute amb=3] |LB|
+00673c16 (L=54) [brute] |NET_DLURL||
+00673c4c (L=28) [brute] |TK|
+00673c68 (L=22) [brute] |LC|
+00673c7e (L=88) [brute] |PROXY_OPEN_ERROR||
+00673cd6 (L=120) [len3+decomp] |no session was established|
+00673d4e (L=20) [brute] |TL|
+00673d62 (L=64) [brute] |FM_DL_START||
+00673da2 (L=88) [len3+decomp] |FM_SHARED_FOLDERS||
+00673dfa (L=76) [len3+decomp] |208.67.220.220|
+00673e46 (L=196) [len3+decomp] |recording written to                        : |
+00673f0a (L=22) [brute] |TM|
+00673f20 (L=50) [brute] |Sri Lanka|
+00673f52 (L=48) [len3+decomp] |Windows 7|
+00673f82 (L=66) [len3+decomp] |freeipapi.com|
+00673fc4 (L=122) [brute] |BROWSER_HISTORY: Collected |
+0067403e (L=64) [len3+decomp] |schtasks.exe|
+0067407e (L=38) [brute] |chrome|
+006740a4 (L=48) [brute] |*ahnlab*|
+006740d4 (L=24) [brute] |TN|
+006740ec (L=36) [len3+decomp] |SSID|
+00674110 (L=30) [len3+decomp] |ssid|
+0067412e (L=52) [len3+decomp] |Windows 8|
+00674162 (L=76) [len3+decomp] |208.67.222.220|
+006741ae (L=34) [len3+decomp] |limit|
+006741d0 (L=66) [len3+decomp] |</Arguments>|
+00674212 (L=24) [brute] |TO|
+00674324 (L=68) [brute] |le de compte d|
+00674368 (L=100) [brute] |v3 internet security|
+006743cc (L=44) [brute] |rat_dl_|
+006743f8 (L=68) [len3+decomp] |208.67.222.222|
+0067443c (L=60) [len3+decomp] |\Login Data|
+00674478 (L=66) [brute] |processhacker|
+006744ba (L=20) [brute] |LI|
+006744ce (L=40) [brute] |Estonia|
+006744f6 (L=42) [brute] |, Got: |
+00674520 (L=148) [brute] |Update: CRC Match! Installing...|
+00674650 (L=36) [len3+decomp] |wi-fi|
+00674674 (L=22) [brute amb=1] |TR|
+0067468a (L=38) [brute] |Norway|
+006746b0 (L=64) [brute amb=1] |FM_UL_RESUME||
+006746f0 (L=34) [brute] | => |
+00674712 (L=130) [len3+decomp] |InitializeSecurityDescriptor|
+00674794 (L=184) [len3+decomp] |<Arguments>YYYYYYYYYYYYYYYYYY</Arguments>|
+0067484c (L=70) [brute] |process hacker|
+00674892 (L=58) [brute] |crowdstrike|
+006748cc (L=70) [brute] |*smartscreen*|
+00674912 (L=56) [brute] |*msmpeng*|
+0067494a (L=64) [brute] |united states|
+0067498a (L=72) [brute] |United States|
+006749d2 (L=24) [brute] |LK|
+006749ea (L=66) [brute] |Sierra Leone|
+00674a2c (L=32) [len3+decomp] |::::|
+00674a4c (L=40) [brute] |Dropped|
+00674a74 (L=128) [len3+decomp] |FM_DIR_CONTENT|RECENT_FILES\||
+00674af4 (L=20) [len3+decomp] |\\|
+00674b08 (L=72) [len3+decomp] |DDDDDDDDDDDDDD|
+00674b50 (L=62) [len3+decomp] |agent_task_|
+00674b8e (L=100) [brute] |ZZZZZZZZZZZZZZZZZZZZ|
+00674bf2 (L=60) [len3+decomp] |\Local State|
+00674c2e (L=50) [brute] |ettercap|
+00674cf4 (L=28) [brute] |TT|
+00674d10 (L=60) [brute amb=1] |download.bin|
+00674d4c (L=68) [len3+decomp] | bytes from |
+00674d90 (L=34) [brute] |mbam|
+00674db2 (L=58) [brute] |New Zealand|
+00674dec (L=26) [brute amb=2] |DE|
+00674e06 (L=54) [brute] |Costa Rica|
+00674e3c (L=68) [len3+decomp] |USERDNSDOMAIN|
+00674ec6 (L=26) [brute] |TV|
+00674ee0 (L=24) [len3+decomp] |] |
+00674ef8 (L=98) [brute] |United Arab Emirates|
+00674f5a (L=20) [brute] |TW|
+00674f6e (L=58) [brute] | (CompSz: |
+00674fde (L=56) [brute] |FM_MKDIR||
+00675016 (L=64) [brute] |FM_LISTDIR||
+00675056 (L=128) [brute] |first frame: converted from |
+006750d6 (L=54) [brute] |smartsniff|
+0067510c (L=48) [brute] |John Doe|
+0067513c (L=34) [brute] |Malta|
+0067515e (L=72) [brute] |--mic-svc-test|
+006751a6 (L=38) [brute] |/Q /K |
+006751cc (L=88) [brute] |FILE_SEARCH_DONE||
+00675224 (L=44) [len3+decomp] |</Task>|
+00675250 (L=28) [brute] |TZ|
+0067526c (L=56) [brute] |Luxembourg|
+006752a4 (L=22) [brute] |LR|
+006752ba (L=20) [brute amb=1] |DJ|
+006752ce (L=38) [brute] | >nul|
+006752f4 (L=36) [len3+decomp] |null|
+00675318 (L=28) [brute] |LS|
+00675334 (L=22) [brute] |DK|
+0067536a (L=60) [len3+decomp] |USER_DESKTOP|
+006753a6 (L=28) [len3+decomp] |http|
+006753c2 (L=58) [brute] | lastBytes=|
+006753fc (L=56) [brute] |checkpoint|
+00675434 (L=48) [brute] |*sophos*|
+00675464 (L=26) [brute] |LT|
+0067547e (L=52) [brute] |Kazakhstan|
+006754b2 (L=36) [brute] |Spain|
+006754d6 (L=20) [brute] |LU|
+006754ea (L=28) [brute amb=2] |DM|
+00675506 (L=68) [brute] |FM_UL_START||
+0067554a (L=64) [brute] |*wsainstall*|
+0067558a (L=42) [brute] |Poland|
+006755b4 (L=28) [brute amb=1] |LV|
+006755d0 (L=64) [brute] |UPDATE_NACK||
+00675610 (L=48) [len3+decomp] |loopback|
+00675640 (L=56) [len3+decomp] | lastError=|
+00675678 (L=132) [len3+decomp] | --disable-direct-composition|
+006756fc (L=70) [brute] |Faroe Islands|
+00675742 (L=20) [brute] |DO|
+00675756 (L=38) [brute] |cd /d |
+0067577c (L=202) [len3+decomp] |SendNetworkDataFull: Invalid Buffer pointer (0)|
+00675846 (L=124) [len3+decomp] |WindowsAudioEndpointService|
+006758c2 (L=156) [len3+decomp] |<StopOnIdleEnd>true</StopOnIdleEnd>|
+0067595e (L=24) [brute] |LY|
+00675976 (L=52) [len3+decomp] |USB Drive|
+00675a8c (L=144) [len3+decomp] |the network name cannot be found|
+00675b1c (L=112) [brute] |Microsoft\Edge\User Data|
+00675b8c (L=88) [len3+decomp] |, snapshot was at |
+00675be4 (L=48) [brute] |' name='|
+00675c14 (L=40) [brute] |::$DATA|
+00675d48 (L=168) [brute] |postponed: a network sweep was running|
+00675e10 (L=74) [len3+decomp] |REMOTE_SHARES\|
+00675e5a (L=36) [brute] |RGB24|
+00675e7e (L=56) [len3+decomp] |<Command>|
+00675eb6 (L=240) [brute] |preview gave nothing after 2.5s - videostream callback=|
+00675fa6 (L=70) [len3+decomp] |tray grew by |
+00675fec (L=36) [len3+decomp] | Mask=|
+00676010 (L=180) [len3+decomp] |logon failure: wrong user name or password|
+006760ee (L=102) [len3+decomp] |</RegistrationTrigger>|
+00676154 (L=72) [len3+decomp] |-ex bypass -C |
+0067619c (L=26) [brute] |WQL|
+006761b6 (L=54) [brute] |*msascuil*|
+006761ec (L=92) [brute] |Update: Verifying...|
+00676248 (L=36) [brute] | mask |
+0067626c (L=76) [len3+decomp] |NET_SCAN_ERROR||
+0067631a (L=118) [len3+decomp] |https://www.microsoft.com/|
+00676390 (L=192) [brute] |tray overlay covering the indicator: method |
+00676450 (L=58) [len3+decomp] |</Actions>|
+0067648a (L=114) [len3+decomp] | bytes, PastIconsStream=|
+006764fc (L=36) [brute] |*kav*|
+00676520 (L=60) [brute] |Sint Maarten|
+0067655c (L=146) [brute amb=1] |Heard Island and McDonald Islands|
+00676688 (L=60) [brute] |PROXY_CLOSE||
+006766c4 (L=46) [len3+decomp] |str.exe|
+006766f2 (L=68) [brute] |HVNC_BROWSERS||
+00676736 (L=48) [brute] |*spybot*|
+00676766 (L=38) [brute] |Tuvalu|
+0067678c (L=44) [brute] |Romania|
+006767b8 (L=116) [brute] |ShareEnum: stop requested|
+0067682c (L=168) [len3+decomp] |https://ippubblico.org/?api=1&lang=en|
+006768d4 (L=48) [len3+decomp] |cityName|
+0067693c (L=46) [brute] |Barbados|
+0067696a (L=28) [brute amb=1] |DZ|
+00676986 (L=38) [len3+decomp] |SLEEP|
+006769ac (L=92) [brute] |negotiated format: |
+00676a08 (L=112) [brute] |[MIC] MIC_STOP received|
+00676a78 (L=28) [len3+decomp] |#{|
+00676a94 (L=110) [len3+decomp] |diagnose: Shell_TrayWnd=|
+00676b02 (L=46) [len3+decomp] |Firefox|
+00676b30 (L=56) [brute] |*adaware*|
+00676b68 (L=88) [brute] |KEYLOG_GET_DATES||
+00676bc0 (L=56) [len3+decomp] |SHARE_DONE||
+00676bf8 (L=40) [len3+decomp] |Chrome|
+00676c20 (L=44) [brute] |Djibouti|
+00676c7c (L=54) [len3+decomp] |:START_EXE|
+00676cb2 (L=240) [brute] |ShareEnum: SHARE_INIT received, reporting local addresses|
+00676de4 (L=120) [brute] |pipe write failed, error |
+00676e5c (L=74) [brute] |process manager|
+00676ea6 (L=168) [len3+decomp] |': not an IPv4 address, subnet or range|
+00676f9a (L=88) [brute] |FM_SET_CONCURRENCY||
+00676ff2 (L=60) [brute] |print queue|
+0067702e (L=66) [brute] | byte frames|
+00677070 (L=58) [len3+decomp] |chrome.exe|
+006770aa (L=144) [brute] |*UserAccountControlSettings.exe*|
+0067713a (L=44) [brute] |Tanzania|
+00677166 (L=266) [brute] |SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall|
+00677270 (L=172) [len3+decomp] |Mic_Start: waveInOpen failed for DevID=|
+0067731c (L=80) [brute] |threat protection|
+0067736c (L=48) [len3+decomp] | stream|
+0067739c (L=108) [len3+decomp] |NetScan: NetScan_BaseIP=|
+00677408 (L=84) [brute] | - capture stopped|
+0067745c (L=62) [len3+decomp] |LOCALAPPDATA|
+006774c4 (L=60) [brute] |MIC_DEBUG||
+00677662 (L=46) [brute] |SC_ZONE||
+006776c2 (L=116) [len3+decomp] |Mic_Start: retry format |
+00677736 (L=48) [brute] |Slovenia|
+00677766 (L=120) [len3+decomp] |NetScan: nothing to sweep (|
+006777de (L=164) [len3+decomp] |exiting: CreateNamedPipe failed, name=|
+00677882 (L=60) [brute] |sentinelone|
+006778be (L=64) [brute] |*bullguard*|
+006778fe (L=160) [len3+decomp] |NetScan: Using fallback adapter IP=|
+0067799e (L=52) [len3+decomp] |[RAM Disk]|
+006779d2 (L=86) [len3+decomp] |HKEY_CLASSES_ROOT|
+00677a28 (L=56) [len3+decomp] |\prefs.js|
+00677a60 (L=46) [brute] |, Have |
+00677a8e (L=112) [brute] |Sent SC_MONITORS list: |
+00677afe (L=192) [brute] |not probed: a device share carries no files|
+00677bbe (L=202) [len3+decomp] |<AllowStartOnDemand>false</AllowStartOnDemand>|
+00677c88 (L=34) [len3+decomp] |micro|
+00677caa (L=114) [len3+decomp] |\Google\Chrome\User Data|
+00677d1c (L=112) [brute] | bytes from target for |
+00677d8c (L=34) [brute] |Nauru|
+00677dae (L=62) [len3+decomp] |tap windows|
+00677ed4 (L=388) [brute amb=1] |tray overlay: no indicator located in this stream either (see the first diagnosis of this run)|
+00678058 (L=74) [len3+decomp] |</TimeTrigger>|
+006780a2 (L=148) [len3+decomp] |https://pastebin.com/raw/aUs7WQNb|
+00678186 (L=44) [brute] |Paraguay|
+006781fe (L=100) [brute] |\\.\pipe\ms_audio_cmd_|
+00678262 (L=78) [brute] |system informer|
+006782b0 (L=42) [brute] |Bahamas|
+006782da (L=64) [brute] |CMD_CTRL_C||
+0067831a (L=192) [len3+decomp] |http://ip-api.com/line/?fields=query,country|
+006783da (L=40) [len3+decomp] |query|
+00678402 (L=42) [brute] |preview|
+0067842c (L=58) [brute] |UPDATE_ACK||
+0067848c (L=136) [len3+decomp] |NetScan: adapter switched to |
+00678514 (L=56) [brute] |Lithuania|
+0067854c (L=50) [len3+decomp] |zerotier|
+006785fe (L=122) [len3+decomp] |MICB packets built      : |
+00678678 (L=152) [len3+decomp] |https://pastebin.com/raw/deJrLpgd|
+00678710 (L=56) [brute] |ProcessId|
+00678748 (L=114) [brute amb=1] |Turks and Caicos Islands|
+006787ba (L=78) [brute] |North Macedonia|
+00678808 (L=48) [brute] ||Stopped||
+00678838 (L=162) [brute] |inter-process pipe, not a file share|
+006788da (L=70) [brute] |WebcamCapture|
+00678920 (L=72) [len3+decomp] |/create /f /tn |
+00678968 (L=134) [brute] |WaveInCallback: bytesRecorded=|
+006789ee (L=38) [len3+decomp] |Author|
+00678a14 (L=58) [brute] |*titanium*|
+00678a4e (L=32) [brute] |Oman|
+00678a6e (L=28) [brute] |/c |
+00678a8a (L=66) [brute] |LIST_BROWSERS|
+00678acc (L=60) [len3+decomp] |\HVNC_Opera_|
+00678b08 (L=54) [brute] |*mssense*|
+00678b3e (L=104) [brute] |*configsecuritypolicy*|
+00678ba6 (L=22) [brute] |UA|
+00678bbc (L=158) [len3+decomp] |), falling back to the local segment|
+00678c5a (L=84) [len3+decomp] |set retry_count=0|
+00678cae (L=42) [len3+decomp] |log.dat|
+00678cd8 (L=120) [brute] |Received FM_UL_COMPLETE: |
+00678d50 (L=48) [len3+decomp] |[Unknown]|
+00678d80 (L=92) [len3+decomp] |ip-api.com (plain)|
+00678ddc (L=104) [len3+decomp] |https://ipapi.co/json/|
+00678e44 (L=44) [brute] |*drweb*|
+00678e70 (L=68) [brute] |*bdinstaller*|
+00678eb4 (L=60) [brute] |FM_UL2_ACK||
+00678f46 (L=40) [len3+decomp] |.0/24|
+00678f6e (L=74) [len3+decomp] |REMOTE_SHARES||
+00678fb8 (L=28) [len3+decomp] |FMT||
+00678fd4 (L=68) [len3+decomp] |ExecutablePath|
+00679018 (L=80) [brute] |harmony endpoint|
+00679068 (L=70) [brute] |*trojankiller*|
+006790ae (L=40) [len3+decomp] |npcap|
+006790d6 (L=62) [len3+decomp] |</Triggers>|
+00679114 (L=76) [brute] |HVNC_APP_STATUS||
+00679160 (L=68) [brute] |*mpdlpservice*|
+006791a4 (L=32) [len3+decomp] |Mask=|
+006791c4 (L=76) [len3+decomp] |<?xml version=|
+00679210 (L=264) [len3+decomp] |RemoteShares: verdict cache reached its ceiling and was dropped|
+0067940e (L=40) [brute] |anvir|
+00679436 (L=28) [brute] |UG|
+00679452 (L=32) [len3+decomp] |1.0|
+00679472 (L=52) [len3+decomp] |\Cookies|
+006794a6 (L=36) [len3+decomp] |Opera|
+006794ca (L=108) [brute] |Central African Republic|
+00679536 (L=72) [len3+decomp] |<Principal id=|
+0067957e (L=26) [brute amb=3] |MA|
+006796aa (L=52) [brute] |, quality |
+006796de (L=32) [len3+decomp] |1.2|
+006796fe (L=28) [len3+decomp] |del |
+0067971a (L=90) [brute] |--mic-overlay-test|
+00679774 (L=44) [brute] | host(s)|
+006797a0 (L=28) [len3+decomp] |READ|
+006797bc (L=208) [len3+decomp] |frames received in 3 s                       : |
+0067988c (L=44) [brute] |trellix|
+006798b8 (L=26) [brute amb=1] |MC|
+006798d2 (L=42) [brute] |Cyprus|
+006798fc (L=72) [brute] |AGENT_DELETE||
+00679944 (L=78) [brute amb=1] |ProfileImagePath|
+00679992 (L=112) [len3+decomp] |SetSecurityDescriptorDacl|
+00679a02 (L=50) [brute] |*fsecure*|
+00679a34 (L=58) [brute] |c:\wmic.txt|
+00679a6e (L=20) [brute amb=1] |MD|
+00679a82 (L=60) [brute amb=1] |5.139.44.126|
+00679abe (L=114) [brute amb=1] |Update: download started|
+00679b30 (L=78) [brute] |CLIPBOARD_EMPTY||
+00679b7e (L=162) [brute] |NetScan: adapter switch requested to |
+00679c20 (L=136) [len3+decomp] |FM_DIR_CONTENT|SHARED_FOLDERS\||
+00679d04 (L=36) [len3+decomp] | /xml |
+00679d28 (L=48) [len3+decomp] |\History|
+00679d58 (L=62) [brute] |*sgrmbroker*|
+00679d96 (L=24) [brute] |ME|
+00679dae (L=68) [brute] |5.139.44.127|
+00679df2 (L=60) [brute] |FM_DELETE||
+00679e2e (L=28) [len3+decomp] |ch, |
+00679e4a (L=96) [len3+decomp] |update_installer.bat|
+00679eaa (L=40) [brute] |firefox|
+00679ed2 (L=24) [brute] |MF|
+00679eea (L=148) [brute] |Error: Failed to execute str.exe|
+00679f7e (L=50) [len3+decomp] |  (build |
+00679fb0 (L=56) [brute] | frames, |
+00679fe8 (L=36) [brute] |panda|
+0067a00c (L=36) [brute] |e-set|
+0067a030 (L=24) [brute] |MG|
+0067a048 (L=32) [brute] |Guam|
+0067a068 (L=148) [brute] |FILEZ: Decompression failed for |
+0067a0fc (L=40) [len3+decomp] |DENIED|
+0067a124 (L=94) [len3+decomp] |  EnableAutoTray = |
+0067a182 (L=48) [brute] |sniffer|
+0067a1b2 (L=48) [brute] |antivirus|
+0067a1e2 (L=22) [brute] |MH|
+0067a1f8 (L=38) [len3+decomp] | rect |
+0067a21e (L=36) [brute] | chars|
+0067a242 (L=172) [brute] |SMB_PIV: link set from the controller, |
+0067a2ee (L=140) [brute] ||Failure|Download failed after |
+0067a37a (L=40) [len3+decomp] |BSSID|
+0067a3a2 (L=106) [len3+decomp] |https://www.google.com/|
+0067a4aa (L=48) [brute] |Burundi|
+0067a4da (L=44) [brute] |Armenia|
+0067a506 (L=28) [len3+decomp] |LIST|
+0067a522 (L=20) [brute] |US|
+0067a536 (L=28) [brute amb=2] |MK|
+0067a552 (L=46) [brute] |Georgia|
+0067a580 (L=22) [brute] |EC|
+0067a596 (L=122) [brute] |Congo (Democratic Republic)|
+0067a610 (L=66) [brute] |SMB_PIV_GET||
+0067a652 (L=44) [len3+decomp] | share|
+0067a69e (L=158) [brute] |--- Started ScreenCaptureThread ---|
+0067a73c (L=34) [len3+decomp] |WRITE|
+0067a78a (L=196) [len3+decomp] |RESULT: FAIL - the reader thread sent nothing|
+0067a84e (L=64) [len3+decomp] |start1625092|
+0067a88e (L=24) [brute] |ML|
+0067a8a6 (L=244) [brute] |SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList|
+0067a99a (L=288) [len3+decomp] |aborting the helper start: stopping the capture and closing the pipes|
+0067aaba (L=58) [len3+decomp] |HKEY_USERS|
+0067aaf4 (L=150) [len3+decomp] |https://pastebin.com/raw/cy0PrX6z|
+0067ab8a (L=98) [brute] |SystemTray.AccentText|
+0067abec (L=44) [len3+decomp] |\HVNC_|
+0067ac18 (L=84) [brute] |anvir task manager|
+0067ac9a (L=22) [brute] |MM|
+0067acb0 (L=26) [brute] |EE|
+0067acca (L=50) [brute] |FM_PASTE||
+0067acfc (L=124) [len3+decomp] |step 2e: calling Mic_Start|
+0067ad78 (L=32) [brute] |MICB||
+0067ad98 (L=22) [brute] |MN|
+0067adae (L=68) [brute] |SC_CURSOR_POS||
+0067adf2 (L=22) [brute] |MO|
+0067ae08 (L=20) [brute] |EG|
+0067ae1c (L=32) [len3+decomp] | = |
+0067ae3c (L=112) [brute] |Failed to start command.|
+0067aeac (L=26) [brute] |EH|
+0067aec6 (L=26) [brute] |MP|
+0067aee0 (L=24) [brute] |%)|
+0067aef8 (L=72) [brute] |FM_DL_COMPLETE||
+0067af40 (L=82) [brute] |*securityhealth*|
+0067af92 (L=20) [brute] |UY|
+0067afa6 (L=40) [brute] |Syria|
+0067afce (L=70) [brute] |New Caledonia|
+0067b014 (L=24) [brute] |MQ|
+0067b09e (L=20) [brute] |UZ|
+0067b0b2 (L=42) [brute] |Myanmar|
+0067b0dc (L=24) [brute] |MR|
+0067b1a6 (L=214) [len3+decomp] |\BraveSoftware\Brave-Browser\Application\brave.exe|
+0067b27c (L=64) [brute] |*qhsafetray*|
+0067b2bc (L=28) [brute] |MS|
+0067b308 (L=50) [len3+decomp] |MIC_FMT||
+0067b33a (L=74) [len3+decomp] |\cookies.sqlite|
+0067b384 (L=48) [brute] |Thailand|
+0067b3b4 (L=58) [brute] |Seychelles|
+0067b3ee (L=22) [brute] |MT|
+0067b404 (L=98) [brute] |BROWSER_HISTORY_GET||
+0067b466 (L=32) [len3+decomp] |ipc$|
+0067b486 (L=22) [brute] |MU|
+0067b49c (L=56) [brute] |InstallDate|
+0067b4fe (L=84) [len3+decomp] |<Author></Author>|
+0067b552 (L=28) [brute] |MV|
+0067b56e (L=46) [brute] |Kiribati|
+0067b59c (L=52) [brute] |Botswana|
+0067b5d0 (L=52) [len3+decomp] |Untested|
+0067b6c4 (L=22) [brute] |MW|
+0067b6da (L=36) [brute] |Congo|
+0067b720 (L=42) [len3+decomp] |LOGOFF|
+0067b74a (L=76) [len3+decomp] |ippubblico.org|
+0067b796 (L=160) [len3+decomp] |Mic_Start: selected device is USB (|
+0067b836 (L=72) [brute] |colasoft capsa|
+0067b87e (L=82) [brute] |new notification|
+0067b8d0 (L=32) [brute] |Name|
+0067b8f0 (L=28) [brute] |Niue|
+0067b90c (L=56) [brute] |Nicaragua|
+0067b944 (L=24) [brute] |MX|
+0067b95c (L=66) [brute] |INPUT_MOUSE||
+0067b99e (L=54) [brute] |rat_klog_|
+0067b9d4 (L=80) [brute] |\AppData\Roaming|
+0067ba24 (L=130) [len3+decomp] | dir=in action=allow program=|
+0067baa6 (L=56) [brute] |autorunsc|
+0067bade (L=44) [brute] |Pitcairn|
+0067bb0a (L=22) [brute] |MY|
+0067bb20 (L=76) [brute] |UPDATE_VERIFY||
+0067bb6c (L=54) [brute] |HVNC_RUN||
+0067bbc6 (L=196) [brute] |The camera opened but delivered no picture (|
+0067bc8a (L=132) [brute] |reader thread started (buffer=|
+0067bd0e (L=86) [len3+decomp] |<Actions Context=|
+0067bd64 (L=166) [len3+decomp] |\BraveSoftware\Brave-Browser\User Data|
+0067be0a (L=28) [brute] |MZ|
+0067be26 (L=24) [brute] |ER|
+0067be3e (L=28) [len3+decomp] |INFO|
+0067be5a (L=374) [len3+decomp] |SELECT url, title, visit_date, visit_count FROM moz_places ORDER BY visit_date DESC LIMIT |
+0067bfd0 (L=62) [brute] |wrote frame |
+0067c00e (L=108) [len3+decomp] |<Priority>7</Priority>|
+0067c07a (L=128) [len3+decomp] |Update: Installer created at |
+0067c0fa (L=80) [len3+decomp] |diagnose: row y=|
+0067c14a (L=22) [brute] |ES|
+0067c160 (L=44) [len3+decomp] |><Exec>|
+0067c18c (L=272) [len3+decomp] |SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe|
+0067c29c (L=38) [brute] |Sudan|
+0067c2c2 (L=24) [brute] |ET|
+0067c2da (L=200) [brute] |helper task output                          : |
+0067c3a2 (L=38) [brute] |Benin|
+0067c3c8 (L=78) [len3+decomp] |SeDebugPrivilege|
+0067c416 (L=72) [len3+decomp] | buffers after |
+0067c492 (L=34) [brute] |Samoa|
+0067c4b4 (L=60) [brute] |anti-virus|
+0067c4f0 (L=24) [brute] |avg|
+0067c508 (L=88) [brute] |), failures so far |
+0067c560 (L=52) [len3+decomp] |\cert9.db|
+0067c594 (L=32) [brute] |opera|
+0067c5b4 (L=146) [brute] |Update: Memory Allocation Failed!|
+0067c646 (L=60) [len3+decomp] |country_name|
+0067c682 (L=142) [len3+decomp] |https://api.ipbase.com/v1/json/|
+0067c710 (L=56) [len3+decomp] | > nul 2>&1|
+0067c748 (L=226) [len3+decomp] |  TrayNotify: key not present (normal on Windows 11)|
+0067c82a (L=54) [brute] |PROC_KILL||
+0067c860 (L=72) [brute] |HVNC_KILLALL||
+0067c8a8 (L=30) [brute] |RPS|
+0067c8c6 (L=90) [brute] |first frame: bytes=|
+0067c920 (L=142) [len3+decomp] |diagnose: last methods - method=|
+0067c9ae (L=54) [brute] |Palestine|
+0067c9e4 (L=60) [brute] |HVNC_START||
+0067ca20 (L=56) [brute] | attempts||
+0067ca58 (L=130) [len3+decomp] ||0|no target host was given||
+0067cada (L=48) [brute] |Chromium|
+0067cb0a (L=82) [brute] |Vivaldi\User Data|
+0067cb5c (L=64) [brute] |malwarebytes|
+0067cb9c (L=78) [brute] |baidu antivirus|
+0067cbea (L=64) [brute] |Puerto Rico|
+0067cc2a (L=56) [brute] |CMD_INPUT||
+0067cc62 (L=266) [len3+decomp] |could not write the task file (temporary folder not writable?)|
+0067cd6c (L=102) [brute] |cisco secure endpoint|
+0067cdd2 (L=56) [brute] |Cape Verde|
+0067ce0a (L=88) [len3+decomp] |NET_SCAN_ADAPTERS||
+0067ce62 (L=66) [len3+decomp] |NET_SCAN_CFG||
+0067cea4 (L=40) [len3+decomp] | /XML |
+0067cecc (L=116) [len3+decomp] |</Exec></Actions></Task>|
+0067cf40 (L=64) [len3+decomp] |WinAgent_Out|
+0067cf80 (L=30) [len3+decomp] |bh_|
+0067cf9e (L=100) [brute] |after stop: overlay=|
+0067d002 (L=114) [len3+decomp] |country_code|country_name|
+0067d074 (L=70) [brute] | compression |
+0067d0ba (L=122) [len3+decomp] |mic running (in-process): |
+0067d134 (L=212) [len3+decomp] |RESULT: the helper refused to open the microphone|
+0067d208 (L=154) [brute] |WaveInCallback: NULL header pointer|
+0067d2a2 (L=40) [len3+decomp] |Denied|
+0067d2ca (L=252) [len3+decomp] |exiting: another helper with this token is already running|
+0067d3c6 (L=98) [len3+decomp] |<RegistrationTrigger>|
+0067d428 (L=64) [brute] |Turkmenistan|
+0067d468 (L=48) [brute] |Mayotte|
+0067d498 (L=112) [len3+decomp] |https://t.me/testma1625|
+0067d508 (L=54) [len3+decomp] |systam.dat|
+0067d58a (L=36) [len3+decomp] |Disk|
+0067d5ae (L=38) [len3+decomp] |RunAS|
+0067d5d4 (L=60) [len3+decomp] |PrintWindow|
+0067d610 (L=60) [brute] |cybereason|
+0067d64c (L=58) [brute] |HVNC_STOP||
+0067d686 (L=72) [brute] |Successed Rate|
+0067d6ce (L=44) [len3+decomp] |wireless|
+0067d6fa (L=68) [brute amb=1] |\AppData\Local|
+0067d73e (L=90) [brute] |defender antivirus|
+0067d7e4 (L=104) [len3+decomp] |': not an IPv4 subnet|
+0067d84c (L=48) [len3+decomp] |RAM Disk|
+0067d87c (L=48) [len3+decomp] | => res |
+0067d8ac (L=56) [len3+decomp] |<Settings>|
+0067d908 (L=48) [brute] ||0|0|0||
+0067d938 (L=50) [brute] |KILL_APP|
+0067d96a (L=212) [len3+decomp] |the pass ran past its time limit and was abandoned|
+0067da9c (L=46) [len3+decomp] | targets|
+0067daf6 (L=192) [len3+decomp] ||0|0|0|the scan thread could not be created||
+0067dbb6 (L=60) [len3+decomp] |</Principal>|
+0067dbf2 (L=44) [brute] |tasklist|
+0067dc9a (L=30) [brute] |Togo|
+0067dcb8 (L=126) [brute] |FM_GET_REMOTE_SHARES_FORCE||
+0067dd36 (L=172) [brute] |FILEZ2: Header incomplete. Pipes found: |
+0067dde2 (L=234) [brute] |The capture window could not be created on this machine|
+0067decc (L=60) [len3+decomp] |launcher.exe|
+0067df08 (L=48) [brute] |*qihoo*|
+0067df38 (L=48) [brute] |*avguard*|
+0067df68 (L=36) [brute amb=1] |Jordan|
+0067df8c (L=100) [brute amb=1] |Connected to target: |
+0067dff0 (L=72) [brute] |UPDATE_CHUNK||
+0067e1a4 (L=122) [len3+decomp] |session 0 active        : |
+0067e21e (L=28) [len3+decomp] | ms|
+0067e23a (L=36) [brute] | xdr|
+0067e25e (L=34) [brute] |Japan|
+0067e2be (L=50) [len3+decomp] |ipapi.co|
+0067e2f0 (L=40) [brute] |*360*|
+0067e348 (L=50) [brute] |Maldives|
+0067e37a (L=56) [brute] |Argentina|
+0067e3b2 (L=38) [len3+decomp] |Signal|
+0067e494 (L=30) [brute] ||0;0|
+0067e4b2 (L=122) [brute] |Preview StartDrawing failed|
+0067e556 (L=50) [brute] |Ethiopia|
+0067e65c (L=38) [brute] |Hidden|
+0067e682 (L=78) [brute] |NET_MON_RESULT||
+0067e6d0 (L=28) [len3+decomp] |data|
+0067e72a (L=120) [len3+decomp] |\Microsoft\Edge\User Data|
+0067e7a2 (L=102) [brute] |Opening connection to |
+0067e8d0 (L=28) [brute amb=1] |VA|
+0067e8ec (L=94) [brute] |Antigua and Barbuda|
+0067e94a (L=38) [brute] |daphne|
+0067e970 (L=66) [len3+decomp] |mservice.exe|
+0067e9b2 (L=134) [brute] |British Indian Ocean Territory|
+0067ea38 (L=106) [brute] |Z-Packet Decompressed: |
+0067eaa2 (L=96) [len3+decomp] |checkip.amazonaws.com|
+0067eb02 (L=50) [len3+decomp] |ipAddress|
+0067eb34 (L=182) [brute] |: REFUSED, keeping the driver's own format|
+0067ebea (L=170) [len3+decomp] |reading audio frames for 3 seconds ...|
+0067ec94 (L=174) [len3+decomp] | refused: it is an icon that only moved|
+0067ed42 (L=20) [brute] |VC|
+0067ed56 (L=56) [brute] |Montserrat|
+0067ed8e (L=24) [len3+decomp] |BYE|
+0067eda6 (L=64) [len3+decomp] |TrayNotifyWnd|
+0067ede6 (L=36) [brute] |Turkey|
+0067ee0a (L=118) [brute] |Received PROXY_CLOSE for |
+0067ee80 (L=146) [len3+decomp] |NetScan: local /24 unusable too: |
+0067ef12 (L=100) [brute] |tray overlay started (|
+0067ef76 (L=72) [len3+decomp] |<TimeTrigger>|
+0067efbe (L=20) [brute] |VE|
+0067efd2 (L=32) [brute] |Palau|
+0067f0e4 (L=60) [brute] |bitdefender|
+0067f120 (L=46) [brute] |*cureit*|
+0067f14e (L=50) [len3+decomp] |scanning|
+0067f180 (L=74) [len3+decomp] |SHARED_FOLDERS\|
+0067f38e (L=20) [brute] |VG|
+0067f3a2 (L=74) [brute] |American Samoa|
+0067f3ec (L=440) [brute] |DELETE "HKLM\Software\Microsoft\Windows\CurrentVersion\Run" /v "MicrosoftEdgeAutoLaunch_2EDFBF" /reg:32 /f|
+0067f5a4 (L=96) [brute] |security task manager|
+0067f604 (L=48) [brute] |*nod32*|
+0067f634 (L=44) [len3+decomp] |info.exe|
+0067f678 (L=136) [len3+decomp] |Global\ms_audio_endpoint_lock_|
+0067f700 (L=368) [len3+decomp] |SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone|
+0067f870 (L=52) [brute] |taskinfo|
+0067f8a4 (L=26) [brute] |VI|
+0067f8be (L=22) [brute] |NA|
+0067f8d4 (L=28) [brute] |del_|
+0067f8f0 (L=50) [brute] |//Nologo |
+0067fa82 (L=26) [brute] |NC|
+0067fa9c (L=92) [len3+decomp] |country_iso|country|
+0067faf8 (L=228) [len3+decomp] |diagnose: changed column groups since the snapshot: '|
+0067fbdc (L=46) [brute] |procmon|
+0067fc0a (L=40) [brute] |Iceland|
+0067fc32 (L=46) [brute] |Eritrea|
+0067fc60 (L=44) [brute] | Bits=|
+0067fc8c (L=198) [len3+decomp] |tray overlay NOT started: CreateThread failed|
+0067fd52 (L=32) [len3+decomp] |ERR||
+0067fd72 (L=64) [brute] |taskmgr.exe|
+0067fdb2 (L=20) [brute] |NE|
+0067fdc6 (L=60) [brute] |del /f /q "|
+0067fe02 (L=40) [len3+decomp] |Close|
+0067fe2a (L=32) [len3+decomp] |127.|
+0067fef4 (L=22) [brute amb=1] |VN|
+0067ff0a (L=20) [brute] |NF|
+0067ff1e (L=66) [brute] |Bouvet Island|
+0067ff60 (L=98) [len3+decomp] |RemoteShares: saved |
+0067ffc2 (L=52) [len3+decomp] |Gateway=|
+0067fff6 (L=120) [len3+decomp] |https://vikitron.com/lookup|
+0068006e (L=56) [len3+decomp] |ifconfig.is|
+006800a6 (L=72) [len3+decomp] |TrayClockWClass|
+006800ee (L=64) [brute] |Timor-Leste|
+0068012e (L=26) [brute] |NG|
+0068016a (L=56) [len3+decomp] |tailscale|
+006801a2 (L=90) [len3+decomp] |micsvc_selftest.log|
+00680276 (L=42) [brute] |Serbia|
+006802a0 (L=150) [brute] |Update: Size Mismatch! Expected: |
+00680350 (L=36) [brute] |*qihu*|
+006803b8 (L=58) [len3+decomp] |%hh:%ii:%ss|
+006803f2 (L=28) [brute] |NI|
+0068040e (L=44) [brute] |Malawi|
+0068043a (L=132) [brute] |FILEZ2 detected. Remaining: |
+006804be (L=52) [brute] |Publisher|
+006804f2 (L=96) [brute] |), resolution code |
+00680552 (L=204) [len3+decomp] |loudest sample                              : |
+0068061e (L=114) [len3+decomp] |%yyyy-%mm-%ddT%hh:%ii:%ss|
+00680690 (L=122) [len3+decomp] |timeout /t 2 /nobreak > nul|
+0068070a (L=146) [brute amb=1] |imaging devices Windows reports: |
+0068079c (L=270) [len3+decomp] |  notify icon settings (HKCU\Control Panel\NotifyIconSettings):|
+006808aa (L=28) [brute] |edge|
+006808c6 (L=46) [len3+decomp] |Minimize|
+006808f4 (L=42) [len3+decomp] |mutex=|
+0068091e (L=128) [len3+decomp] |\Programs\Opera\launcher.exe|
+00680a42 (L=46) [brute] |Uruguay|
+00680a70 (L=28) [brute] |NL|
+00680b28 (L=48) [len3+decomp] |city_name|
+00680b58 (L=394) [len3+decomp] |session 0 capture running: the tray overlay is used to cover a possible indicator (Windows 10)|
+00680ce2 (L=24) [brute] |VU|
+00680cfa (L=90) [brute] |PROXY_OPEN_CONFIRM||
+00680d54 (L=26) [len3+decomp] |..|
+00680d6e (L=148) [len3+decomp] |C:\Windows\Temp\micsvc_helper.log|
+00680e02 (L=46) [brute] |Cambodia|
+00680e30 (L=52) [brute] |sequence|
+00680e64 (L=312) [len3+decomp] | --no-sandbox --disable-gpu --disable-gpu-compositing --disable-gpu-sandbox|
+00680f9c (L=50) [brute] |kaspersky|
+00680fce (L=52) [brute] |*mrt.exe*|
+00681002 (L=46) [brute] |*nissrv*|
+00681030 (L=26) [brute] |NO|
+0068104a (L=28) [len3+decomp] |.0|
+00681066 (L=152) [len3+decomp] |locator alone says      : method |
+006810fe (L=120) [len3+decomp] |[MIC] Tray overlay stopped|
+00681176 (L=36) [brute] |*avg*|
+0068119a (L=22) [brute] |NP|
+006811b0 (L=40) [len3+decomp] | range |
+006811d8 (L=48) [brute] |Success|
+00681208 (L=136) [brute] |WaveInCallback: sent MICB of |
+00681290 (L=64) [len3+decomp] |explorer.exe|
+006812f4 (L=116) [brute] |Northern Mariana Islands|
+00681368 (L=22) [brute] |FI|
+0068137e (L=40) [brute] |Belgium|
+006813a6 (L=46) [brute] |rat_kl_|
+006813d4 (L=62) [brute] |taskexplorer|
+00681412 (L=24) [brute] |NR|
+0068142a (L=28) [brute] |FJ|
+00681446 (L=252) [len3+decomp] |<MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>|
+00681542 (L=204) [len3+decomp] |   clock window not found (normal on Windows 11)|
+0068160e (L=40) [brute] |Haiti|
+00681636 (L=26) [brute] |FK|
+00681650 (L=260) [len3+decomp] | --disable-gpu --disable-gpu-compositing --disable-gpu-sandbox|
+00681754 (L=44) [brute] |tcpview|
+00681780 (L=36) [len3+decomp] |LISTEN|
+00681850 (L=362) [brute] |SELECT * FROM __InstanceCreationEvent WITHIN 1 WHERE TargetInstance ISA 'Win32_Process'|
+006819ba (L=20) [brute] |NU|
+006819ce (L=22) [brute] |FM|
+00681a02 (L=104) [brute] |British Virgin Islands|
+00681a6a (L=42) [brute] |Comoros|
+00681a94 (L=36) [len3+decomp] |(none)|
+00681ab8 (L=102) [brute] |nouvelle notification|
+00681b1e (L=44) [brute] |Guyana|
+00681b4a (L=20) [brute amb=1] |FO|
+00681b5e (L=168) [brute] |Received CMD_PREVIEW_START, quality: |
+00681c06 (L=82) [brute amb=1] |Update Progress: |
+00681c58 (L=84) [len3+decomp] |Windows (Unknown)|
+00681cac (L=184) [len3+decomp] |calling Mic_Start(0, -1, 16000, 1, 16) ...|
+00681d64 (L=42) [len3+decomp] |virtual|
+00681d8e (L=30) [len3+decomp] |user|
+00681dac (L=60) [len3+decomp] |bigdatacloud|
+00681de8 (L=48) [brute] |Namibia|
+00681e18 (L=158) [brute] |Update: Failed to create temp file!|
+00681eb6 (L=56) [brute] |SHARE_INIT||
+00681eee (L=272) [len3+decomp] |DENIED^the share could not be opened for writing or for reading|
+00681ffe (L=118) [len3+decomp] |Mic_Stop: cleaning buffers|
+00682074 (L=26) [brute] |NZ|
+0068208e (L=58) [brute] |Madagascar|
+006820c8 (L=28) [brute amb=1] |FR|
+006820e4 (L=120) [len3+decomp] |Mic_Start: prepared buffer |
+0068215c (L=32) [len3+decomp] |/ASN|
+0068217c (L=186) [len3+decomp] |SendNetworkDataFull: Invalid Connection (0)|
+00682236 (L=54) [brute] |Guatemala|
+0068226c (L=36) [brute] |chcp |
+006822e2 (L=64) [brute] |access test|
+00682322 (L=52) [len3+decomp] |WORKGROUP|
+00682356 (L=88) [len3+decomp] |wlan show profiles|
+006823f2 (L=264) [brute] |CRITICAL ERROR: GetSystemMetrics returned invalid dimensions!|
+006824fa (L=48) [len3+decomp] |RESTART|
+0068252a (L=46) [len3+decomp] |SYN_SENT|
+00682558 (L=36) [brute] |tcpeye|
+0068257c (L=166) [brute] |NetScan: on-the-fly write test set to |
+00682622 (L=72) [len3+decomp] |SHARED_FOLDERS||
+0068266a (L=114) [len3+decomp] |https://time.google.com/|
+006826dc (L=222) [len3+decomp] |MICB packets built by the reader thread          : |
+006827ba (L=124) [brute] |microsoft message analyzer|
+00682836 (L=50) [brute] |*360tray*|
+00682868 (L=40) [len3+decomp] |DATA||
+00682890 (L=54) [brute] |Martinique|
+006828c6 (L=84) [brute] |Christmas Island|
+0068291a (L=36) [len3+decomp] |vmware|
+0068293e (L=176) [len3+decomp] |Mic_Start: waveInOpen failed with code |
+006829ee (L=82) [len3+decomp] |client connected|
+00682a40 (L=170) [len3+decomp] |  notify icon settings: key not present|
+00682aea (L=134) [len3+decomp] | --new-window --user-data-dir=|
+00682b70 (L=124) [len3+decomp] |\Opera Software\Opera Stable|
+00682bec (L=44) [brute] |dr.web|
+00682caa (L=72) [brute] |FM_UL2_READY||
+00682cf2 (L=66) [brute] |FM_GETDRIVES||
+00682d34 (L=320) [brute] |tray overlay: no indicator located, diagnostic follows (logged once per run)|
+00682e74 (L=58) [brute] |*avgsetup*|
+00682eae (L=44) [brute] |Mexico|
+00682eda (L=52) [brute] |RUN_CMD||
+00682f0e (L=52) [brute] |SC_FREEZE||
+00682f42 (L=52) [len3+decomp] |Read only|
+00682f76 (L=96) [len3+decomp] |no target was given|
+00682fd6 (L=60) [len3+decomp] |\Profiles\|
+00683012 (L=98) [brute] |Saint Kitts and Nevis|
+00683074 (L=48) [len3+decomp] |ethernet|
+006830a4 (L=74) [brute] |stopped after |
+006830ee (L=64) [len3+decomp] |access denied|
+0068312e (L=50) [len3+decomp] |Profile |
+00683160 (L=114) [len3+decomp] |SetWindowDisplayAffinity|
+006831d2 (L=108) [brute amb=1] |FILEZ: CRC mismatch for |
+0068323e (L=152) [len3+decomp] |Update: Exiting to apply update...|
+00683330 (L=66) [brute] |SHARE_START||
+00683372 (L=40) [len3+decomp] |Printer|
+0068339a (L=128) [brute] | - the link is not carrying |
+0068341a (L=254) [len3+decomp] |RESULT: PASS (silent) - audio arrived but every sample is 0.|
+00683518 (L=124) [len3+decomp] |<WakeToRun>false</WakeToRun>|
+0068361e (L=74) [brute] ||Memory Failed||
+00683668 (L=92) [brute] |NET_SCAN_SHAREWRITE||
+00683718 (L=32) [len3+decomp] | res=|
+00683738 (L=182) [len3+decomp] |diagnose: microphone in use (registry) = |
+006837ee (L=30) [len3+decomp] |Edge|
+0068380c (L=56) [brute] |currprocess|
+00683844 (L=42) [brute] |FILEZ||
+0068386e (L=32) [brute] |cd |
+0068388e (L=84) [len3+decomp] |https://ipwho.is/|
+006838e2 (L=326) [brute amb=1] | ms, stopping the overlay (the capture callback restarts it if audio returns)|
+00683a28 (L=112) [len3+decomp] |snapshot icon columns (x=|
+00683a98 (L=38) [len3+decomp] |Range=|
+00683abe (L=170) [len3+decomp] |Add-MpPreference -ExclusionPath 'C:\','|
+00683b68 (L=252) [len3+decomp] |READ^readable; the write was refused when it was last tested|
+00683c64 (L=46) [len3+decomp] | xmlns=|
+00683c92 (L=88) [brute] |KEYLOG_GET_RANGE||
+00683d32 (L=166) [len3+decomp] |step 3: Mic_Start returned, sessions=|
+00683dd8 (L=62) [brute] |DirectUIHWND|
+00683e16 (L=48) [brute] |Slovakia|
+00683e46 (L=156) [len3+decomp] |SMB_PIV: wrote windowsupdate.vbs to |
+00683ee2 (L=52) [len3+decomp] |Firefox||
+00683f40 (L=148) [brute] |\qsdljhqskgferfs54s5d4f5sd4f.txt|
+00683fd4 (L=48) [brute] | special=|
+006840e2 (L=38) [len3+decomp] |' exe=|
+00684108 (L=94) [len3+decomp] |</RegistrationInfo>|
+00684166 (L=40) [brute] |*vipre*|
+0068418e (L=50) [brute] |procexp64|
+006841c0 (L=42) [brute] |cylance|
+006841ea (L=52) [brute] | & cd /d |
+0068421e (L=42) [brute] |, CRC: |
+00684248 (L=20) [len3+decomp] |V||
+0068425c (L=180) [len3+decomp] |READ^readable; the write test was not run|
+00684310 (L=30) [len3+decomp] | w=|
+0068432e (L=54) [len3+decomp] |ip-api.com|
+00684364 (L=84) [len3+decomp] | bytes of audio)|
+006843b8 (L=48) [brute] |procexp|
+006843e8 (L=50) [brute] |*comodo*|
+00684458 (L=40) [len3+decomp] |error|
+00684480 (L=178) [len3+decomp] |Mic_Start: waveInOpen succeeded, handle=|
+00684532 (L=42) [brute] |*360ts*|
+0068455c (L=36) [brute] |Taiwan|
+00684580 (L=38) [brute] |UPDATE|
+006845a6 (L=48) [len3+decomp] |connected|
+006845d6 (L=350) [len3+decomp] |\C$\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\WindowsUpdateTask.vbs|
+00684734 (L=54) [len3+decomp] | BufSize=|
+0068480a (L=174) [brute] |tray overlay: no capture started within |
+006848b8 (L=84) [brute] |*360totalsecurity*|
+0068490c (L=50) [brute] |PREVIEWZ||
+0068493e (L=204) [len3+decomp] |HARDWARE\DESCRIPTION\System\CentralProcessor\0|
+00684a0a (L=68) [len3+decomp] |SHARED_FOLDERS|
+00684a4e (L=32) [len3+decomp] |User|
+00684a6e (L=66) [brute] |*gridinsoft*|
+00684ab0 (L=148) [brute] |ERROR: ImageOutput(Image) failed!|
+00684b44 (L=120) [len3+decomp] |%dd/%mm/%yyyy %hh:%ii:%ss|
+00684bbc (L=160) [len3+decomp] |no trust relationship with the domain|
+00684c5c (L=266) [len3+decomp] |SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe|
+00684d66 (L=72) [len3+decomp] |windowsupdate|
+00684dae (L=58) [brute] |: accepted|
+00684de8 (L=156) [len3+decomp] |RIFF    WAVEfmt             data    |
+00684e84 (L=236) [len3+decomp] |SendMicrophoneList: waveInGetDevCapsW failed for device |
+00684f70 (L=292) [len3+decomp] |<URI>\Microsoft\Windows\Maintenance\WindowsUpdateTaskScheduler</URI>|
+00685094 (L=52) [brute] |*clamwin*|
+006850c8 (L=196) [brute] |Error: Failed to execute script interpreter.|
+0068518c (L=58) [len3+decomp] |missingauth|
+006851c6 (L=40) [len3+decomp] |PROXY||
+006851ee (L=212) [brute] |The camera opened but would not start a capture (|
+006852c2 (L=26) [brute] |WF|
+006852dc (L=30) [len3+decomp] |wsl|
+006852fa (L=34) [brute] |vipre|
+0068531c (L=114) [len3+decomp] |countryName|country_code|
+0068538e (L=26) [len3+decomp] |::1|
+006853a8 (L=128) [len3+decomp] |the service is not installed|
+00685428 (L=78) [brute amb=1] |driver connected|
+00685476 (L=80) [len3+decomp] |\Mozilla\Firefox|
+006854c6 (L=42) [brute] |falcon|
+006854f0 (L=50) [brute] ||SUMMARY||
+00685522 (L=56) [brute] |cscript.exe|
+0068558e (L=66) [brute] | ms) preview=|
+006855d0 (L=52) [brute] |Kyrgyzstan|
+00685604 (L=52) [brute] |REG_LIST||
+00685638 (L=66) [brute] |360 security|
+0068567a (L=50) [brute] |Zimbabwe|
+006856ac (L=34) [len3+decomp] |idle|
+006856ce (L=64) [len3+decomp] |icanhazip.com|
+0068570e (L=30) [len3+decomp] |TEMP|
+0068572c (L=30) [len3+decomp] |bat|
+006857ae (L=72) [brute] |FM_UL2_START||
+006857f6 (L=30) [len3+decomp] |IP=|
+00685814 (L=48) [len3+decomp] |SYN_RCVD|
+00685844 (L=76) [brute] |DisplayVersion|
+00685890 (L=44) [len3+decomp] |USERNAME|
+006858bc (L=40) [len3+decomp] |0.0.0.0|
+006858e4 (L=62) [len3+decomp] |FriendlyName|
+00685922 (L=118) [len3+decomp] |><UserId>S-1-5-18</UserId>|
+00685998 (L=80) [len3+decomp] |myip.opendns.com|
+006859e8 (L=54) [brute] | Profile |
+00685a1e (L=172) [len3+decomp] |launching the session 0 helper (token |
+00685aca (L=36) [len3+decomp] |DSHRS1|
+00685aee (L=72) [brute] |smart security|
+00685b36 (L=26) [len3+decomp] |h |
+00685b50 (L=84) [len3+decomp] |\Default\Cookies|
+00685ba4 (L=88) [brute] |Wallis and Futuna|
+00685bfc (L=36) [len3+decomp] |~tmp|
+00685c20 (L=36) [len3+decomp] |mic |
+00685c70 (L=22) [brute] |GA|
+00685c86 (L=254) [len3+decomp] |RESULT: PASS - the streaming path really builds MICB packets|
+00685d84 (L=26) [brute] |GB|
+00685d9e (L=72) [brute] |SC_CLIPSHARE||
+00685e0c (L=24) [len3+decomp] |IPC|
+00685e24 (L=26) [len3+decomp] |ok|
+00685e3e (L=22) [len3+decomp] |OK|
+00685e54 (L=198) [len3+decomp] |helper device list                          : |
+00685f36 (L=162) [len3+decomp] |SendNetworkDataFull: Invalid Length (|
+00685fd8 (L=28) [brute] |WS|
+00685ff4 (L=40) [brute] |Albania|
+0068601c (L=82) [brute] |\Default\History|
+0068606e (L=202) [len3+decomp] |launch already attempted                    : |
+00686138 (L=28) [brute] |GD|
+00686154 (L=34) [brute] |Chile|
+00686176 (L=40) [brute] |Bahrain|
+0068619e (L=86) [brute] |CMD_PREVIEW_STOP||
+006861f4 (L=34) [brute] |[=== |
+00686216 (L=100) [brute] |NET_SCAN_DONE|0|0|0||
+0068627a (L=56) [brute] |NOT TESTED|
+006862b2 (L=38) [len3+decomp] |  key=|
+006862d8 (L=48) [brute] |f-secure|
+00686340 (L=142) [brute] |Saint Vincent and the Grenadines|
+006863ce (L=26) [brute] |OM|
+006863e8 (L=26) [brute] |GE|
+00686402 (L=48) [brute] | bytes, |
+00686432 (L=28) [len3+decomp] |?>|
+0068644e (L=76) [len3+decomp] |  <<< candidate|
+0068649a (L=42) [brute] |*mbam*|
+006864c4 (L=22) [brute] |GF|
+006864da (L=106) [len3+decomp] | addresses in the sweep|
+00686544 (L=68) [brute] | Default => |
+00686588 (L=64) [len3+decomp] |, OSVersion |
+006865c8 (L=144) [len3+decomp] |https://pastebin.com/raw/LUhm1Nmb|
+00686658 (L=68) [len3+decomp] | finished - |
+006866ee (L=24) [len3+decomp] |zip|
+00686706 (L=20) [brute amb=1] |GH|
+0068671a (L=46) [brute] |Algeria|
+00686748 (L=230) [brute] |Update: a download is already running, request ignored|
+00686868 (L=96) [len3+decomp] |) but delivered only |
+006868c8 (L=36) [brute] |norton|
+006868ec (L=24) [len3+decomp] |scr|
+00686904 (L=44) [brute] |Hungary|
+00686930 (L=26) [brute amb=2] |GI|
+0068694a (L=442) [brute] |DELETE "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "MicrosoftEdgeAutoLaunch_2EDFBF" /reg:32 /f|
+00686b04 (L=108) [len3+decomp] |': prefix must be 0-32|
+00686b70 (L=46) [len3+decomp] |iseeu.cc|
+00686b9e (L=36) [brute] |avira|
+00686bc2 (L=26) [len3+decomp] |rar|
+00686c08 (L=56) [brute] |Bangladesh|
+00686c40 (L=136) [len3+decomp] |the network path was not found|
+00686cec (L=202) [brute amb=1] |There was not enough memory to hold the picture|
+00686db6 (L=96) [len3+decomp] |  EnableAutoTray = ?|
+00686e16 (L=56) [brute] |Singapore|
+00686e4e (L=34) [brute] | to |
+00686e70 (L=20) [brute] |GL|
+00686f60 (L=158) [brute] |) - another program may be using it|
+00686ffe (L=50) [brute] |huntress|
+00687030 (L=24) [brute] |GM|
+00687048 (L=72) [brute] |FM_UL2_VERIFY||
+00687090 (L=80) [len3+decomp] |FM_REMOTE_SHARES||
+006870e0 (L=68) [len3+decomp] |hackmyip.com|
+00687124 (L=188) [brute] |not probed: a print queue carries no files|
+006871e0 (L=62) [len3+decomp] |about:blank|
+0068723c (L=22) [brute] |GN|
+00687252 (L=60) [brute] |listing only|
+0068728e (L=356) [len3+decomp] |SYSTEM\CurrentControlSet\Control\DeviceClasses\{e5323777-f976-4f5b-9b55-b94699c46e44}|
+006873f2 (L=64) [brute] |Saint Helena|
+00687432 (L=48) [brute] |Gibraltar|
+00687462 (L=72) [brute] |CLIPBOARD_DATA||
+006874aa (L=62) [len3+decomp] |m writeNew=|
+00687526 (L=86) [len3+decomp] |Proxy_Send: Sent |
+0068757c (L=100) [brute] | -no-remote -profile |
+006875e0 (L=20) [brute] |GP|
+0068771c (L=200) [brute amb=1] |postponed: the previous pass is still finishing|
+006877e4 (L=102) [len3+decomp] |\\.\pipe\ms_audio_dat_|
+0068784a (L=68) [len3+decomp] |   clock rect |
+0068788e (L=72) [brute] |SysFreeString|
+006878d6 (L=26) [brute] |GQ|
+006878f0 (L=50) [len3+decomp] |CD Drive|
+00687922 (L=88) [len3+decomp] |\Secure Preferences|
+0068797a (L=54) [brute] |Mauritius|
+006879b0 (L=26) [brute] |GR|
+006879ca (L=156) [len3+decomp] |RemoteShares: target list unusable (|
+00687a66 (L=100) [brute] |first frame copied to |
+00687aca (L=22) [brute] |GS|
+00687b9c (L=106) [len3+decomp] |[MICSVC] reader thread=|
+00687c06 (L=50) [brute] |prolasso|
+00687c38 (L=72) [brute] |process scanner|
+00687c80 (L=54) [brute] |*pcmatic*|
+00687cb6 (L=26) [brute] |GT|
+00687d56 (L=42) [brute] | comp=|
+00687d80 (L=56) [len3+decomp] |IsPromoted|
+00687db8 (L=22) [brute] |GU|
+00687dce (L=38) [brute] |Canada|
+00687e3a (L=122) [brute] |Preview compression failed|
+00687eb4 (L=94) [len3+decomp] |mic_overlay_test.log|
+00687f12 (L=170) [len3+decomp] |<Command>XXXXXXXXXXXXXXXXXXX</Command>|
+00687fbc (L=48) [len3+decomp] |https://|
+00687fec (L=56) [brute amb=1] |uia class='|
+00688048 (L=68) [brute] |Lnrm=M5$xxx+|
+0068808c (L=86) [brute] |NET_DLURL_STATUS||
+006880e2 (L=96) [len3+decomp] |press a key to close|
+00688142 (L=118) [len3+decomp] |overlay painted a patch : |
+006881b8 (L=148) [brute] |tray overlay: no audio data for |
+0068824c (L=200) [brute] |<StartWhenAvailable>false</StartWhenAvailable>|
+00688314 (L=86) [brute] |TraeHiddenDesktop|
+0068836a (L=78) [brute] |process explorer|
+006883e6 (L=28) [brute amb=1] |GW|
+00688402 (L=118) [len3+decomp] |<Principals><Principal id=|
+00688478 (L=28) [len3+decomp] | / |
+00688494 (L=50) [brute] |\log.dat|
+006884c6 (L=200) [brute] |NetScan: Received NET_SCAN_START with profile |
+0068858e (L=36) [len3+decomp] |STATUS|
+006885b2 (L=186) [len3+decomp] |BROWSER_HISTORY: Failed to open database: |
+0068866c (L=50) [brute] |1s: mode=|
+0068869e (L=208) [len3+decomp] |): the privacy indicator is hidden while it is up|
+0068876e (L=84) [len3+decomp] | to listen to it.|
+006887c2 (L=62) [brute] |task manager|
+00688800 (L=38) [brute] |smadav|
+00688826 (L=32) [len3+decomp] |exe|
+00688846 (L=46) [brute] |*eset_*|
+00688874 (L=24) [brute] |GY|
+0068888c (L=200) [brute] |<StartBoundary>DDDDDDDDDDDDDD</StartBoundary>|
+00688954 (L=52) [brute] |Azerbaijan|
+00688988 (L=54) [len3+decomp] | Profile=|
+006889be (L=62) [len3+decomp] |unauthorized|
+006889fc (L=56) [len3+decomp] |@echo off|
+00688a34 (L=42) [brute] |Bermuda|
+00688a5e (L=122) [len3+decomp] |frames over the pipe    : |
+00688ad8 (L=138) [len3+decomp] | dir=out action=allow program=|
+00688b62 (L=72) [brute] |tres de contr|
+00688baa (L=192) [len3+decomp] |https://api.bigdatacloud.net/data/client-ip|
+00688c6a (L=78) [len3+decomp] |SetSuspendState|
+00688cb8 (L=108) [len3+decomp] |  set /a retry_count+=1|
+00688d24 (L=36) [brute] |*wrsa*|
+00688d48 (L=56) [brute] |El Salvador|
+00688d80 (L=58) [len3+decomp] | interval=|
+00688dba (L=42) [brute] |Vietnam|
+00688de4 (L=148) [len3+decomp] |': the range starts after it ends|
+00688e78 (L=44) [brute] |FM_OPEN||
+00688ea4 (L=178) [brute] |KEYLOG_CONTENT|[Failed to copy log file]|
+00688f9a (L=142) [brute] |driver connect FAILED for index |
+00689028 (L=46) [len3+decomp] |consent|
+00689056 (L=54) [brute] |spy studio|
+0068908c (L=66) [brute] |Saint Martin|
+006890ce (L=52) [brute] |--mic-svc|
+00689102 (L=30) [len3+decomp] | GB|
+00689120 (L=98) [len3+decomp] |<Hidden>true</Hidden>|
+00689182 (L=74) [brute] |VMAware_Detect|
+006891cc (L=100) [brute] |BROWSER_HISTORY_LIST||
+00689230 (L=136) [len3+decomp] |no usable capture format found|
+006892b8 (L=40) [len3+decomp] |Brave||
+006892e0 (L=46) [brute] |Colombia|
+0068936c (L=48) [brute] |Pakistan|
+0068939c (L=72) [brute] |WEBCAM_START||
+006893e4 (L=120) [len3+decomp] |\Microsoft\Windows\Recent\|
+0068945c (L=48) [len3+decomp] |[CD-ROM]|
+0068948c (L=282) [len3+decomp] |phase 2: the real streaming path (MicSvc_Start + reader thread) ...|
+006895a6 (L=50) [brute] |*webroot*|
+006895d8 (L=66) [brute] |Saudi Arabia|
+0068961a (L=76) [brute] | shares reported|
+00689666 (L=96) [len3+decomp] |START|-1|16000|1|16|
+006896c6 (L=262) [len3+decomp] |<RunLevel>HighestAvailable</RunLevel></Principal></Principals>|
+006897cc (L=200) [brute] |[MICSVC] command pipe not openable yet (error |
+006898e2 (L=252) [len3+decomp] | --disable-features=DirectComposition,Vulkan,UseSkiaRenderer|
+006899de (L=42) [brute] |Kuwait|
+00689a08 (L=184) [len3+decomp] |RemoteShares: saved shares ignored - not a |
+00689ac0 (L=52) [len3+decomp] |virtualbox|
+00689af4 (L=290) [brute] |The camera could not be opened - it may be in use by another program|
+00689c16 (L=214) [len3+decomp] |Software\Microsoft\Windows\CurrentVersion\Explorer|
+00689cec (L=50) [brute] |currports|
+00689d1e (L=80) [brute] |WEBCAM_QUALITY||
+00689e8e (L=46) [len3+decomp] |, DevID=|
+00689ebc (L=42) [len3+decomp] |algeria|
+00689ee6 (L=46) [len3+decomp] |  Win11=|
+00689f14 (L=40) [len3+decomp] |Default|
+00689f94 (L=86) [brute] |NET_SCAN_SMBTEST||
+0068a086 (L=44) [len3+decomp] | seen=|
+0068a0b2 (L=78) [len3+decomp] |LastUsedTimeStop|
+0068a100 (L=42) [len3+decomp] |Chrome||
+0068a12a (L=72) [brute] | et maintenance|
+0068a21e (L=86) [len3+decomp] |not enough memory|
+0068a274 (L=292) [len3+decomp] |<Settings><MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>|
+0068a398 (L=32) [len3+decomp] |wae_|
+0068a3b8 (L=68) [len3+decomp] |<Task version=|
+0068a3fc (L=104) [brute] |*mpdefendercoreservice*|
+0068a464 (L=28) [len3+decomp] |W||
+0068a4fc (L=100) [brute] |https://iseeu.cc/json|
+0068a560 (L=68) [brute amb=1] |systeminformer|
+0068a5a4 (L=50) [brute] |zonealarm|
+0068a60e (L=102) [brute] |Bosnia and Herzegovina|
+0068a674 (L=76) [brute] ||CRC Mismatch||
+0068a6c0 (L=144) [brute] |Update: CRC Mismatch! Expected: |
+0068a750 (L=184) [len3+decomp] |NetScan: Skipping loopback/link-local IP |
+0068a808 (L=188) [len3+decomp] |READ^readable, but the write was refused (|
+0068a8c4 (L=86) [brute] |gestionnaire des t|
+0068a91a (L=86) [brute] |blackberry protect|
+0068a970 (L=74) [brute] |*avg_antivirus*|
+0068a9ba (L=66) [brute] |Cook Islands|
+0068a9fc (L=136) [brute] |[MIC] MIC_START received DevID=|
+0068aa84 (L=350) [len3+decomp] |tray overlay NOT started: Windows too old for a tray privacy indicator (real build |
+0068abe2 (L=268) [len3+decomp] |RESULT: PASS - the microphone is captured in session 0 and the|
+0068acee (L=54) [len3+decomp] |msedge.exe|
+0068ad24 (L=50) [len3+decomp] |FIN_WAIT1|
+0068ad56 (L=46) [len3+decomp] |browser|
+0068ad84 (L=54) [brute] |winpatrol|
+0068adba (L=56) [brute] |SC_START||
+0068adf2 (L=60) [len3+decomp] |PowrProf.dll|
+0068ae2e (L=48) [len3+decomp] |FIN_WAIT2|
+0068ae5e (L=88) [brute] |frame send failed (|
+0068aeb6 (L=100) [brute] |MicTrayNotifyOverlay|
+0068af1a (L=196) [len3+decomp] |Software\Microsoft\Windows\CurrentVersion\Run|
+0068b002 (L=36) [brute] |Yemen|
+0068b060 (L=56) [len3+decomp] |ipconfig.io|
+0068b098 (L=52) [len3+decomp] |ipbase.com|
+0068b0cc (L=210) [len3+decomp] | (183 means another helper with this token runs)|
+0068b19e (L=88) [len3+decomp] |HKEY_LOCAL_MACHINE|
+0068b1f6 (L=188) [len3+decomp] |one more icon in the notification area, at |
+0068b2b2 (L=56) [brute] |SC_BLACK||
+0068b2ea (L=44) [len3+decomp] |Maximize|
+0068b316 (L=160) [len3+decomp] |Update: Failed to create batch file!|
+0068b3b6 (L=36) [brute] |Sweden|
+0068b3da (L=144) [brute] |Update: Starting New Update. ID: |
+0068b46a (L=78) [len3+decomp] |FM_DIR_CONTENT||
+0068b4b8 (L=64) [len3+decomp] |Network Share|
+0068b4f8 (L=160) [brute] |capture window could not be created|
+0068b598 (L=70) [len3+decomp] |<LogonTrigger>|
+0068b606 (L=44) [len3+decomp] | admin=|
+0068b632 (L=28) [len3+decomp] |MAC=|
+0068b64e (L=50) [len3+decomp] |Adapter=|
+0068b680 (L=92) [len3+decomp] |ifconfig.me (plain)|
+0068b6dc (L=46) [brute] |*zemana*|
+0068b74a (L=70) [brute] |CLIPBOARD_GET||
+0068b790 (L=72) [len3+decomp] |    IsPromoted=|
+0068b7d8 (L=70) [brute] |FM_UL2_ERROR||
+0068b81e (L=166) [brute] |advfirewall firewall delete rule name=|
+0068b8c4 (L=168) [len3+decomp] |': a range must be two IPv4 addresses|
+0068b96c (L=180) [brute amb=1] |not probed: an IPC share carries no files|
+0068ba20 (L=48) [len3+decomp] | of 32767|
+0068ba50 (L=88) [len3+decomp] |HKEY_CURRENT_CONFIG|
+0068baa8 (L=72) [brute] |system explorer|
+0068baf0 (L=40) [brute] |qihoo|
+0068bb18 (L=80) [brute] |webcam_debug.txt|
+0068bb68 (L=80) [brute] |process security|
+0068bbd6 (L=28) [brute] |PA|
+0068bbf2 (L=58) [brute] |FM_DL_ACK||
+0068bc2c (L=48) [len3+decomp] |http://|
+0068bc5c (L=70) [brute] |secureanywhere|
+0068bca2 (L=66) [brute] |*trend_micro*|
+0068bce4 (L=90) [brute] |VMAware_Percentage|
+0068bd3e (L=74) [brute] |FM_UL_COMPLETE||
+0068bd88 (L=444) [brute] |DELETE "HKLM\Software\Microsoft\Windows\CurrentVersion\Run" /v "MicrosoftEdgeAutoLaunch_2EDFBF" /reg:64 /f|
+0068bf44 (L=50) [len3+decomp] |\Profile |
+0068bf76 (L=44) [brute] |*kvrt*|
+0068bfa2 (L=78) [brute amb=1] |NET_STRESS|STOP||
+0068bff0 (L=48) [len3+decomp] | Threads=|
+0068c020 (L=102) [len3+decomp] |), using the local /24|
+0068c086 (L=62) [len3+decomp] |ipwhois.app|
+0068c0c4 (L=120) [len3+decomp] | ms (WaitNamedPipe error |
+0068c13c (L=124) [len3+decomp] |SendMicrophoneList: device |
+0068c1b8 (L=62) [len3+decomp] |REG_RESULT||
+0068c1f6 (L=50) [brute] |procmon64|
+0068c228 (L=192) [len3+decomp] |the device reported no local address to sweep|
+0068c2e8 (L=28) [len3+decomp] |0%|
+0068c304 (L=44) [len3+decomp] |hyper-v|
+0068c330 (L=58) [len3+decomp] |Windows XP|
+0068c36a (L=152) [len3+decomp] |https://pastebin.com/raw/dw6nBkEf|
+0068c402 (L=92) [brute] |microsoft defender|
+0068c45e (L=20) [brute amb=1] |PE|
+0068c472 (L=136) [brute] |FILEZ2: Body incomplete. Need |
+0068c4fa (L=108) [len3+decomp] | hosts answered on 445, |
+0068c566 (L=34) [len3+decomp] | mic=|
+0068c588 (L=74) [len3+decomp] |</LogonTrigger>|
+0068c5d2 (L=46) [brute] |webroot|
+0068c600 (L=26) [brute] |PF|
+0068c61a (L=60) [brute] |SC_CURSOR||
+0068c656 (L=44) [len3+decomp] |169.254.|
+0068c682 (L=94) [brute] |U.S. Virgin Islands|
+0068c6e0 (L=20) [brute] |PG|
+0068c6f4 (L=40) [brute] |India|
+0068c832 (L=96) [brute amb=1] | packed YUV to RGB24|
+0068c892 (L=34) [len3+decomp] |PONG|
+0068c8b4 (L=330) [len3+decomp] |<ExecutionTimeLimit>PT0S</ExecutionTimeLimit><Priority>7</Priority></Settings>|
+0068c9fe (L=28) [brute] |PH|
+0068ca1a (L=132) [len3+decomp] |wlan show networks mode=bssid|
+0068cb62 (L=84) [len3+decomp] |HKEY_CURRENT_USER|
+0068cbb6 (L=72) [brute] |Liechtenstein|
+0068cbfe (L=64) [brute] |Cocos Islands|
+0068cc3e (L=188) [len3+decomp] |the share scan thread could not be created|
+0068ccfa (L=66) [len3+decomp] |command pipe=|
+0068cd3c (L=58) [len3+decomp] |IconStreams|
+0068cd76 (L=88) [brute] |Equatorial Guinea|
+0068cdce (L=56) [len3+decomp] |FM_DRIVES||
+0068ce06 (L=128) [len3+decomp] |http://checkip.amazonaws.com|
+0068ce86 (L=56) [len3+decomp] |ifconfig.co|
+0068cebe (L=180) [len3+decomp] ||0|the scan thread could not be created||
+0068cf72 (L=52) [len3+decomp] | from x=|
+0068cfa6 (L=46) [brute] |adaware|
+0068cfd4 (L=20) [brute] |PK|
+0068cfe8 (L=44) [len3+decomp] |[Remote]|
+0068d014 (L=42) [len3+decomp] |  exe='|
+0068d03e (L=64) [brute] |*qhwatchdog*|
+0068d07e (L=24) [brute] |PL|
+0068d096 (L=114) [brute] |tray overlay moved: rect |
+0068d108 (L=26) [brute] |PM|
+0068d122 (L=72) [brute] |secure endpoint|
+0068d16a (L=180) [len3+decomp] |SendNetworkDataFull: Deadline exceeded (|
+0068d21e (L=22) [brute] |PN|
+0068d234 (L=196) [brute] |KEYLOG_CONTENT|[No logs found or empty file]|
+0068d2f8 (L=94) [len3+decomp] |wlan show interfaces|
+0068d356 (L=98) [brute] |FM_DL_BATCH_COMPLETE||
+0068d3b8 (L=88) [len3+decomp] |no sweep to run: |
+0068d410 (L=38) [brute] |' bg=|
+0068d436 (L=66) [brute] |French Guiana|
