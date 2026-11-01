@@ -85,7 +85,7 @@ process start, before any other statement mechanic runs.
 
 5. REF-COUNT CORRECTION
 
-   Prior handoff claimed ~400 references. Actual count over decomp_code.txt:
+   Claimed ~400 references. Actual count over decomp_code.txt:
    377 pool-literal refs (206+87+120+65+3+3+1+1+2), from 319 of 322 functions.
    Heaviest users: FUN_006f53c2 (191; dq/empty/CRLF — report builder),
    FUN_006bbaa4 (geo-IP cascade), FUN_006c3b82, FUN_006daad1 (mic-family log

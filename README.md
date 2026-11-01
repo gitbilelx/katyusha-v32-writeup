@@ -464,8 +464,7 @@ paths are now TRACE-VERIFIED via the analyst's own detonation.)*
 
 - Ghidra headless decompilation + a homegrown PB-statement profiler (marker
   `MOV dword ptr[0x62dddd],0xNNNN` statement IDs; WinMain = 2,841 statements), capstone
-  raw-scan tooling, `pefile` for VA→file-offset. Full session log: `HANDOFF3.md`
-  (in the analyst repo). Papertrail of hypotheses accepted/rejected is preserved
+  raw-scan tooling, `pefile` for VA→file-offset. Papertrail of hypotheses accepted/rejected is preserved
   (`config_consumer.txt`, `masked_tables.txt`, per-UPDATE sections).
 - Verification discipline: V1 (no IOC "confirmed" without a remote trace), V2 (every
   function label cites ≥1 decrypted-blob VA), V3 (all-0xFF = debugger decoy, discard),
