@@ -82,6 +82,20 @@ here strictly as hunting IOCs — not as attribution claims.
 
 Archive MD5s (from the same corroboration): `gmail2.7z` = `c20cd5b3df4ca8fadfa8c2a45054fb4b`, its `.tmp` alias = `93e70abbd335dba791c5e277bba86881`. The `.vbs` dropper itself is deliberately excluded here — see §3 for why it has no stable hash.
 
+### MalwareBazaar (original artifacts; no binaries in this repo)
+
+The original, unmodified samples are hosted on MalwareBazaar for vetted researchers. No malware binaries are stored in this repository.
+
+| File | SHA-256 | MalwareBazaar |
+|---|---|---|
+| `RuntimeHost.exe` (UPX) | `a9baddca01a6f07cac7472644adde90349e3954ceaead6400f05264e9e93c087` | [sample](https://bazaar.abuse.ch/sample/a9baddca01a6f07cac7472644adde90349e3954ceaead6400f05264e9e93c087/) |
+| `ms.exe` (UPX) | `269c255de74a6c486d704b3c5f308a05bd719d4f081b7d64ea3dde8ff342a0e7` | [sample](https://bazaar.abuse.ch/sample/269c255de74a6c486d704b3c5f308a05bd719d4f081b7d64ea3dde8ff342a0e7/) |
+| `mservice_l.exe` (UPX) | `9e620fdbe81f3649fe51df395d07b4359ce92dd88b221c6c59d649a621d242af` | [sample](https://bazaar.abuse.ch/sample/9e620fdbe81f3649fe51df395d07b4359ce92dd88b221c6c59d649a621d242af/) |
+| `info.exe` (UPX) | `57e2ce1f973daee7e7dacc7065cff5f6619fef8668ceda61afe6c6e4cea8370a` | [sample](https://bazaar.abuse.ch/sample/57e2ce1f973daee7e7dacc7065cff5f6619fef8668ceda61afe6c6e4cea8370a/) |
+| `WinRing0x64.sys` | `11bd2c9f9e2397c9a16e0990e4ed2cf0679498fe0fd418a3dfdac60b5c160ee5` | [sample](https://bazaar.abuse.ch/sample/11bd2c9f9e2397c9a16e0990e4ed2cf0679498fe0fd418a3dfdac60b5c160ee5/) |
+| `ST.xml` | `0c0512a567941957503710b99e4838decc808142868d351305e513457a9c89b3` | [sample](https://bazaar.abuse.ch/sample/0c0512a567941957503710b99e4838decc808142868d351305e513457a9c89b3/) |
+| `00_original.vbs` (dropper; unstable hash) | `c3137d7394274b81104bb6bd4943bb2265ca6373c8894a51e1c681e0d673634f` | [sample](https://bazaar.abuse.ch/sample/c3137d7394274b81104bb6bd4943bb2265ca6373c8894a51e1c681e0d673634f/) |
+
 ---
 
 ## 3. Infection chain
