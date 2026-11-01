@@ -111,7 +111,7 @@ File transfer channel
    0x678678, 0x67aaf4, 0x6865c8, 0x68c36a): it loads all 11 URLs into an
    array, strips 'http://'/'https://' (0x0068bc2c/0x00687fbc; Mid 7/8) and
    '/'-splits (0x0065f894) — i.e., the kit validates/normalizes the same
-   distribution list that ms and mservice_l carry. Closes the T6 TODO.
+   distribution list that ms and mservice_l carry.
 6. Local IPC (NOT C2): mic-service named pipes \\.\pipe\ms_audio_cmd_
    (0x006781fe) and \\.\pipe\ms_audio_dat_ (0x006877e4); param builder
    FUN_0070f7f9 (see map-correction note): 'helper start: parameters=' +

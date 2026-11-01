@@ -50,8 +50,7 @@ Method: decomp repairs + capstone xref scan; STATIC ONLY. 2026-11-01.
       (VAs 0x65e354, 0x65e79a, 0x6632b0, 0x664c64, 0x668f8a, 0x672a2e,
       0x6780a2, 0x678678, 0x67aaf4, 0x6865c8, 0x68c36a) but are NOT consumed
       by FUN_00726bac — c2_bootstrap only downloads its own 5; the 11-ID set
-      is the ms/mservice_l distribution list. Consumer of the 11 in RH is a
-      TODO for T7. 16 unique total (5 + 11).
+      is the ms/mservice_l distribution list. 16 unique total (5 + 11).
 
 3. CONFIG FORMAT (STATIC HYPOTHESIS; UNVERIFIED-BY-RUNTIME)
 

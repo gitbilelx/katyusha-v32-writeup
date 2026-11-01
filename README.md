@@ -487,8 +487,6 @@ paths are now TRACE-VERIFIED via the analyst's own detonation.)*
 | `wmain_stmts.txt` | WinMain statement-level dump (source cited by protocol_table) |
 | `decomp_code.txt` | Ghidra decompilation of RuntimeHost (source cited by protocol_table) |
 | `sbox_620320.bin` | RuntimeHost on-disk S-box (256 B) used for blob decryption |
-| `HANDOFF3.md` | Session/hypothesis paper trail |
-| `tasks.txt` | Analyst task ledger |
 
 *This write-up is intended as defensive research material. No malware binaries
 are included with it, and nothing in it was written to help anyone run the
